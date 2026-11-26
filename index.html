@@ -2161,6 +2161,199 @@ WRITE_TASKS.push(
  {id:'w7',sim:'s5',title:'Descriere: pădurea copilăriei',type:'Descriere',min:150,req:'Scrie o descriere de tip tablou, de minimum 150 de cuvinte, a unei păduri pe care o știi, pornind de la imaginile din poezia „O, rămâi...”.',bullets:['o privire de ansamblu asupra locului','cel puțin trei detalii, cu imagini vizuale și auditive','cel puțin trei figuri de stil diferite (epitet, comparație, personificare etc.)','impresia/sentimentul tău față de loc'],crit:[{c:'Privirea de ansamblu',p:2},{c:'Detalii relevante (cel puțin trei)',p:2},{c:'Imagini artistice vizuale și auditive',p:2},{c:'Trei figuri de stil diferite, folosite adecvat',p:2},{c:'Impresia/sentimentul personal',p:2},{c:'Organizarea descrierii (de la general la particular)',p:2}]},
  {id:'w8',sim:'s3',title:'Scrisoare către părintele Trandafir',type:'Scrisoare',min:150,req:'Scrie o scrisoare de minimum 150 de cuvinte adresată părintelui Trandafir, în care să-i spui ce părere ai despre metoda lui de a-i schimba pe săteni.',bullets:['respectarea convențiilor scrisorii (localitatea și data, formula de adresare, formula de încheiere, semnătura)','exprimarea opiniei tale despre metoda personajului','două argumente, cu referire la text','un registru potrivit (politicos)'],crit:[{c:'Localitatea și data',p:1},{c:'Formula de adresare potrivită',p:1},{c:'Formula de încheiere și semnătura',p:2},{c:'Opinia formulată clar',p:2},{c:'Primul argument, cu referire la text',p:2},{c:'Al doilea argument, cu referire la text',p:2},{c:'Registrul adecvat (politicos)',p:2}]}
 );
+
+// ===================== SIMULĂRI NOI DUPĂ MODELUL OFICIAL EN 2026–2027 (26.11.2026) =====================
+// Textul 1: autori din domeniul public (texte preluate din manualele Art Klett). Textul 2: scris pentru acest exercițiu.
+const C_SEMN_EPIC = [{c:'Mesajul/semnificația, în raport cu tema',p:2},{c:'Primul element specific textului narativ (adecvat 2 p, schematic 1 p)',p:2},{c:'Al doilea element specific textului narativ',p:2},{c:'Interpretarea primei secvențe (adecvat 2 p, încercare 1 p)',p:2},{c:'Interpretarea celei de-a doua secvențe',p:2},{c:'Emoția/sentimentul unui personaj – menționare',p:1},{c:'Emoția/sentimentul – justificare',p:1}];
+const C_COMPAR = [{c:'Precizarea unei asemănări sau deosebiri',p:2},{c:'Secvență relevantă din textul 1',p:1},{c:'Secvență relevantă din textul 2',p:1},{c:'Exprimare, ortografie, punctuație (0–1 greșeli)',p:1},{c:'Minimum 30 de cuvinte',p:1}];
+SIMS.push(
+// ------------------------------------------------------------------ s6
+{id:'s6', title:'Simularea 6 · „Vizită...”', emoji:'🎖️', sub:'I.L. Caragiale (schiță) + articol despre bunele maniere · după modelul oficial 2027',
+ texts:[
+ {h:'Textul 1', html:`<p>M-am dus de Sf. Ion să fac o vizită doamnei Maria Popescu, o veche prietenă, ca s-o felicit pentru onomastica* unicului său fiu, Ionel Popescu, un copilaș foarte drăguț de vreo opt anișori. N-am voit să merg cu mâna goală și i-am dus băiețelului o minge foarte mare de cauciuc și foarte elastică. Atențiunea mea a făcut mare plăcere amicei mele și mai ales copilului, pe care l-am găsit îmbrăcat ca maior de roșiori* în uniformă de mare ținută. După formalitățile de rigoare, am început să convorbim despre vreme, despre sorții agriculturii – d. Popescu tatăl este mare agricultor –, despre criză ș. cl. Am observat doamnei Popescu că în anul acesta nu se prea vede la plimbare, la teatru, la petreceri... Doamna mi-a răspuns că de la o vreme i se urăște chiar unei femei cu petrecerile, mai ales când are copii.</p>
+<p>— Să-ți spun drept, cât era Ionel mititel, mai mergea; acu, de când s-a făcut băiat mare, trebuie să mă ocup eu de el; trebuie să-i fac educația. Și nu știți dv. bărbații cât timp îi ia unei femei educația unui copil, mai ales când mama nu vrea să-l lase fără educație!</p>
+<p>Pe când doamna Popescu-mi expune părerile ei sănătoase în privința educației copiilor, auzim dintr-o odaie de alături o voce răgușită de femeie bătrână:</p>
+<p>— Uite, coniță, Ionel nu s-astâmpără!<br>— Ionel! strigă madam Popescu; Ionel! vin’ la mama!</p>
+<p>Apoi, cătră mine încet:</p>
+<p>— Nu știi ce ștrengar se face... și deștept... [...]</p>
+<p>Madam Popescu mai sărută o dată dulce pe maiorașul, îl scuipă, să nu-l deoache, și-l lasă jos. El a pus sabia în teacă, salută militărește și merge într-un colț al salonului unde, pe două mese, pe canapea, pe foteluri și pe jos, stau grămădite fel de fel de jucării. Dintre toate, maiorul alege o trâmbiță și o tobă. Atârnă toba de gât, suie pe un superb cal vânăt rotat, pune trâmbița la gură și, legănându-se călare, începe să bată toba cu o mână și să sufle-n trâmbiță. Madam Popescu îmi spune ceva; eu n-aud nimica. Îi răspund totuși că nu cred să mai ție mult gerul așa de aspru; ea n-aude nimica.</p>
+<p>— Ionel! Ionel!! Ionel!!! Du-te dincolo, mamă; spargi urechile dumnealui! Nu e frumos când sunt musafiri!</p>
+<p>Iar eu, profitând de un moment când trâmbița și toba tac, adaog:</p>
+<p>— Și pe urmă, d-ta ești roșior, în cavalerie.<br>— Maior! strigă mândrul militar.<br>— Tocmai! zic eu. La cavalerie nu e tobă; și maiorul nu cântă cu trâmbița; cu trâmbița cântă numai gradele inferioare; maiorul comandă și merge-n fruntea soldaților cu sabia scoasă.</p>
+<p>Explicația mea prinde bine. Maiorul descalică, scoate de după gât toba, pe care o trântește cât colo; asemenea și trâmbița. [...]</p>
+<p>— Ajunge, Ionel! destulă dulceață, mamă! iar te-apucă stomacul...</p>
+<p>Maiorul ascultă, după ce mai ia încă vreo trei-patru lingurițe; apoi iese cu cheseaua* în vestibul*.</p>
+<p>— Unde te duci? întreabă mama.<br>— Viu acu! răspunde Ionel.</p>
+<p>După un moment, se-ntoarce cu cheseaua goală; o pune pe o masă, se apropie de mine, îmi ia de pe mescioară tabacherea cu țigarete regale, scoate una, o pune în gură și mă salută militărește, ca orice soldat care cere unui țivil să-i împrumute foc. Eu nu știu ce trebuie să fac. Mama, râzând, îmi face cu ochiul și mă-ndeamnă să servesc pe domnul maior. [...]</p>
+<p>Maiorul și-a fumat țigareta până la carton. Apoi se repede la mingea pe care i-am adus-o eu și-ncepe s-o trântească. Mingea sare până la policandrul din tavanul salonului, unde tulbură grozav liniștea ciucurilor de cristal. [...]</p>
+<p>Am lăsat pe madam Popescu liniștită cu scumpul ei maior afară din orice stare alarmantă, și am ieșit. Mi-am pus șoșonii* și paltonul și am plecat. Când am ajuns acasă, am înțeles de ce maiorul ieșise un moment cu cheseaua în vestibul – ca să-mi toarne dulceață în șoșoni.</p>`,
+  src:'I.L. Caragiale, <i>Vizită...</i><br>*onomastică – ziua numelui; *roșior – soldat călăreț, îmbrăcat în haină roșie; *chesea – vas mic în care se păstrează dulceața; *vestibul – prima încăpere a unei locuințe; *șoșoni – încălțăminte de cauciuc purtată peste pantofi'},
+ {h:'Textul 2', html:`<p><b>Musafiri mici, gazde mari</b></p>
+<p>Vizitele în familie sau la prieteni sunt prilejuri bune pentru copii de a învăța regulile bunei-cuviințe. Specialiștii în educație recomandă ca, înainte de vizită, părinții să le explice celor mici ce urmează: cine sunt gazdele, cât timp vor sta și ce comportament se așteaptă de la ei.</p>
+<p>Câteva reguli simple ajută foarte mult. Copiii își salută gazdele, nu întrerup discuțiile adulților și cer voie înainte să atingă obiectele din casă. La masă, se servesc cu măsură și mulțumesc pentru ce li se oferă.</p>
+<p>Și gazdele pot face vizita mai plăcută. Un colț cu cărți, jocuri de masă sau creioane colorate îi ține pe copii ocupați, iar adulții pot sta liniștiți de vorbă.</p>
+<p>„Copiii nu învață bunele maniere din predici, ci din ce văd în jurul lor”, spune o psihologă care lucrează de douăzeci de ani cu familiile. „Dacă părinții sunt politicoși și calmi, cei mici vor copia, mai devreme sau mai târziu, același comportament.”</p>
+<p>Limitele nu sunt pedepse. Un „nu” spus cu blândețe, dar cu fermitate, îi arată copilului că adulții au grijă de el și de cei din jur.</p>`, src:'articol realizat pentru acest exercițiu'}
+ ],
+ items:[
+ {part:1,nr:1,type:'blanks',pts:2,req:'Completează spațiile punctate cu informațiile din textul 1.',html:'Naratorul îi aduce lui Ionel o {{0}} foarte mare de cauciuc, iar băiatul este îmbrăcat ca maior de {{1}}.',ans:[['minge','mingea'],['roșiori','rosiori']]},
+ {part:1,nr:2,type:'mc',pts:2,req:'Încercuiește litera corespunzătoare răspunsului corect, valorificând informațiile din textul 1. Repetarea replicii „Ionel! vin’ la mama!” are rolul',o:['de a evidenția că mama nu reușește să-și impună autoritatea asupra copilului.','de a arăta că Ionel ascultă imediat de mama sa.','de a sugera că mama este foarte severă cu fiul ei.','de a arăta că naratorul se grăbește să plece.'],a:0,e:'Mama strigă de mai multe ori, dar Ionel nu ascultă: educația de care se laudă nu are niciun efect.'},
+ {part:1,nr:3,type:'mc',pts:2,req:'Încercuiește litera corespunzătoare răspunsului corect, valorificând informațiile din textul 2. Înainte de vizită, părinții ar trebui',o:['să le explice copiilor ce urmează.','să le cumpere copiilor jucării noi.','să-i lase pe copii acasă.','să le dea copiilor dulciuri.'],a:0,e:'„înainte de vizită, părinții să le explice celor mici ce urmează”.'},
+ {part:1,nr:4,type:'mc',pts:2,req:'Încercuiește litera corespunzătoare răspunsului corect, valorificând informațiile din textul 2. Psihologa citată afirmă că bunele maniere se învață mai ales',o:['din exemplul celor din jur.','din predicile adulților.','din cărțile de povești.','numai la școală.'],a:0,e:'„nu învață bunele maniere din predici, ci din ce văd în jurul lor”.'},
+ {part:1,nr:5,type:'tf',pts:6,req:'Notează „X” în dreptul fiecărui enunț pentru a marca dacă acesta este adevărat sau fals, bazându-te pe informațiile din cele două texte.',rows:[
+   {t:'Textul 1: Vizita are loc de ziua numelui lui Ionel.',a:true},
+   {t:'Textul 1: Doamna Popescu spune că merge tot mai des la petreceri.',a:false},
+   {t:'Textul 1: Ajuns acasă, naratorul descoperă dulceață în șoșoni.',a:true},
+   {t:'Textul 2: Psihologa lucrează de zece ani cu familiile.',a:false},
+   {t:'Textul 2: Gazdele pot amenaja un colț cu jocuri pentru copii.',a:true},
+   {t:'Textul 2: Limitele sunt prezentate ca pedepse.',a:false}]},
+ {part:1,nr:6,type:'open',pts:6,min:0,max:0,minSent:2,req:'Precizează, în minimum două enunțuri, o trăsătură a tiparului textual dialogat, identificată în textul 1, ilustrând-o cu o secvență relevantă.',crit:C_TIPAR,
+  model:'O trăsătură a tiparului textual dialogat este alternanța replicilor personajelor, marcate prin linie de dialog. De exemplu, în secvența „— Unde te duci? întreabă mama. / — Viu acu! răspunde Ionel.”, replicile mamei și ale copilului se succedă, iar verbele „întreabă” și „răspunde” arată cine vorbește.'},
+ {part:1,nr:7,type:'open',pts:6,min:30,max:0,req:'Compară, în minimum 30 de cuvinte, comportamentul copilului din textul 1 cu regulile pentru vizite prezentate în textul 2, valorificând câte o secvență relevantă din fiecare text.',crit:C_COMPAR,
+  model:'Comportamentul lui Ionel este opusul regulilor din textul 2. Textul 2 recomandă ca, la masă, copiii să se servească „cu măsură”, însă Ionel mănâncă dulceață până când mama îi spune „Ajunge, Ionel! destulă dulceață”. De asemenea, în loc să ceară voie, aruncă mingea până la policandru.'},
+ {part:1,nr:8,type:'open',pts:6,min:50,max:100,req:'Crezi că un copil învață bunele maniere mai ales din exemplul părinților? Motivează, în 50–100 de cuvinte, răspunsul la întrebarea dată, valorificând textul 2.',crit:C_OPINIE,
+  model:'Cred că un copil învață bunele maniere mai ales din exemplul părinților. Psihologa din textul 2 explică faptul că cei mici nu învață „din predici, ci din ce văd în jurul lor”. Dacă un copil își vede părinții salutând, mulțumind și vorbind calm, va face la fel fără să i se mai spună. În plus, textul arată că un „nu” spus cu blândețe îl învață pe copil să respecte limitele. Așadar, exemplul contează mai mult decât vorbele.'},
+ {part:1,nr:9,type:'open',pts:6,min:50,max:100,req:'Asociază schița „Vizită...” de I.L. Caragiale cu un alt text literar studiat la clasă sau citit ca lectură suplimentară, prezentând, în 50–100 de cuvinte, o valoare comună, prin referire la câte o secvență relevantă din fiecare text.',crit:C_ASOC,
+  model:'Schița „Vizită...” poate fi asociată cu „D-l Goe...” de I.L. Caragiale, prin valoarea educației. În ambele texte, adulții răsfață copiii și nu le impun limite. Mama lui Ionel îl sărută și îl scuipă „să nu-l deoache”, deși băiatul face numai nebunii. La fel, cele trei doamne îl numesc pe Goe „puișorul mamii”, deși el se poartă urât în tren. Ambele texte arată că educația adevărată înseamnă și reguli, nu doar alint.'},
+ {part:2,nr:1,type:'mc',pts:2,req:'Încercuiește litera corespunzătoare răspunsului corect. Conțin diftong ambele cuvinte din seria:',o:['„pierduți”, „iese”','„ceașcă”, „mai”','„cafea”, „copilaș”','„mingea”, „trâmbița”'],a:0,e:'pier-duți (ie), ie-se (ie). În „ceașcă” și „mingea”, „e” este literă ajutătoare (ce/ge + vocală).'},
+ {part:2,nr:2,type:'mc',pts:2,req:'Încercuiește litera corespunzătoare răspunsului corect. Cuvintele subliniate în secvențele „un <u class=s>copilaș</u> (1) foarte drăguț” și „cu multă <u class=s>bunătate</u> (2)” s-au format prin:',o:['derivare (1), derivare (2).','compunere (1), derivare (2).','derivare (1), conversiune (2).','conversiune (1), compunere (2).'],a:0,e:'copil + -aș; bun + -ătate – ambele derivate cu sufix.'},
+ {part:2,nr:3,type:'mc',pts:2,req:'Încercuiește litera corespunzătoare răspunsului corect. Secvența subliniată în fragmentul „Explicația mea <u class=s>prinde bine</u>” are sensul de',o:['are efectul dorit.','este prinsă de cineva.','este greu de înțeles.','îl supără pe copil.'],a:0,e:'„a prinde bine” = a fi de folos, a avea efect.'},
+ {part:2,nr:4,type:'mc',pts:2,req:'Încercuiește litera corespunzătoare răspunsului corect. Sunt omonime cuvintele subliniate în secvențele din seria:',o:['„Mingea <u class=s>sare</u> până la policandru”; Pune <u class=s>sare</u> în supă.','„cu sabia <u class=s>scoasă</u>”; A <u class=s>scos</u> apă din fântână.','„o <u class=s>voce</u> răgușită”; Are o <u class=s>voce</u> frumoasă.','„pe două <u class=s>mese</u>”; Am cumpărat o <u class=s>masă</u> nouă.'],a:0,e:'„sare” (verbul „a sări”) și „sare” (condiment) au aceeași formă, dar sensuri fără legătură.'},
+ {part:2,nr:5,type:'morph',pts:6,req:'Menționează valoarea morfologică a fiecărui cuvânt subliniat.',rows:[
+   {w:'„este” – din „d. Popescu tatăl <u class=s>este</u> mare agricultor”',a:'verb copulativ'},
+   {w:'„a” – din „Atențiunea mea <u class=s>a</u> făcut mare plăcere”',a:'verb auxiliar'},
+   {w:'„sunt” – din „Nu e frumos când <u class=s>sunt</u> musafiri!”',a:'verb predicativ'}]},
+ {part:2,nr:6,type:'open',pts:6,min:0,max:0,req:'Alcătuiește o propoziție negativă, în care pronumele personal „el” să fie în cazul dativ (1), și un enunț exclamativ, în care adverbul „acasă” să aibă funcția sintactică de atribut (2).',
+  crit:[{c:'(1) Propoziție negativă',p:1},{c:'(1) Pronumele „el” în dativ (lui / îi)',p:1},{c:'(1) Norme de exprimare, ortografie, punctuație',p:1},{c:'(2) Enunț exclamativ',p:1},{c:'(2) „acasă” – atribut',p:1},{c:'(2) Norme de exprimare, ortografie, punctuație',p:1}],
+  model:'(1) Nu i-am dat lui nicio jucărie. (2) Ce frumoasă e grădina de acasă!'},
+ {part:2,nr:7,type:'clauses',pts:6,req:'Precizează felul fiecărei propoziții din fraza de mai jos (subordonatele valorează câte 2 p).',phrase:'Când am ajuns acasă, am înțeles de ce maiorul ieșise în vestibul, care era întunecat.',props:[
+   {t:'Când am ajuns acasă',a:'circumstanțială de timp'},{t:'am înțeles',a:'principală'},{t:'de ce maiorul ieșise în vestibul',a:'completivă directă'},{t:'care era întunecat',a:'atributivă'}]},
+ {part:2,nr:8,type:'forms',pts:6,req:'Alege forma corectă a cuvintelor din mesajul lui Ionel către musafir.',html:'„Domnule, [[0]] adus o minge grozavă! [[1]] plăcut tare mult. Mama zice că [[2]] supărat puțin din cauza dulceții, dar [[3]] trecut. Sper să [[4]] iar la noi. [[5]] din bloc vor să se joace și ei cu mingea.”',
+  sel:[{o:['mi-ați','miați'],a:0},{o:['Mia','Mi-a'],a:1},{o:['v-ați','vați'],a:0},{o:['v-a','va'],a:0},{o:['vi','vii'],a:1},{o:['Copiii','Copii'],a:0}],
+  e:'mi-ați adus · Mi-a plăcut · v-ați supărat · v-a trecut · să vii · Copiii (articulat)'},
+ {part:3,nr:1,type:'essay',pts:20,min:150,max:0,req:'Scrie un text de minimum 150 de cuvinte, în care să prezinți o semnificație a/un mesaj al fragmentului din schița „Vizită...” de I.L. Caragiale (textul 1).',
+  bullets:['să precizezi mesajul textului/o semnificație a textului, prin referire la temă','să prezinți două elemente specifice textului narativ prin care se construiește semnificația/mesajul','să interpretezi două secvențe din text, relevante pentru semnificație/mesaj','să menționezi o emoție exprimată a/un sentiment al unui personaj, justificându-ți alegerea'],
+  crit:C_SEMN_EPIC,
+  model:'Schița „Vizită...” de I.L. Caragiale are ca temă educația greșită a copiilor, iar mesajul ei este că un copil lăsat fără limite devine un mic tiran, iar răsfățul nu înseamnă iubire.\n\nUn prim element specific textului narativ este naratorul-personaj, musafirul, care povestește la persoana I și observă cu ironie tot ce se întâmplă. Al doilea element este personajul principal, Ionel, construit prin fapte: suflă în trâmbiță, atacă jupâneasa cu sabia, fumează și aruncă mingea până la policandru.\n\nO secvență relevantă este afirmația mamei: „trebuie să-i fac educația”. Ea contrastează puternic cu faptele, pentru că doamna Popescu nu-i interzice nimic copilului, ci îl sărută și îl scuipă „să nu-l deoache”. A doua secvență este finalul, în care naratorul descoperă că Ionel îi turnase „dulceață în șoșoni”. Răutatea copilului rămâne nepedepsită, iar musafirul suportă urmările.\n\nUn sentiment al naratorului este stânjeneala, justificată de faptul că nu știe cum să reacționeze când copilul îi cere foc: „Eu nu știu ce trebuie să fac”.\n\nAșadar, textul ne amuză, dar ne și avertizează că dragostea părintească are nevoie de reguli.'}
+ ]},
+// ------------------------------------------------------------------ s7
+{id:'s7', title:'Simularea 7 · „Iarna”', emoji:'❄️', sub:'Vasile Alecsandri (pastel) + text explicativ despre zăpadă · după modelul oficial 2027',
+ texts:[
+ {h:'Textul 1', html:`<p>Din văzduh cumplita iarnă cerne norii de zăpadă,<br>Lungi troiene călătoare adunate-n cer grămadă;<br>Fulgii zbor*, plutesc în aer ca un roi de fluturi albi,<br>Răspândind fiori de gheață pe ai țării umeri dalbi*.</p>
+<p>Ziua ninge, noaptea ninge, dimineața ninge iară!<br>Cu o zale* argintie se îmbracă mândra țară;<br>Soarele rotund și palid se prevede* pintre nori<br>Ca un vis de tinerețe pintre anii trecători.</p>
+<p>Tot e alb pe câmp, pe dealuri, împregiur, în depărtare,<br>Ca fantasme albe plopii înșirați se perd în zare,<br>Și pe-ntinderea pustie, fără urme, fără drum,<br>Se văd satele perdute sub clăbuci albii* de fum.</p>
+<p>Dar ninsoarea încetează, norii fug, doritul soare<br>Strălucește și dismiardă oceanul de ninsoare.<br>Iată-o sanie ușoară care trece peste văi...<br>În văzduh voios răsună clinchete de zurgălăi.</p>`,
+  src:'Vasile Alecsandri, <i>Iarna</i><br>*zbor – zboară (formă veche); *dalb – alb, imaculat; *zale – armură din inele mici de fier; *a se prevedea – a se întrezări; *albiu – albicios'},
+ {h:'Textul 2', html:`<p><b>De ce scârțâie zăpada?</b></p>
+<p>Un fulg de zăpadă se naște sus, în nori, atunci când vaporii de apă îngheață în jurul unui grăunte minuscul de praf. Cristalul de gheață crește pe măsură ce cade și capătă, de obicei, o formă cu șase brațe. Pentru că temperatura și umezeala se schimbă de la un loc la altul, doi fulgi nu cresc niciodată exact la fel.</p>
+<p>Fiecare cristal este, de fapt, transparent, ca gheața dintr-un pahar. Zăpada ni se pare albă pentru că milioanele de cristale și aerul dintre ele împrăștie lumina în toate direcțiile.</p>
+<p>Zăpada proaspăt căzută conține foarte mult aer – uneori peste 90% din volumul ei. De aceea, ea este un bun izolator: sub stratul de nea, pământul nu îngheață la fel de tare, iar semințele și unele animale mici trec mai ușor iarna.</p>
+<p>Dacă ați observat că zăpada scârțâie sub ghete doar în zilele foarte geroase, aveți dreptate. Când temperatura scade sub aproximativ –10 °C, cristalele sunt tari și se rup cu un sunet scurt atunci când călcăm pe ele. Pe vreme mai blândă, ele se topesc puțin sub greutatea noastră și alunecă fără zgomot.</p>
+<p>Primul om care a fotografiat un fulg de zăpadă a fost americanul Wilson Bentley, în 1885. El a adunat, în timpul vieții, peste cinci mii de fotografii cu fulgi.</p>`, src:'text realizat pentru acest exercițiu'}
+ ],
+ items:[
+ {part:1,nr:1,type:'blanks',pts:2,req:'Completează spațiile punctate cu informațiile din textul 1.',html:'Fulgii plutesc în aer ca un roi de {{0}} albi, iar plopii înșirați se pierd în zare ca niște {{1}} albe.',ans:[['fluturi'],['fantasme']]},
+ {part:1,nr:2,type:'mc',pts:2,req:'Încercuiește litera corespunzătoare răspunsului corect, valorificând informațiile din textul 1. Apariția saniei în ultima strofă sugerează',o:['revenirea vieții și a bucuriei după ninsoare.','plecarea oamenilor din satele pierdute.','începutul unei noi furtuni de zăpadă.','tristețea eului liric în fața iernii.'],a:0,e:'Soarele „strălucește”, iar „voios răsună clinchete de zurgălăi” – lumea se trezește la viață.'},
+ {part:1,nr:3,type:'mc',pts:2,req:'Încercuiește litera corespunzătoare răspunsului corect, valorificând informațiile din textul 2. Zăpada ni se pare albă deoarece',o:['cristalele și aerul dintre ele împrăștie lumina.','cristalele de gheață sunt colorate în alb.','fulgii conțin mult praf.','zăpada reflectă culoarea norilor.'],a:0,e:'„milioanele de cristale și aerul dintre ele împrăștie lumina în toate direcțiile”.'},
+ {part:1,nr:4,type:'mc',pts:2,req:'Încercuiește litera corespunzătoare răspunsului corect, valorificând informațiile din textul 2. Zăpada este un bun izolator, deoarece',o:['conține foarte mult aer.','este foarte grea.','se topește repede.','are cristale colorate.'],a:0,e:'„conține foarte mult aer – uneori peste 90% din volumul ei. De aceea, ea este un bun izolator”.'},
+ {part:1,nr:5,type:'tf',pts:6,req:'Notează „X” în dreptul fiecărui enunț pentru a marca dacă acesta este adevărat sau fals, bazându-te pe informațiile din cele două texte.',rows:[
+   {t:'Textul 1: Ninsoarea durează o singură zi.',a:false},
+   {t:'Textul 1: Soarele este comparat cu un vis de tinerețe.',a:true},
+   {t:'Textul 1: Satele se văd limpede, fără fum.',a:false},
+   {t:'Textul 2: Fiecare cristal de gheață este, de fapt, transparent.',a:true},
+   {t:'Textul 2: Wilson Bentley a fotografiat primul fulg de zăpadă în 1885.',a:true},
+   {t:'Textul 2: Pe vreme blândă, zăpada scârțâie mai tare.',a:false}]},
+ {part:1,nr:6,type:'open',pts:6,min:0,max:0,minSent:2,req:'Precizează, în minimum două enunțuri, o trăsătură a tiparului textual descriptiv, identificată în textul 1, ilustrând-o cu o secvență relevantă.',crit:C_TIPAR,
+  model:'O trăsătură a tiparului textual descriptiv este folosirea imaginilor artistice vizuale, realizate prin epitete și comparații. De exemplu, în secvența „Soarele rotund și palid se prevede pintre nori”, epitetele „rotund” și „palid” redau imaginea unui soare slab, abia vizibil prin ninsoare.'},
+ {part:1,nr:7,type:'open',pts:6,min:30,max:0,req:'Prezintă, în minimum 30 de cuvinte, o diferență de limbaj între cele două texte, valorificând câte o secvență relevantă din fiecare text.',crit:C_COMPAR,
+  model:'Textul 1 folosește un limbaj expresiv, figurat, cu comparații și epitete: fulgii plutesc „ca un roi de fluturi albi”. Textul 2 folosește un limbaj științific, precis, cu termeni de specialitate și cifre: „Când temperatura scade sub aproximativ –10 °C, cristalele sunt tari”. Primul text transmite emoții, al doilea explică un fenomen.'},
+ {part:1,nr:8,type:'open',pts:6,min:50,max:100,req:'Crezi că este important să înțelegem fenomenele naturii pe care le vedem în fiecare zi? Motivează, în 50–100 de cuvinte, răspunsul la întrebarea dată, valorificând textul 2.',crit:C_OPINIE,
+  model:'Cred că este important să înțelegem fenomenele naturii. Textul 2 ne arată că zăpada nu este doar frumoasă, ci și utilă: stratul de nea, care conține mult aer, protejează pământul, semințele și animalele mici. Când știm acest lucru, prețuim mai mult natura și o protejăm. În plus, explicațiile despre scârțâitul zăpezii sau despre fulgii cu șase brațe ne fac mai curioși și mai atenți la ce ne înconjoară. Așadar, cunoașterea face lumea mai interesantă.'},
+ {part:1,nr:9,type:'open',pts:6,min:50,max:100,req:'Asociază poezia „Iarna” de Vasile Alecsandri cu un alt text literar studiat la clasă sau citit ca lectură suplimentară, prezentând, în 50–100 de cuvinte, o valoare comună, prin referire la câte o secvență relevantă din fiecare text.',crit:C_ASOC,
+  model:'Poezia „Iarna” de Vasile Alecsandri poate fi asociată cu „Iarna pe uliță” de George Coșbuc, prin valoarea frumuseții naturii și a bucuriei pe care o aduce iarna. La Alecsandri, după ninsoare, „În văzduh voios răsună clinchete de zurgălăi”. La Coșbuc, iarna adună copiii pe uliță, iar ninsoarea începe încet: „A-nceput de ieri să cadă / Câte-un fulg”. Ambele texte arată că iarna, deși aspră, poate fi un anotimp al bucuriei.'},
+ {part:2,nr:1,type:'mc',pts:2,req:'Încercuiește litera corespunzătoare răspunsului corect. Conțin diftong ambele cuvinte din seria:',o:['„iarnă”, „soare”','„aer”, „dealuri”','„ninge”, „zurgălăi”','„pustie”, „gheață”'],a:0,e:'iar-nă (ia), soa-re (oa). „aer” și „pustie” au hiat; în „gheață”, „e” e literă ajutătoare.'},
+ {part:2,nr:2,type:'mc',pts:2,req:'Încercuiește litera corespunzătoare răspunsului corect. Cuvintele subliniate în secvențele „Cu o zale <u class=s>argintie</u> (1)” și „<u class=s>Ziua</u> (2) ninge” s-au format prin:',o:['derivare (1), conversiune (2).','compunere (1), derivare (2).','derivare (1), derivare (2).','conversiune (1), compunere (2).'],a:0,e:'argint + -iu (derivare); „ziua” – substantiv folosit ca adverb de timp (conversiune).'},
+ {part:2,nr:3,type:'mc',pts:2,req:'Încercuiește litera corespunzătoare răspunsului corect. Cuvântul subliniat în versul „Strălucește și <u class=s>dismiardă</u> oceanul de ninsoare” are sensul de',o:['mângâie.','topește.','acoperă.','ascunde.'],a:0,e:'„a dismierda” (azi: a dezmierda) = a mângâia.'},
+ {part:2,nr:4,type:'mc',pts:2,req:'Încercuiește litera corespunzătoare răspunsului corect. Sunt sinonime cuvintele din seria:',o:['„cumplită” – „aspră”','„palid” – „strălucitor”','„văzduh” – „pământ”','„pustie” – „populată”'],a:0,e:'Celelalte perechi sunt antonime.'},
+ {part:2,nr:5,type:'morph',pts:6,req:'Menționează valoarea morfologică a fiecărui cuvânt subliniat.',rows:[
+   {w:'„Ziua” – din „<u class=s>Ziua</u> ninge, noaptea ninge”',a:'adverb'},
+   {w:'„se” – din „Cu o zale argintie <u class=s>se</u> îmbracă mândra țară”',a:'pronume reflexiv'},
+   {w:'„albi” – din „ca un roi de fluturi <u class=s>albi</u>”',a:'adjectiv'}]},
+ {part:2,nr:6,type:'open',pts:6,min:0,max:0,req:'Alcătuiește o propoziție interogativă, în care verbul „a ninge” să fie la modul conjunctiv, timpul prezent (1), și un enunț în care substantivul „zăpadă” să aibă funcția sintactică de complement direct (2).',
+  crit:[{c:'(1) Propoziție interogativă',p:1},{c:'(1) „a ninge” la conjunctiv prezent („să ningă”)',p:1},{c:'(1) Norme de exprimare, ortografie, punctuație',p:1},{c:'(2) Enunț corect construit',p:1},{c:'(2) „zăpadă” – complement direct',p:1},{c:'(2) Norme de exprimare, ortografie, punctuație',p:1}],
+  model:'(1) Oare să ningă și mâine? (2) Copiii adună zăpada în curte.'},
+ {part:2,nr:7,type:'clauses',pts:6,req:'Precizează felul fiecărei propoziții din fraza de mai jos (subordonatele valorează câte 2 p).',phrase:'Când ninsoarea încetează, copiii ies afară ca să vadă cum strălucește zăpada.',props:[
+   {t:'Când ninsoarea încetează',a:'circumstanțială de timp'},{t:'copiii ies afară',a:'principală'},{t:'ca să vadă',a:'finală'},{t:'cum strălucește zăpada',a:'completivă directă'}]},
+ {part:2,nr:8,type:'forms',pts:6,req:'Alege forma corectă a cuvintelor din mesajul unui copil către bunica lui.',html:'„Bunico, [[0]] văzut cât a nins? [[1]] troienit toate drumurile! Nu circulă [[2]] autobuz. Toți [[3]] din sat au ieșit afară și [[4]] dat cu sania până seara. Te sun [[5]]!”',
+  sel:[{o:['a-i','ai'],a:1},{o:['S-au','Sau'],a:0},{o:['nici un','niciun'],a:1},{o:['copiii','copii'],a:0},{o:['neam','ne-am'],a:1},{o:['deseară','de seară'],a:0}],
+  e:'ai văzut · S-au troienit · niciun · copiii (articulat) · ne-am dat · deseară'},
+ {part:3,nr:1,type:'essay',pts:20,min:150,max:0,req:'Scrie un text de minimum 150 de cuvinte, în care să prezinți o semnificație a/un mesaj al poeziei „Iarna” de Vasile Alecsandri (textul 1).',
+  bullets:['să precizezi mesajul textului/o semnificație a textului, prin referire la temă','să prezinți două elemente specifice textului liric (de exemplu: imaginile artistice, figurile de stil, versificația, vocea lirică) prin care se construiește semnificația/mesajul','să interpretezi două secvențe din text, relevante pentru semnificație/mesaj','să menționezi un sentiment al eului liric, justificându-ți alegerea'],
+  crit:[{c:'Mesajul/semnificația poeziei',p:1},{c:'Tema',p:1},{c:'Primul element specific textului liric (adecvat 2 p, schematic 1 p)',p:2},{c:'Al doilea element specific textului liric',p:2},{c:'Interpretarea primei secvențe (adecvat 2 p, încercare 1 p)',p:2},{c:'Interpretarea celei de-a doua secvențe',p:2},{c:'Sentimentul eului liric – menționare',p:1},{c:'Sentimentul – justificare',p:1}],
+  model:'Poezia „Iarna” de Vasile Alecsandri este un pastel care are ca temă natura în anotimpul rece. Mesajul ei este că iarna, deși la început pare cumplită, ascunde o frumusețe luminoasă și aduce bucurie.\n\nUn prim element specific textului liric este imaginea artistică vizuală. Culoarea dominantă este albul: „Tot e alb pe câmp, pe dealuri, împregiur, în depărtare”. Al doilea element îl reprezintă figurile de stil, mai ales comparațiile, ca în versul „Fulgii zbor, plutesc în aer ca un roi de fluturi albi”, care transformă ninsoarea într-un spectacol delicat.\n\nSecvența „Ziua ninge, noaptea ninge, dimineața ninge iară!” folosește repetiția verbului „ninge” pentru a sugera o ninsoare fără sfârșit, care acoperă totul. A doua secvență, „În văzduh voios răsună clinchete de zurgălăi”, aduce o imagine auditivă veselă: viața revine după ce ninsoarea încetează.\n\nSentimentul eului liric este admirația, justificată de epitetul „mândra țară” și de exclamația din strofa a doua.\n\nAșadar, poezia ne învață să vedem frumusețea chiar și în anotimpul cel mai aspru.'}
+ ]},
+// ------------------------------------------------------------------ s8
+{id:'s8', title:'Simularea 8 · „Zâna Munților”', emoji:'🕊️', sub:'basm cules de Petre Ispirescu + articol despre turturică · după modelul oficial 2027',
+ texts:[
+ {h:'Textul 1', html:`<p>A fost odată un împărat foarte viteaz; toate împărățiile dimprejurul împărăției sale îi cereau sfaturi: atâta era de drept și înțelept. Când se isca sfadă* între dânșii, la acest împărat mergeau mai întâi la judecată și, cum zicea el așa se și făcea, fiindcă era judecător drept și iubitor de pace. Când fu aproape de bătrânețe îi dărui Dumnezeu un fecior. Nu se poate spune câtă bucurie simți împăratul când văzu că dobândi un moștenitor. [...]</p>
+<p>După ce se mări, îl puse de învăță carte. El era așa de silitor, încât se mirau dascălii de dânsul cum de învață așa repede. Ceea ce învățau ceilalți copii într-un an, el învăța numai într-o săptămână. Ajunsese să nu mai aibă dascălii ce să-i dea să învețe. Iară tată-său scrise carte împărătească la niște filozofi* vestiți ca să vie să ispitească cu învățăturile lor pe fiul său.</p>
+<p>La curtea acelui împărat se afla pe atunci un vânător vestit; și, până să vie filozofii cei vestiți, împăratul dete pe fiu-său acestui vânător ca să-l învețe meșteșugul său. [...] Iară el de ce se mărea d-aia se făcea mai cu minte și mai frumos. [...] N-ajunsese să-și răsucească mustăcioara, și foile de zestre curgeau de la fel de fel de împărați, care voiau să-și dea fetele după dânsul, dară el nu voia să se însoare așa de tânăr.</p>
+<p>Într-una din zile mergând la vânătoare, văzu o turturică, care tot sărea înaintea lui; lui îi fu milă să o vâneze; el căuta vânaturi mari, fiindcă nu se temea de primejdii; era vânător meșter și viteaz. În cele din urmă, dacă văzu și văzu că tot îi sărea în cale, întinse arcul și dete cu o săgeată. El se miră prea mult cum de nu o putu omorî el, care era așa de bun vânător, ci o răni puțin în aripă, care, așa rănită, se duse de nu o mai văzu. Cum se duse turturica, simți, nu știu cum, nu știu de ce, că îi tâcâia inima.</p>
+<p>După ce se întoarse acasă, era tot cam galeș*. Împăratul văzând că tânjește* fiu-său cu sănătatea, îl întrebă ce are, iară el răspunse că n-are nimic.</p>
+<p>Turturica aceea era Zâna Munților care se îndrăgostise de frumusețea lui. Ei nu-i venea la socoteală să se arate lui aievea*, ca să-i dea pricină, și d-aia se făcuse turturică și îi tot sărea în cale. Nu știa însă cum să facă, cum să dreagă, ca să se cunoască cu fiul împăratului.</p>`,
+  src:'Petre Ispirescu, <i>Zâna Munților</i> (fragment)<br>*sfadă – ceartă; *filozof – om învățat; *galeș – melancolic, trist; *a tânji – a fi slăbit, bolnăvicios; *aievea – în realitate'},
+ {h:'Textul 2', html:`<p><b>Turturica, glasul verii</b></p>
+<p>Turturica (<i>Streptopelia turtur</i>) este una dintre cele mai mici specii de porumbei sălbatici din Europa. O recunoști ușor după penele ruginii, cu pete negre, de pe spate și după gâtul împodobit cu dungi alb-negre. Numele ei vine chiar de la cântecul pe care îl scoate: un „turrr-turrr” moale, care se aude în zilele calde de vară.</p>
+<p>Turturica este o pasăre migratoare. Ajunge în România la sfârșitul lui aprilie sau la începutul lui mai, își face cuibul în tufișuri și la marginea pădurilor, iar toamna pleacă spre Africa, la sud de deșertul Sahara.</p>
+<p>În ultimele decenii, numărul turturelelor din Europa a scăzut îngrijorător. Cauzele sunt mai multe: dispariția gardurilor vii și a tufărișurilor, folosirea pesticidelor, care distrug semințele buruienilor cu care se hrănește, dar și vânătoarea din timpul migrației. Uniunea Internațională pentru Conservarea Naturii o consideră specie vulnerabilă.</p>
+<p>Ornitologii spun că fiecare dintre noi poate ajuta: păstrând tufișurile de la marginea câmpurilor, renunțând la otrăvurile din grădină și raportând pe platformele de observații ale voluntarilor păsările văzute.</p>`, src:'articol realizat pentru acest exercițiu'}
+ ],
+ items:[
+ {part:1,nr:1,type:'blanks',pts:2,req:'Completează spațiile punctate cu informațiile din textul 1.',html:'Fiul împăratului învăța într-o {{0}} ceea ce ceilalți copii învățau într-un {{1}}.',ans:[['săptămână','saptamana'],['an']]},
+ {part:1,nr:2,type:'mc',pts:2,req:'Încercuiește litera corespunzătoare răspunsului corect, valorificând informațiile din textul 1. Turturica îi sărea mereu în cale fiului de împărat, deoarece',o:['era Zâna Munților, care voia să-l cunoască.','fusese trimisă de împărat ca să-l încerce.','căuta hrană pe drumul de vânătoare.','voia să-l ducă la filozofii vestiți.'],a:0,e:'„Turturica aceea era Zâna Munților […] și d-aia se făcuse turturică și îi tot sărea în cale.”'},
+ {part:1,nr:3,type:'mc',pts:2,req:'Încercuiește litera corespunzătoare răspunsului corect, valorificând informațiile din textul 2. Turturica își face cuibul',o:['în tufișuri și la marginea pădurilor.','pe acoperișurile caselor.','în scorburile copacilor bătrâni.','pe stâncile din munți.'],a:0,e:'„își face cuibul în tufișuri și la marginea pădurilor”.'},
+ {part:1,nr:4,type:'mc',pts:2,req:'Încercuiește litera corespunzătoare răspunsului corect, valorificând informațiile din textul 2. Una dintre cauzele scăderii numărului de turturele este',o:['folosirea pesticidelor, care distrug semințele cu care se hrănesc.','iernile prea calde din Africa.','lipsa apei din păduri.','concurența cu vrăbiile din orașe.'],a:0,e:'„folosirea pesticidelor, care distrug semințele buruienilor cu care se hrănește”.'},
+ {part:1,nr:5,type:'tf',pts:6,req:'Notează „X” în dreptul fiecărui enunț pentru a marca dacă acesta este adevărat sau fals, bazându-te pe informațiile din cele două texte.',rows:[
+   {t:'Textul 1: Împărații vecini veneau la împărat ca să le judece neînțelegerile.',a:true},
+   {t:'Textul 1: Fiul împăratului voia să se însoare de tânăr.',a:false},
+   {t:'Textul 1: Turturica a fost omorâtă de săgeată.',a:false},
+   {t:'Textul 2: Turturica rămâne în România și iarna.',a:false},
+   {t:'Textul 2: Numele păsării vine de la cântecul ei.',a:true},
+   {t:'Textul 2: Turturica are pe gât dungi alb-negre.',a:true}]},
+ {part:1,nr:6,type:'open',pts:6,min:0,max:0,minSent:2,req:'Precizează, în minimum două enunțuri, o trăsătură a tiparului textual narativ, identificată în textul 1, ilustrând-o cu o secvență relevantă.',crit:C_TIPAR,
+  model:'O trăsătură a tiparului textual narativ este succesiunea de acțiuni, redate prin verbe la timpuri trecute. De exemplu, în secvența „întinse arcul și dete cu o săgeată”, verbele la perfect simplu prezintă, una după alta, faptele fiului de împărat.'},
+ {part:1,nr:7,type:'open',pts:6,min:30,max:0,req:'Prezintă, în minimum 30 de cuvinte, un element de conținut comun celor două texte, valorificând câte o secvență relevantă din fiecare text.',crit:C_COMUN,
+  model:'Un element comun celor două texte este turturica, o pasăre amenințată de vânători. În textul 1, fiul de împărat „întinse arcul și dete cu o săgeată” spre ea. În textul 2, printre cauzele dispariției turturelelor este numită „vânătoarea din timpul migrației”. Ambele texte arată cât de vulnerabilă este această pasăre.'},
+ {part:1,nr:8,type:'open',pts:6,min:50,max:100,req:'Crezi că oamenii au datoria să ocrotească păsările sălbatice? Motivează, în 50–100 de cuvinte, răspunsul la întrebarea dată, valorificând textul 2.',crit:C_OPINIE,
+  model:'Cred că oamenii au datoria să ocrotească păsările sălbatice, pentru că tot ei le pun în pericol. Textul 2 arată că numărul turturelelor a scăzut din cauza pesticidelor, a dispariției tufișurilor și a vânătorii. Dacă oamenii au produs aceste schimbări, tot ei le pot repara. Ornitologii explică faptul că fiecare poate ajuta, de exemplu „renunțând la otrăvurile din grădină”. Așadar, ocrotirea păsărilor este o responsabilitate a tuturor.'},
+ {part:1,nr:9,type:'open',pts:6,min:50,max:100,req:'Asociază fragmentul din basmul „Zâna Munților” cu un alt text literar studiat la clasă sau citit ca lectură suplimentară, prezentând, în 50–100 de cuvinte, o valoare comună, prin referire la câte o secvență relevantă din fiecare text.',crit:C_ASOC,
+  model:'Basmul „Zâna Munților” poate fi asociat cu „Tinerețe fără bătrânețe și viață fără de moarte”, cules tot de Petre Ispirescu, prin prețuirea învățăturii. Fiul de împărat din primul text învăța „într-o săptămână” ceea ce alții învățau într-un an. La fel, Făt-Frumos din al doilea basm învăța foarte repede și îi uimea pe dascăli. Ambele texte arată că înțelepciunea și dorința de a învăța sunt calități ale eroului.'},
+ {part:2,nr:1,type:'mc',pts:2,req:'Încercuiește litera corespunzătoare răspunsului corect. Conțin diftong ambele cuvinte din seria:',o:['„vânătoare”, „iară”','„turturică”, „fecior”','„filozofi”, „aievea”','„săgeată”, „inima”'],a:0,e:'vâ-nă-toa-re (oa), ia-ră (ia). În „fecior” și „săgeată”, „i”/„e” sunt litere ajutătoare.'},
+ {part:2,nr:2,type:'mc',pts:2,req:'Încercuiește litera corespunzătoare răspunsului corect. Cuvintele subliniate în secvența „un <u class=s>vânător</u> (1) <u class=s>vestit</u> (2)” s-au format prin:',o:['derivare (1), conversiune (2).','compunere (1), derivare (2).','derivare (1), derivare (2).','conversiune (1), compunere (2).'],a:0,e:'a vâna + -ător (derivare); „vestit” – participiu devenit adjectiv (conversiune).'},
+ {part:2,nr:3,type:'mc',pts:2,req:'Încercuiește litera corespunzătoare răspunsului corect. Secvența subliniată în fragmentul „simți […] că <u class=s>îi tâcâia inima</u>” are sensul de',o:['îi bătea inima tare, de emoție.','îl durea inima de boală.','se liniștise complet.','se supărase pe turturică.'],a:0,e:'Inima bate repede, de emoție – semn că se îndrăgostise.'},
+ {part:2,nr:4,type:'mc',pts:2,req:'Încercuiește litera corespunzătoare răspunsului corect. Sunt sinonime cuvintele din seria:',o:['„silitor” – „harnic”','„viteaz” – „fricos”','„înțelept” – „neghiob”','„bucurie” – „mâhnire”'],a:0,e:'Celelalte perechi sunt antonime.'},
+ {part:2,nr:5,type:'morph',pts:6,req:'Menționează valoarea morfologică a fiecărui cuvânt subliniat.',rows:[
+   {w:'„îi” – din „<u class=s>îi</u> dărui Dumnezeu un fecior”',a:'pronume personal'},
+   {w:'„care” – din „văzu o turturică, <u class=s>care</u> tot sărea înaintea lui”',a:'pronume relativ'},
+   {w:'„mai” – din „se făcea <u class=s>mai</u> cu minte”',a:'adverb'}]},
+ {part:2,nr:6,type:'open',pts:6,min:0,max:0,req:'Alcătuiește o propoziție exclamativă, în care numeralul „doi” să aibă funcția sintactică de subiect (1), și un enunț în care adjectivul „înțelept” să fie la gradul superlativ relativ și să aibă funcția de nume predicativ (2).',
+  crit:[{c:'(1) Propoziție exclamativă',p:1},{c:'(1) „doi” – subiect',p:1},{c:'(1) Norme de exprimare, ortografie, punctuație',p:1},{c:'(2) „înțelept” la superlativ relativ',p:1},{c:'(2) Funcția de nume predicativ',p:1},{c:'(2) Norme de exprimare, ortografie, punctuație',p:1}],
+  model:'(1) Doi au venit la timp! (2) Împăratul era cel mai înțelept dintre conducători.'},
+ {part:2,nr:7,type:'clauses',pts:6,req:'Precizează felul fiecărei propoziții din fraza de mai jos (subordonatele valorează câte 2 p).',phrase:'Fiul împăratului nu știa de ce îi bătea inima, când se gândea la turturica pe care o rănise.',props:[
+   {t:'Fiul împăratului nu știa',a:'principală'},{t:'de ce îi bătea inima',a:'completivă directă'},{t:'când se gândea la turturica',a:'circumstanțială de timp'},{t:'pe care o rănise',a:'atributivă'}]},
+ {part:2,nr:8,type:'forms',pts:6,req:'Alege forma corectă a cuvintelor din mesajul unui elev către bunicul lui.',html:'„Dragă bunicule, [[0]] scris ca să-ți spun că am citit basmul. [[1]] plăcut mai ales turturica. [[2]] ce am început, n-am mai putut să mă opresc. [[3]] din clasa mea vor să-l citească și ei. Nu cunosc [[4]] poveste mai frumoasă. Te sun [[5]]!”',
+  sel:[{o:['țiam','ți-am'],a:1},{o:['Mi-a','Mia'],a:0},{o:['O dată','Odată'],a:1},{o:['Copii','Copiii'],a:1},{o:['nicio','nici o'],a:0},{o:['de seară','deseară'],a:1}],
+  e:'ți-am · Mi-a · Odată (= după ce) · Copiii (articulat) · nicio · deseară'},
+ {part:3,nr:1,type:'essay',pts:20,min:150,max:0,req:'Scrie un text de minimum 150 de cuvinte, în care să-l caracterizezi pe fiul de împărat din fragmentul basmului „Zâna Munților” (textul 1).',
+  bullets:['să notezi două date de identificare a personajului (statut, familie etc.)','să prezinți, prin câte o secvență comentată, două trăsături morale ale personajului','să precizezi două mijloace de caracterizare diferite, prin care se evidențiază trăsăturile morale prezentate','să corelezi o valoare personală cu una dintre valorile personajului'],
+  crit:SIMS[1].items.find(i=>i.type==='essay').crit,
+  model:'Fiul de împărat este personajul principal al fragmentului din basmul „Zâna Munților”, cules de Petre Ispirescu. El este singurul fecior și moștenitorul unui împărat drept și înțelept, născut când tatăl său era „aproape de bătrânețe”, iar fetele de împărat îl doresc de soț.\n\nO primă trăsătură este hărnicia la învățătură. Naratorul îl caracterizează direct: „El era așa de silitor, încât se mirau dascălii de dânsul”. Ceea ce alții învățau într-un an, el învăța „într-o săptămână”, așa că tatăl său trebuie să aducă filozofi vestiți.\n\nA doua trăsătură este bunătatea, reieșită indirect din fapte. Deși era un vânător „meșter și viteaz”, lui „îi fu milă” de turturică și nu voia s-o vâneze. Doar când pasărea îi sare mereu în cale, trage cu arcul, iar apoi devine trist, „cam galeș”.\n\nPrin urmare, personajul este construit prin caracterizare directă (de către narator) și indirectă (prin fapte și gesturi).\n\nO valoare a personajului este prețuirea învățăturii. Și eu cred că învățătura este importantă, pentru că, la fel ca fiul de împărat, care îi uimea pe dascăli, un elev care învață cu drag își poate alege singur drumul în viață.'}
+ ]}
+);
+WRITE_TASKS.push(
+ {id:'w11',sim:'s6',title:'Semnificația schiței „Vizită...”',type:'Semnificație',min:150,req:'Scrie o compunere de minimum 150 de cuvinte despre o semnificație a schiței „Vizită...” de I.L. Caragiale.',bullets:['mesajul în raport cu tema','două elemente specifice textului narativ','interpretarea a două secvențe','o emoție a unui personaj, justificată'],crit:C_SEMN_EPIC},
+ {id:'w12',sim:'s7',title:'Descriere: o zi de iarnă',type:'Descriere',min:150,req:'Scrie o descriere de tip tablou, de minimum 150 de cuvinte, a unei zile de iarnă, pornind de la imaginile din pastelul „Iarna” de Vasile Alecsandri.',bullets:['o privire de ansamblu','cel puțin trei detalii, cu imagini vizuale și auditive','cel puțin trei figuri de stil diferite','impresia ta față de peisaj'],crit:[{c:'Privirea de ansamblu',p:2},{c:'Detalii relevante (cel puțin trei)',p:2},{c:'Imagini artistice vizuale și auditive',p:2},{c:'Trei figuri de stil diferite, folosite adecvat',p:2},{c:'Impresia/sentimentul personal',p:2},{c:'Organizarea descrierii (de la general la particular)',p:2}]}
+);
 // ===================== ȘABLOANE =====================
 const TEMPLATES = [
  {g:'Subiectul I – itemi scriși', t:'Item 6 · Trăsătură a tiparului textual', w:'„Precizează, în minimum două enunțuri, o trăsătură a tiparului [narativ/dialogat/descriptiv]...” (6 p)',
@@ -2289,6 +2482,405 @@ PORTRET: [Cine este, prima impresie.] [Trăsături fizice: chip, ochi, vestiment
  {g:'Alte tipuri de texte', t:'Cronică de film / spectacol', w:'fără a dezvălui finalul',
   x:`„[Titlul filmului/spectacolului]” ([regizor], [anul / teatrul]) [o frază despre subiect, fără final]. [Ce mi-a plăcut: jocul actorilor / regia / muzica / decorul / efectele.] [Ce mi s-a părut mai puțin reușit.] [Recomandare: cui i se potrivește și de ce.]`}
 ];
+
+// ===================== CONȚINUT NOU PENTRU PROGRAMUL ZILNIC (lista profesoarei, 26.11.2026) =====================
+(function(){
+ const G = id => GRAM.find(m=>m.id===id);
+ const L = id => LIT.find(m=>m.id===id);
+
+ // ---------------- g1: vocală/semivocală/consoană, sunete vs. litere, silabe, accent
+ G('g1').theory += `
+<h3>9. Vocală, semivocală sau consoană? (metoda în 3 pași)</h3>
+<ol><li><b>Desparte în silabe.</b> Fiecare silabă are <b>o singură vocală</b> – „centrul” ei.</li>
+<li>Dacă în silabă mai apare un <i>e, i, o, u</i> lângă vocală, acela e <b>semivocală</b>: <i>s<b>o</b>a-re</i>, <i>st<b>e</b>a</i>, <i>m<b>a</b><u>i</u></i>.</li>
+<li>Verifică dacă litera notează un sunet: în <i>ce, ci, ge, gi, che, chi, ghe, ghi</i> urmate de vocală, <i>e</i>/<i>i</i> sunt <b>litere ajutătoare</b> (nu sunete): <i>c<u>e</u>as, c<u>i</u>orbă, gh<u>i</u>ocel</i>.</li></ol>
+<table class="t"><tr><th>Sunet</th><th>Poate face singur silabă?</th><th>Care sunt</th></tr>
+<tr><td><b>Vocală</b></td><td>DA</td><td>a, ă, â/î, e, i, o, u</td></tr>
+<tr><td><b>Semivocală</b></td><td>NU – stă lângă o vocală, în aceeași silabă</td><td>e, i, o, u</td></tr>
+<tr><td><b>Consoană</b></td><td>NU</td><td>b, c, d, f, g, h, j, k, l, m, n, p, r, s, ș, t, ț, v, x, z</td></tr></table>
+<div class="tip"><b>Truc:</b> <i>a, ă, â, î</i> sunt <b>mereu vocale</b>. Doar <i>e, i, o, u</i> pot fi și semivocale.</div>
+<h3>10. Cum numeri literele și sunetele (3 pași)</h3>
+<ol><li><b>Literele</b> = numeri tot ce e scris (fără cratimă).</li>
+<li><b>Scazi</b> literele care nu sunt sunete: <i>h</i> din <i>ch/gh</i>; <i>e</i>/<i>i</i> ajutătoare din <i>ce, ci, ge, gi, che, chi, ghe, ghi</i> + vocală.</li>
+<li><b>Aduni</b> 1 pentru fiecare <b>x</b> (x = 2 sunete: [cs] sau [gz]).</li></ol>
+<table class="t"><tr><th>Cuvânt</th><th>Litere</th><th>Sunete</th><th>De ce</th></tr>
+<tr><td><i>ceas</i></td><td>4</td><td>3</td><td>e ajutător</td></tr>
+<tr><td><i>ghiozdan</i></td><td>8</td><td>6</td><td>h și i nu sunt sunete</td></tr>
+<tr><td><i>chenar</i></td><td>6</td><td>5</td><td>h nu e sunet; e e vocală (urmează consoană)</td></tr>
+<tr><td><i>taxi</i></td><td>4</td><td>5</td><td>x = [cs]</td></tr>
+<tr><td><i>cercel</i></td><td>6</td><td>6</td><td>ce + consoană → e e vocală, se numără</td></tr></table>
+<div class="trap"><b>Capcană:</b> <i>e</i>/<i>i</i> după c/g sunt ajutătoare <b>doar dacă urmează o vocală</b>: <i>c<u>i</u>orbă</i> (ajutător) vs. <i>c<u>i</u>tesc</i> (vocală, se numără).</div>
+<h3>11. Accentul – cuvinte de ținut minte (DOOM)</h3>
+<p><b>Accentul</b> = silaba rostită mai apăsat. Unele cuvinte se accentuează des greșit:</p>
+<div class="ex">ca-rac-<b>TER</b> · bu-te-<b>LI</b>-e · <b>U</b>-nic · re-gi-<b>ZOR</b> · a-va-<b>RI</b>-e · du-<b>MI</b>-ni-că · <b>CRA</b>-ter · doc-to-<b>RI</b>-ță · e-<b>CHI</b>-pă · pe-nu-<b>RI</b>-e · <b>TRA</b>-fic · lo-<b>ZIN</b>-că · ve-<b>RI</b>-gă · sim-<b>BOL</b> · re-<b>GIM</b></div>
+<div class="tip"><b>De ce contează:</b> accentul deosebește <b>omografele</b>: <i><b>CO</b>-pii</i> (după acte) – <i>co-<b>PII</b></i> (băieți și fete); <i><b>MO</b>-bi-lă</i> (mobilier) – <i>mo-<b>BI</b>-lă</i> (care se mișcă).</div>`;
+ G('g1').q.push(
+ {t:'mc',q:'Semivocalele limbii române sunt:',o:['e, i, o, u','a, ă, â','b, c, d','toate vocalele'],a:0,e:'Doar e, i, o, u pot fi semivocale; a, ă, â/î sunt mereu vocale.'},
+ {t:'tf',q:'Semivocala poate forma singură o silabă.',a:false,e:'Fals. Semivocala stă mereu lângă o vocală, în aceeași silabă (s<b>o</b>a-re).'},
+ {t:'mc',q:'Sunetul „ă” poate fi:',o:['doar vocală','vocală sau semivocală','doar semivocală','consoană'],a:0,e:'a, ă, â/î sunt mereu vocale.'},
+ {t:'mc',q:'Litera care notează DOUĂ sunete este:',o:['x','h','â','ș'],a:0,e:'x = [cs] (taxi) sau [gz] (examen).'},
+ {t:'mc',q:'În cuvântul „chenar”, litera „h”:',o:['nu notează un sunet separat (ch = un singur sunet)','notează sunetul [h]','este vocală','este semivocală'],a:0,e:'ch + e/i = un singur sunet [k’]; h e literă ajutătoare.'},
+ {t:'tf',q:'Literele „â” și „î” notează același sunet.',a:true,e:'Adevărat: același sunet, scris diferit (î la început și la final de cuvânt, â în interior).'},
+ {t:'mc',q:'Despărțirea corectă în silabe este:',o:['a-pli-ca-ți-e','ap-li-ca-ți-e','a-plic-a-ți-e','a-pli-ca-ție'],a:0,e:'p + l trec împreună la silaba următoare (a-pli-); „ție” are hiat: ți-e.'},
+ {t:'mc',q:'Despărțirea corectă în silabe este:',o:['sculp-tor','scul-ptor','scu-lptor','sculpt-or'],a:0,e:'Grupul „lpt” se desparte după a doua consoană: sculp-tor.'},
+ {t:'mc',q:'Despărțirea corectă în silabe este:',o:['în-drăz-neț','în-dră-zneț','înd-răz-neț','î-ndrăz-neț'],a:0,e:'Două consoane între vocale (z, n): prima rămâne, a doua trece → drăz-neț.'},
+ {t:'mc',q:'Cuvântul care are 4 silabe este:',o:['„poezie”','„școală”','„cireașă”','„pomi”'],a:0,e:'po-e-zi-e (4). școa-lă (2), ci-rea-șă (3), pomi (1).'},
+ {t:'mc',q:'Câte silabe are cuvântul „copiii”?',o:['3','2','4','1'],a:0,e:'co-pi-ii: 3 silabe.'},
+ {t:'mc',q:'Despărțirea corectă în silabe este:',o:['punc-taj','pun-ctaj','punct-aj','pu-nctaj'],a:0,e:'Grupul „nct” se desparte după a doua consoană: punc-taj.'}
+ );
+
+ // ---------------- g2: familie/câmp lexical, omonime, polisemie, omografe, omofone
+ G('g2').theory += `
+<h3>7. Omonime, omografe, omofone – cum le deosebești</h3>
+<table class="t"><tr><th>Ce sunt</th><th>Se scriu</th><th>Se pronunță</th><th>Exemple</th></tr>
+<tr><td><b>Omonime</b></td><td>la fel</td><td>la fel</td><td><i>lac</i> (apă) – <i>lac</i> (vopsea); <i>somn</i> (pește) – <i>somn</i> (odihnă); <i>mare</i> (întinderea de apă) – <i>mare</i> (adjectiv)</td></tr>
+<tr><td><b>Omografe</b></td><td>la fel</td><td><b>diferit</b> (alt accent)</td><td><i><b>CO</b>-pii</i> (după acte) – <i>co-<b>PII</b></i>; <i><b>VE</b>-se-lă</i> (bucuroasă) – <i>ve-<b>SE</b>-lă</i> (vase); <i><b>A</b>-ce-le</i> (acele cărți) – <i>a-<b>CE</b>-le</i> (de cusut)</td></tr>
+<tr><td><b>Omofone</b></td><td><b>diferit</b></td><td>la fel</td><td><i>sau – s-au; la – l-a; ia – i-a; mai – m-ai; nea – ne-a; sar – s-ar; neam – ne-am; cei – ce-i</i></td></tr>
+<tr><td><b>Paronime</b></td><td>aproape la fel</td><td>aproape la fel</td><td><i>eminent – iminent; original – originar</i></td></tr></table>
+<div class="tip"><b>Omonim sau polisemantic?</b> Întreabă-te: sensurile au <b>legătură</b> între ele? <i>gura omului – gura râului</i> (deschizătura) → DA → <b>cuvânt polisemantic</b> (un singur cuvânt, mai multe sensuri). <i>lac de apă – lac de unghii</i> → NU → <b>omonime</b> (cuvinte diferite).</div>
+<div class="trap"><b>Omofonele produc cele mai multe greșeli de scriere!</b> Truc: înlocuiește cu altă persoană sau alt timp. <i>S-au dus</i> → „s-a dus” (are sens) → cratimă. <i>Sau</i> = „ori” → fără cratimă.</div>
+<h3>8. Familia lexicală – capcane</h3>
+<ul><li>Familia lexicală = <b>aceeași rădăcină</b>: <i>pădure, pădurar, pădurice, împăduri, despăduri</i>.</li>
+<li>Câmpul lexical = <b>aceeași temă</b>, fără să conteze forma: <i>pădure, copac, frunză, ciupercă, vânt</i>.</li>
+<li>Intră în familie și <b>compusele</b>: <i>floare-de-colț</i> (familia lui <i>floare</i>), <i>untdelemn</i> (familia lui <i>unt</i> și a lui <i>lemn</i>).</li></ul>
+<div class="trap"><b>Atenție:</b> două cuvinte care sună asemănător nu sunt automat în aceeași familie (<i>mare</i> – <i>marinar</i> da; <i>casă</i> – <i>casier</i> NU: <i>casier</i> vine de la <i>casă de bani</i>, alt sens).</div>`;
+ G('g2').q.push(
+ {t:'mc',q:'Cuvântul care NU face parte din familia lexicală a cuvântului „pădure” este:',o:['copac','pădurar','împădurire','pădurice'],a:0,e:'„copac” e din câmpul lexical al pădurii, nu are rădăcina „pădur-”.'},
+ {t:'mc',q:'Seria care formează un câmp lexical (al școlii) este:',o:['elev, catalog, tablă, profesor','școlar, școlăriță, școlărește','a învăța, învățătură, învățător','carte, cărticică, cărturar'],a:0,e:'Câmp lexical = aceeași temă; celelalte serii sunt familii lexicale.'},
+ {t:'mc',q:'Seria care formează o familie lexicală este:',o:['a scrie, scriitor, scrisoare, nescris','masă, scaun, dulap, pat','râu, lac, mare, ocean','frumos, urât, înalt, scund'],a:0,e:'Toate au rădăcina „scri-”.'},
+ {t:'mc',q:'„Floare-de-colț” face parte din familia lexicală a cuvântului „floare” pentru că:',o:['este un cuvânt compus care conține cuvântul de bază „floare”','este o plantă de munte','are același număr de silabe','este sinonim cu „floare”'],a:0,e:'Familia lexicală cuprinde derivatele ȘI compusele cuvântului de bază.'},
+ {t:'tf',q:'Familia lexicală este formată din cuvinte care au aceeași rădăcină (același cuvânt de bază).',a:true,e:'Adevărat.'},
+ {t:'tf',q:'„Mare”, „ocean” și „val” formează o familie lexicală.',a:false,e:'Fals – au teme comune (câmp lexical), dar rădăcini diferite.'},
+ {t:'mc',q:'Cuvântul de bază al familiei „lemnar, lemnos, lemnărie” este:',o:['lemn','lemnar','a lemni','lemnărie'],a:0,e:'Toate sunt derivate de la „lemn”.'},
+ {t:'mc',q:'Intrusul din câmpul lexical al iernii este:',o:['cireașă','zăpadă','sanie','ger'],a:0,e:'Cireașa ține de vară.'},
+ {t:'mc',q:'Diferența dintre familia lexicală și câmpul lexical:',o:['familia – aceeași rădăcină; câmpul – aceeași temă','familia – sensuri opuse; câmpul – sensuri asemănătoare','nu există nicio diferență','familia – doar verbe; câmpul – doar substantive'],a:0,e:'Familia = formă comună (rădăcina). Câmpul = temă comună.'},
+ {t:'mc',q:'Seria în care cuvântul subliniat este POLISEMANTIC (sensuri înrudite):',o:['<u class=s>gura</u> omului / <u class=s>gura</u> râului','<u class=s>lac</u> de apă / <u class=s>lac</u> de unghii','<u class=s>roman</u> (carte) / <u class=s>roman</u> (locuitor al Romei)','<u class=s>somn</u> (pește) / <u class=s>somn</u> (odihnă)'],a:0,e:'„gura” = deschizătură în ambele sensuri → sensuri legate → polisemie. Celelalte sunt omonime.'},
+ {t:'mc',q:'Omonimele sunt cuvinte:',o:['cu aceeași formă și sensuri fără legătură între ele','cu formă diferită și sens asemănător','cu sens opus','cu formă aproape la fel, care se confundă'],a:0,e:'Omonime = aceeași formă, sensuri complet diferite (lac – lac).'},
+ {t:'mc',q:'Diferența dintre omonime și cuvintele polisemantice:',o:['la polisemie sensurile au legătură între ele; la omonime nu au','la omonime sensurile au legătură; la polisemie nu au','omonimele se scriu diferit','cuvintele polisemantice au un singur sens'],a:0,e:'Polisemie = un cuvânt cu mai multe sensuri înrudite; omonimie = cuvinte diferite cu aceeași formă.'},
+ {t:'mc',q:'În „Am mers la <u class=s>mare</u>.” și „Am o casă <u class=s>mare</u>.”, cuvintele subliniate sunt:',o:['omonime','sinonime','antonime','paronime'],a:0,e:'Aceeași formă, sensuri fără legătură (substantiv / adjectiv).'},
+ {t:'tf',q:'În „piciorul mesei” și „piciorul omului”, „picior” este un cuvânt polisemantic.',a:true,e:'Adevărat: sensurile sunt înrudite (suportul pe care stă ceva).'},
+ {t:'mc',q:'Cuvântul „rădăcină” are sens FIGURAT în:',o:['rădăcina răului','rădăcina copacului','rădăcinile plantei','rădăcina morcovului'],a:0,e:'„rădăcina răului” = cauza, originea – sens figurat.'},
+ {t:'mc',q:'Omografele sunt cuvinte care:',o:['se scriu la fel, dar se pronunță diferit (alt accent) și au sensuri diferite','se pronunță la fel, dar se scriu diferit','au sens opus','fac parte din aceeași familie lexicală'],a:0,e:'Ex.: CO-pii (după acte) – co-PII (băieți și fete).'},
+ {t:'mc',q:'Omofonele sunt cuvinte care:',o:['se pronunță la fel, dar se scriu diferit și au sensuri diferite','se scriu la fel, dar au accent diferit','au același sens','au sens opus'],a:0,e:'Ex.: sau – s-au; la – l-a.'},
+ {t:'mc',q:'Perechea de OMOFONE este:',o:['sau – s-au','CO-pii – co-PII','eminent – iminent','lac (apă) – lac (vopsea)'],a:0,e:'Se aud la fel, se scriu diferit.'},
+ {t:'mc',q:'Perechea de OMOGRAFE este:',o:['VE-se-lă (bucuroasă) – ve-SE-lă (vase)','la – l-a','original – originar','harnic – leneș'],a:0,e:'Se scriu la fel, accentul e diferit.'},
+ {t:'tf',q:'„Acele” din „acele cărți” și „acele” de cusut sunt omografe.',a:true,e:'A-ce-le (adjectiv pronominal) – a-CE-le (substantiv): aceeași scriere, alt accent.'}
+ );
+
+ // ---------------- g6: acordul încrucișat
+ G('g6').theory += `
+<h3>Acordul încrucișat (al cărui / a cărei / ai căror…)</h3>
+<p>Apare când pronumele relativ <b>care</b> e la <b>genitiv</b>. Are două bucăți, și fiecare se acordă cu alt cuvânt – de aici „încrucișat”:</p>
+<table class="t"><tr><th>Bucata</th><th>Se acordă cu</th><th>Forme</th></tr>
+<tr><td><b>al / a / ai / ale</b> (articolul)</td><td><b>obiectul posedat</b> (cuvântul de DUPĂ)</td><td>al (m./n. sg.), a (f. sg.), ai (m. pl.), ale (f./n. pl.)</td></tr>
+<tr><td><b>cărui / cărei / căror</b></td><td><b>posesorul</b> (cuvântul de DINAINTE)</td><td>cărui (m./n. sg.), cărei (f. sg.), căror (pl.)</td></tr></table>
+<div class="ex"><i>Fata <b>al</b> cărei <b>frate</b>…</i> → <b>al</b> pentru <i>frate</i> (m. sg.), <b>cărei</b> pentru <i>fata</i> (f. sg.).<br><i>Băiatul <b>a</b> cărui <b>soră</b>…</i> → <b>a</b> pentru <i>soră</i>, <b>cărui</b> pentru <i>băiatul</i>.<br><i>Copiii <b>ale</b> căror <b>cărți</b>…</i> → <b>ale</b> pentru <i>cărți</i>, <b>căror</b> pentru <i>copiii</i>.</div>
+<div class="tip"><b>Truc în 2 pași:</b> 1) Uită-te <b>după</b> cuvânt → alegi al/a/ai/ale. 2) Uită-te <b>înainte</b> → alegi cărui/cărei/căror.</div>
+<div class="trap"><b>Nu confunda cu dativul</b> (fără al/a/ai/ale): <i>băiatul <b>căruia</b> i-am scris, fata <b>căreia</b> i-am scris, copiii <b>cărora</b> le-am scris</i> – aici se acordă doar cu cuvântul de dinainte. ❌ <i>copiii cărui le-am dat</i> → ✅ <i>copiii cărora le-am dat</i>.</div>`;
+ G('g6').q.push(
+ {t:'mc',q:'Completează corect: „Fata ___ frate e medic a plecat.”',o:['al cărei','a cărei','al cărui','a cărui'],a:0,e:'al ← frate (m. sg.); cărei ← fata (f. sg.).'},
+ {t:'mc',q:'Completează corect: „Scriitorul ___ cărți le-am citit e celebru.”',o:['ale cărui','ale cărei','ai cărui','ale căror'],a:0,e:'ale ← cărți (f. pl.); cărui ← scriitorul (m. sg.).'},
+ {t:'mc',q:'Completează corect: „Elevii ___ profesoară a lipsit au avut oră liberă.”',o:['a căror','a cărui','ale căror','al căror'],a:0,e:'a ← profesoară (f. sg.); căror ← elevii (pl.).'},
+ {t:'mc',q:'Regula acordului încrucișat este:',o:['al/a/ai/ale se acordă cu obiectul posedat; cărui/cărei/căror – cu posesorul','al/a/ai/ale se acordă cu posesorul; cărui/cărei/căror – cu obiectul posedat','amândouă se acordă cu subiectul frazei','nu se acordă cu nimic'],a:0,e:'Articolul privește înainte spre obiect (după el), pronumele privește înapoi spre posesor.'},
+ {t:'mc',q:'Completează corect: „Prietena ___ i-am scris a răspuns.”',o:['căreia','cărei','căruia','cărora'],a:0,e:'Dativ (cui i-am scris?) → căreia, acordat cu „prietena”.'},
+ {t:'mc',q:'Completează corect: „Copiii ___ le-am dat cărți sunt aici.”',o:['cărora','căror','cărui','căruia'],a:0,e:'Dativ plural: cărora.'},
+ {t:'tf',q:'Construcția „cartea al cărei autor e Creangă” este corectă.',a:true,e:'Adevărat: al ← autor (m. sg.); cărei ← cartea (f. sg.).'},
+ {t:'mc',q:'Enunțul CORECT este:',o:['Băiatul al cărui câine s-a pierdut plânge.','Băiatul a cărui câine s-a pierdut plânge.','Băiatul al cărei câine s-a pierdut plânge.','Băiatul ai cărui câine s-a pierdut plânge.'],a:0,e:'al ← câine (m. sg.); cărui ← băiatul (m. sg.).'}
+ );
+
+ // ---------------- g7: adjectiv vs. adverb, numeral
+ G('g7').theory += `
+<h3>5. Adjectiv sau adverb? Testul întrebării</h3>
+<table class="t"><tr><th></th><th>Adjectiv</th><th>Adverb</th></tr>
+<tr><td>Determină</td><td>un <b>substantiv</b></td><td>un <b>verb</b>, un adjectiv sau alt adverb</td></tr>
+<tr><td>Se acordă?</td><td><b>DA</b> (gen, număr, caz)</td><td><b>NU</b> (formă fixă)</td></tr>
+<tr><td>Întrebare</td><td>care? ce fel de?</td><td>cum? când? unde? cât?</td></tr>
+<tr><td>Funcție</td><td>atribut adjectival / nume predicativ</td><td>circumstanțial (de mod, timp, loc)</td></tr></table>
+<div class="ex"><i>O fată <b>frumoasă</b></i> (adjectiv – ce fel de fată?) · <i>Fata cântă <b>frumos</b></i> (adverb – cum cântă?)<br><i>Un tren <b>rapid</b></i> (adjectiv) · <i>Trenul merge <b>rapid</b></i> (adverb)</div>
+<div class="tip"><b>Truc:</b> pune substantivul la feminin sau la plural. Dacă și cuvântul se schimbă (<i>băiat frumos → fete frumoase</i>) → <b>adjectiv</b>. Dacă rămâne la fel (<i>cântă frumos → cântă frumos</i>) → <b>adverb</b>.</div>
+<h3>6. Numeralul – feluri și scriere</h3>
+<ul><li><b>Cardinal</b> (câți?): <i>unu, doi, trei, unsprezece, douăzeci</i>. <b>Ordinal</b> (al câtelea?): <i>primul, al doilea, a treia, întâi</i>.</li>
+<li><b>Colectiv</b>: <i>amândoi, amândouă, tustrei</i>. <b>Distributiv</b>: <i>câte doi, câte trei</i>.</li>
+<li><b>Scriere corectă:</b> <i>paisprezece, șaisprezece, douăsprezece</i> (la feminin: <i>douăsprezece fete</i>), <i>al doilea, a doua, al treilea</i>; <i>ora două</i> (nu „ora doi”).</li>
+<li><b>Funcții:</b> stă lângă substantiv → <b>atribut</b> (<i>trei frați</i>); ține locul substantivului → subiect, complement etc. (<i><b>Doi</b> au plecat.</i> – subiect).</li></ul>`;
+ G('g7').q.push(
+ {t:'mc',q:'În „Fata cântă <u class=s>frumos</u>.”, cuvântul subliniat este:',o:['adverb','adjectiv','substantiv','verb'],a:0,e:'Determină verbul „cântă” (cum?) și nu se acordă → adverb.'},
+ {t:'mc',q:'În „O zi <u class=s>frumoasă</u>.”, cuvântul subliniat este:',o:['adjectiv','adverb','substantiv','numeral'],a:0,e:'Determină substantivul „zi” și se acordă cu el → adjectiv.'},
+ {t:'mc',q:'Enunțul în care cuvântul subliniat este ADJECTIV:',o:['Are un caracter <u class=s>tare</u>.','Vorbește <u class=s>tare</u>.','Aleargă <u class=s>repede</u>.','Lucrează <u class=s>bine</u>.'],a:0,e:'„caracter tare” – determină un substantiv → adjectiv.'},
+ {t:'mc',q:'Enunțul în care cuvântul subliniat este ADVERB:',o:['Ne-am plimbat <u class=s>mult</u>.','Băiatul <u class=s>harnic</u> învață.','E un drum <u class=s>lung</u>.','Am o casă <u class=s>veche</u>.'],a:0,e:'„mult” determină verbul „ne-am plimbat” (cât?) → adverb.'},
+ {t:'tf',q:'„Rapid” poate fi și adjectiv, și adverb, în funcție de cuvântul pe care îl determină.',a:true,e:'„tren rapid” (adjectiv) / „merge rapid” (adverb).'},
+ {t:'mc',q:'Cel mai sigur test pentru a deosebi adjectivul de adverb:',o:['verifici dacă se acordă cu un substantiv (adjectiv) sau determină un verb (adverb)','verifici dacă are diftong','numeri literele','verifici dacă e la începutul propoziției'],a:0,e:'Adjectivul se acordă cu substantivul; adverbul e invariabil și determină un verb.'},
+ {t:'mc',q:'Funcția sintactică a adjectivului „înalt” în „Băiatul înalt a câștigat.”:',o:['atribut adjectival','circumstanțial de mod','nume predicativ','subiect'],a:0,e:'Determină substantivul „băiatul” → atribut adjectival.'},
+ {t:'mc',q:'Funcția sintactică a adverbului „repede” în „Ana a răspuns repede.”:',o:['circumstanțial de mod','atribut adjectival','nume predicativ','complement direct'],a:0,e:'Cum a răspuns? → circumstanțial de mod.'},
+ {t:'mc',q:'În „Apa e <u class=s>rece</u>.”, cuvântul subliniat este:',o:['adjectiv, cu funcția de nume predicativ','adverb, cu funcția de circumstanțial de mod','adjectiv, cu funcția de atribut','substantiv, cu funcția de subiect'],a:0,e:'„e” este copulativ; „rece” se acordă cu „apa” → adjectiv, nume predicativ.'},
+ {t:'mc',q:'„Primul” din „Primul elev a sosit.” este numeral:',o:['ordinal','cardinal','colectiv','distributiv'],a:0,e:'Arată ordinea (al câtelea?) → ordinal.'},
+ {t:'mc',q:'„Copiii au intrat <u class=s>câte doi</u>.” – numeralul subliniat este:',o:['distributiv','cardinal','ordinal','colectiv'],a:0,e:'„câte doi” arată gruparea → distributiv.'},
+ {t:'mc',q:'Scrierea corectă este:',o:['șaisprezece','șasesprezece','șaișpe','saisprezece'],a:0,e:'Forma literară: șaisprezece (ca paisprezece).'},
+ {t:'mc',q:'Forma corectă este:',o:['douăsprezece fete','doisprezece fete','douăsprezece băieți','doisprezece de fete'],a:0,e:'La feminin: douăsprezece; la masculin: doisprezece băieți.'},
+ {t:'mc',q:'Funcția numeralului „Doi” în „Doi au plecat.”:',o:['subiect','atribut','complement direct','nume predicativ'],a:0,e:'Ține locul unui substantiv (Cine a plecat?) → subiect.'},
+ {t:'mc',q:'Funcția numeralului „trei” în „Am trei frați.”:',o:['atribut adjectival','subiect','complement direct','circumstanțial de mod'],a:0,e:'Stă lângă substantivul „frați” → atribut adjectival.'},
+ {t:'mc',q:'Scrierea corectă a numeralului ordinal:',o:['al treilea','a treilea','al treia','al trei-lea'],a:0,e:'Masculin: al treilea; feminin: a treia.'}
+ );
+
+ // ---------------- g9: harta părților de vorbire și de propoziție
+ G('g9').theory += `
+<h3>4. Harta: părți de vorbire → părți de propoziție</h3>
+<p><b>Partea de vorbire</b> spune <b>ce este</b> cuvântul (morfologie). <b>Partea de propoziție</b> spune <b>ce rol are</b> în enunț (sintaxă). Același cuvânt are mereu ambele etichete.</p>
+<table class="t"><tr><th>Flexibile (își schimbă forma)</th><th>Neflexibile (formă fixă)</th></tr>
+<tr><td>substantiv, articol, adjectiv, pronume, numeral, verb</td><td>adverb, prepoziție, conjuncție, interjecție</td></tr></table>
+<table class="t"><tr><th>Parte de vorbire</th><th>Funcții obișnuite</th></tr>
+<tr><td>Substantiv / pronume / numeral</td><td>subiect, complement, atribut, nume predicativ, circumstanțial</td></tr>
+<tr><td>Adjectiv</td><td>atribut adjectival, nume predicativ</td></tr>
+<tr><td>Verb</td><td>predicat (la moduri personale)</td></tr>
+<tr><td>Adverb</td><td>circumstanțial (mod, timp, loc), uneori atribut</td></tr>
+<tr><td>Prepoziție, conjuncție, articol</td><td><b>fără funcție sintactică</b> (sunt „unelte”)</td></tr>
+<tr><td>Interjecție</td><td>de obicei fără funcție; uneori predicat (<i>Hai la joacă!</i>)</td></tr></table>
+<div class="tip"><b>Metoda la analiză:</b> 1) Ce parte de vorbire e? 2) Pune întrebarea de la cuvântul de care depinde. 3) Scrie ambele: <i>„ziarul” – substantiv, complement direct</i>.</div>`;
+ G('g9').q.push(
+ {t:'mc',q:'Părțile de vorbire NEFLEXIBILE sunt:',o:['adverbul, prepoziția, conjuncția, interjecția','substantivul, verbul, adjectivul','pronumele, numeralul, articolul','toate părțile de vorbire'],a:0,e:'Neflexibilele nu își schimbă forma.'},
+ {t:'mc',q:'Partea de vorbire care NU are funcție sintactică:',o:['prepoziția','substantivul','adverbul','pronumele'],a:0,e:'Prepoziția, conjuncția și articolul sunt „unelte” de legătură, fără funcție.'},
+ {t:'mc',q:'Diferența dintre partea de vorbire și partea de propoziție:',o:['partea de vorbire arată CE este cuvântul; partea de propoziție arată CE ROL are în enunț','nu există nicio diferență','partea de propoziție se schimbă după gen și număr','partea de vorbire apare doar în frază'],a:0,e:'Morfologie (ce este) vs. sintaxă (ce rol are).'},
+ {t:'mc',q:'În „Bunicul citește <u class=s>ziarul</u>.”, cuvântul subliniat este:',o:['substantiv – complement direct','substantiv – subiect','verb – predicat','adjectiv – atribut'],a:0,e:'Ce citește? → complement direct, exprimat prin substantiv.'},
+ {t:'mc',q:'În „Câinele latră <u class=s>tare</u>.”, cuvântul subliniat este:',o:['adverb – circumstanțial de mod','adjectiv – atribut','verb – predicat','substantiv – subiect'],a:0,e:'Cum latră? → circumstanțial de mod, exprimat prin adverb.'},
+ {t:'mc',q:'În „Mama este <u class=s>fericită</u>.”, cuvântul subliniat este:',o:['adjectiv – nume predicativ','adjectiv – atribut','verb – predicat','adverb – circumstanțial de mod'],a:0,e:'„este” copulativ + adjectiv → nume predicativ.'}
+ );
+
+ // ---------------- g10: raporturi în propoziție
+ G('g10').theory += `
+<h3>5. Coordonare și subordonare în PROPOZIȚIE</h3>
+<p>Raporturile nu există doar între propoziții, ci și între <b>cuvinte</b>:</p>
+<ul><li><b>Coordonare</b> = cuvinte <b>egale</b>, cu aceeași funcție: <i><b>Ana și Maria</b> cântă</i> (subiect multiplu); <i>Am cumpărat <b>mere și pere</b></i> (complement direct multiplu); <i>Merge <b>încet, dar sigur</b></i> (adversativ).</li>
+<li><b>Subordonare</b> = un cuvânt <b>depinde</b> de altul (regent → subordonat): <i>cartea <b>colegului</b></i> (atribut subordonat lui „cartea”); <i>citește <b>repede</b></i> (circumstanțial subordonat verbului).</li></ul>
+<div class="tip"><b>Truc:</b> dacă poți pune o întrebare de la un cuvânt la celălalt (<i>cartea cui? – colegului</i>) → <b>subordonare</b>. Dacă cele două răspund la <b>aceeași întrebare</b> (<i>cine cântă? – Ana și Maria</i>) → <b>coordonare</b>.</div>`;
+ G('g10').q.push(
+ {t:'mc',q:'În „Ana și Maria cântă.”, între „Ana” și „Maria” există un raport de:',o:['coordonare','subordonare','interdependență','nu există raport'],a:0,e:'Au aceeași funcție (subiect multiplu) → coordonare.'},
+ {t:'mc',q:'În „Cartea colegului e nouă.”, între „cartea” și „colegului” există un raport de:',o:['subordonare','coordonare','juxtapunere','nu există raport'],a:0,e:'„colegului” depinde de „cartea” (cartea cui?) → subordonare (atribut).'},
+ {t:'mc',q:'Enunțul în care există raport de coordonare între două părți de propoziție:',o:['Am cumpărat mere și pere.','Am cumpărat mere roșii.','Mărul e roșu.','Am mâncat un măr.'],a:0,e:'„mere și pere” – complement direct multiplu → coordonare copulativă.'},
+ {t:'mc',q:'În „Merge încet, dar sigur.”, cuvintele „încet” și „sigur” sunt în raport de:',o:['coordonare adversativă','coordonare copulativă','subordonare','coordonare disjunctivă'],a:0,e:'„dar” = conjuncție adversativă.'},
+ {t:'tf',q:'Între termenul regent și termenul subordonat există un raport de coordonare.',a:false,e:'Fals: regent – subordonat înseamnă SUBORDONARE.'}
+ );
+
+ // ---------------- g11: rescrierea corectă a unui text
+ G('g11').theory += `
+<h3>7. Rescrierea corectă a unui text – metoda în 4 treceri</h3>
+<p>La cerința „Rescrie textul, corectând greșelile” citești textul de <b>4 ori</b>, de fiecare dată căutând altceva:</p>
+<ol><li><b>Cratima</b>: <i>s-a/sa, s-au/sau, i-a/ia, l-a/la, ne-a/nea, într-un, n-am</i>.</li>
+<li><b>Câți de „i”</b>: <i>copii/copiii, fii/fi, membrii/membri, să scrii</i>.</li>
+<li><b>Acordul</b>: <i>aceeași/aceiași, ușa a fost închisă</i>, acordul încrucișat (<i>a cărei, al cărui</i>), <i>cărora</i>.</li>
+<li><b>Punctuația</b>: virgula la vocativ (<i>Vino, Maria!</i>), fără virgulă între subiect și predicat, virgula înainte de <i>dar, iar, însă, ci</i>.</li></ol>
+<div class="tip"><b>Truc:</b> la rescriere copiezi textul <b>întreg</b>, nu doar cuvintele corectate. Fiecare greșeală corectată = punct; fiecare greșeală nouă = punct pierdut.</div>`;
+
+ // ---------------- g13: exerciții de scris noi (omofone, acord încrucișat, rescriere de text)
+ G('g13').q.push(
+ CR('Ei sau întâlnit în parc și au vorbit.',['Ei s-au întâlnit în parc și au vorbit.'],'„s-au” = se + au (verb reflexiv). „sau” = ori.'),
+ CR('Mama ia dat bunicii o vază.',['Mama i-a dat bunicii o vază.'],'„i-a dat” = pronumele „i” + auxiliarul „a”.'),
+ CR('Colega a cărui mamă e profesoară a câștigat.',['Colega a cărei mamă e profesoară a câștigat.'],'a ← mamă (f. sg.); cărei ← colega (f. sg.).'),
+ CR('Băiatul al cărei câine s-a pierdut plânge.',['Băiatul al cărui câine s-a pierdut plânge.'],'al ← câine (m. sg.); cărui ← băiatul (m. sg.).'),
+ CR('Vecinii a căror copii sunt mici au plecat.',['Vecinii ai căror copii sunt mici au plecat.'],'ai ← copii (m. pl.); căror ← vecinii (pl.).'),
+ CR('Ieri, copii sau dus la muzeu. Ei au văzut multe tablouri vechi.',['Ieri, copiii s-au dus la muzeu. Ei au văzut multe tablouri vechi.'],'copiii (articulat: 3 de i) · s-au dus (cratimă).'),
+ CR('Nu am nici o idee unde ai pus caietul. Poate lai uitat la școală.',['Nu am nicio idee unde ai pus caietul. Poate l-ai uitat la școală.'],'nicio (legat) · l-ai uitat (cratimă).'),
+ CR('Andrei, ia spus colegului că vine și el. Sau înțeles să plece împreună.',['Andrei i-a spus colegului că vine și el. S-au înțeles să plece împreună.'],'Fără virgulă între subiect și predicat · i-a spus · S-au înțeles.'),
+ CR('Membri echipei au primit aceiași medalie. Toți erau fericiți.',['Membrii echipei au primit aceeași medalie. Toți erau fericiți.'],'membrii (articulat) · aceeași (feminin singular, ca „medalie”).'),
+ CR('Vino Maria, să vezi! Afară ninge de ieri și nu sa oprit.',['Vino, Maria, să vezi! Afară ninge de ieri și nu s-a oprit.'],'Vocativul se izolează prin virgule · s-a oprit.'),
+ CR('Trebuie să fi atent când scri. Dacă greșești, corectează-te.',['Trebuie să fii atent când scrii. Dacă greșești, corectează-te.'],'să fii (verb, persoana a II-a) · scrii (2 de i).')
+ );
+
+ // ---------------- literatură: jurnal, rezumat, scrisoare
+ L('l14').q.push(
+ {t:'mc',q:'Pagina de jurnal începe, de obicei, cu:',o:['data (și, eventual, locul)','titlul unei opere','formula de încheiere','semnătura'],a:0,e:'Jurnalul se organizează pe zile: data e obligatorie.'},
+ {t:'mc',q:'Pagina de jurnal se scrie la persoana:',o:['I','a II-a','a III-a','oricare'],a:0,e:'Autorul scrie despre sine: persoana I (eu, noi).'},
+ {t:'mc',q:'Ce NU este specific paginii de jurnal:',o:['un destinatar căruia îi ceri un răspuns','relatarea întâmplărilor zilei','exprimarea trăirilor și a reflecțiilor','data'],a:0,e:'Destinatarul și cererea de răspuns țin de scrisoare.'},
+ {t:'tf',q:'În pagina de jurnal, autorul relatează întâmplări și își exprimă sentimentele și reflecțiile despre ele.',a:true,e:'Adevărat: relatare + trăiri + reflecții.'},
+ {t:'mc',q:'Diferența principală dintre jurnal și scrisoare:',o:['jurnalul e scris pentru sine; scrisoarea are un destinatar','jurnalul are semnătură și formulă de adresare','scrisoarea nu are dată','nu există nicio diferență'],a:0,e:'Scrisoarea are destinatar, formulă de adresare și de încheiere.'},
+ {t:'mc',q:'Ordinea corectă a elementelor scrisorii:',o:['localitatea și data – formula de adresare – conținutul – formula de încheiere – semnătura','semnătura – conținutul – data','formula de adresare – semnătura – conținutul – data','conținutul – formula de adresare – data'],a:0,e:'Aceasta este structura convențională a scrisorii.'},
+ {t:'mc',q:'Formula de adresare potrivită într-o scrisoare către un profesor:',o:['Stimate domnule profesor,','Salut, profu’!','Hei!','Dragă amice,'],a:0,e:'Registrul formal, politicos.'},
+ {t:'mc',q:'După formula de adresare „Dragă bunico” se pune, de obicei:',o:['virgulă','punct','nimic','punct și virgulă'],a:0,e:'„Dragă bunico,” – vocativul se separă prin virgulă.'},
+ {t:'mc',q:'Scrisoarea oficială se deosebește de cea familială prin:',o:['registrul formal și formulele de politețe','lipsa datei','lipsa semnăturii','scrierea la persoana a III-a'],a:0,e:'Scrisoarea oficială: registru formal, formule de politețe (Stimate domnule…, Cu stimă,).'}
+ );
+ L('l8').q.push(
+ {t:'mc',q:'Rezumatul se scrie la persoana:',o:['a III-a','I','a II-a','oricare'],a:0,e:'Rezumatul povestește obiectiv: persoana a III-a.'},
+ {t:'mc',q:'Ce NU are voie să conțină rezumatul:',o:['dialog, citate și păreri personale','ideile principale','conectori','ordinea întâmplărilor'],a:0,e:'Rezumatul e obiectiv și concentrat.'},
+ {t:'mc',q:'Primul pas în realizarea rezumatului:',o:['citirea atentă și împărțirea textului în fragmente/idei principale','scrierea concluziei','alegerea unui titlu nou','copierea dialogului'],a:0,e:'Planul de idei e scheletul rezumatului.'},
+ {t:'tf',q:'În rezumat, vorbirea directă se transformă în vorbire indirectă.',a:true,e:'Adevărat: nu se păstrează dialogul.'}
+ );
+
+ // ---------------- exerciții noi pentru atelier
+ WRITE_TASKS.push(
+ {id:'w9',sim:'s1',title:'Pagina de jurnal a lui Nică',type:'Jurnal',min:150,req:'Imaginează-ți că ești Nică din fragmentul „La cireșe”. Scrie o pagină de jurnal, de minimum 150 de cuvinte, în seara zilei în care ai fost prins în cireș.',bullets:['data (și locul)','relatarea întâmplării la persoana I','cel puțin două sentimente/trăiri, explicate','o reflecție: ce ai învățat din întâmplare'],crit:[{c:'Data (și locul)',p:1},{c:'Persoana I, unitar',p:1},{c:'Relatarea întâmplării, în ordine',p:3},{c:'Două trăiri, explicate',p:3},{c:'Reflecția (ce ai învățat)',p:2},{c:'Respectarea faptelor din text',p:2}]},
+ {id:'w10',sim:'s2',title:'Narațiune: o călătorie cu peripeții',type:'Narațiune',min:150,req:'Scrie o compunere narativă, de minimum 150 de cuvinte, despre o călătorie în care s-a întâmplat ceva neașteptat (poți porni de la călătoria lui Goe).',bullets:['un titlu potrivit','momentele subiectului (expozițiune, intriga, desfășurarea, punctul culminant, deznodământul)','cel puțin un personaj caracterizat în câteva cuvinte','o secvență de dialog și una descriptivă'],crit:[{c:'Titlu potrivit',p:1},{c:'Expozițiunea și intriga',p:2},{c:'Desfășurarea și punctul culminant',p:3},{c:'Deznodământul',p:2},{c:'Personaj conturat',p:2},{c:'Dialog + descriere integrate',p:2}]}
+ );
+
+ // ---------------- generatoare noi
+ const VSC_OPTS = ['vocală','semivocală','consoană','literă care nu notează un sunet'];
+ const B_VSC = [
+  ['s(o)are','semivocală','soa-re: centrul silabei e „a”, „o” e semivocală (diftong „oa”).'],['so(a)re','vocală','„a” e centrul silabei „soa”.'],
+  ['(i)arnă','semivocală','iar-nă: „ia” e diftong, „i” e semivocală.'],['ia(r)nă','consoană','„r” e consoană.'],
+  ['c(e)as','literă care nu notează un sunet','În „ce” + vocală, „e” e literă ajutătoare: [čas].'],['c(h)ibrit','literă care nu notează un sunet','„ch” notează un singur sunet; „h” e literă ajutătoare.'],
+  ['gh(i)ocel','literă care nu notează un sunet','„ghi” + vocală: „i” e literă ajutătoare.'],['c(i)orbă','literă care nu notează un sunet','„ci” + vocală: „i” e literă ajutătoare.'],
+  ['(c)iorbă','consoană','„c” notează consoana [č].'],['gh(e)ață','literă care nu notează un sunet','„ghe” + vocală: „e” e literă ajutătoare.'],
+  ['m(a)i','vocală','„a” e centrul silabei.'],['ma(i)','semivocală','„ai” e diftong; „i” e semivocală.'],
+  ['p(u)i','vocală','„u” e centrul silabei „pui”.'],['pu(i)','semivocală','„ui” e diftong; „i” e semivocală.'],
+  ['st(e)a','semivocală','„ea” e diftong; centrul e „a”.'],['ste(a)','vocală','„a” e centrul silabei.'],
+  ['f(i)er','semivocală','„ie” e diftong; „i” e semivocală.'],['p(o)ezie','vocală','po-e-zi-e: „o” formează singur centrul silabei „po”.'],
+  ['poezi(e)','vocală','zi-e: hiat; „e” e silabă separată → vocală.'],['(a)er','vocală','a-er: hiat; „a” e silabă singur.'],
+  ['le(u)','semivocală','„eu” e diftong; „u” e semivocală.'],['n(o)u','vocală','„o” e centrul silabei.'],['no(u)','semivocală','„ou” e diftong; „u” e semivocală.'],
+  ['b(e)au','semivocală','„eau” e triftong: e și u sunt semivocale, „a” e vocala.'],['be(a)u','vocală','În triftongul „eau”, „a” e vocala.'],
+  ['do(u)ă','semivocală','do-uă: „uă” e diftong; „u” e semivocală.'],['zi(u)a','semivocală','zi-ua: „ua” e diftong; „u” e semivocală.'],
+  ['(î)nger','vocală','„î” e mereu vocală.'],['r(ă)u','vocală','„ă” e mereu vocală.'],['ră(u)','semivocală','„ău” e diftong; „u” e semivocală.'],
+  ['a(u)r','vocală','a-ur: hiat; „u” e centrul silabei „ur”.'],['(c)ireașă','consoană','„c” notează [č]; aici „i” e vocală (urmează consoană).']];
+ const B_LS = [['ceas',4,3,'e ajutător'],['geam',4,3,'e ajutător'],['ciorbă',6,5,'i ajutător'],['chibrit',7,6,'h nu e sunet'],['chiar',5,3,'h și i nu sunt sunete'],
+  ['ghiozdan',8,6,'h și i nu sunt sunete'],['gheață',6,4,'h și e nu sunt sunete'],['taxi',4,5,'x = [cs]'],['examen',6,7,'x = [gz]'],['cireașă',7,7,'toate literele notează sunete'],
+  ['cheie',5,4,'h nu e sunet'],['ghete',5,4,'h nu e sunet'],['ceapă',5,4,'e ajutător'],['geantă',6,5,'e ajutător'],['chenar',6,5,'h nu e sunet'],
+  ['ghinion',7,6,'h nu e sunet'],['cercel',6,6,'e e vocală (urmează consoană)'],['excursie',8,9,'x = [cs]'],['xilofon',7,8,'x = [cs]'],['ciocolată',9,8,'i ajutător'],
+  ['ghicitoare',10,9,'h nu e sunet; i după c e vocală (urmează t)'],['ceai',4,3,'e ajutător'],['geamantan',9,8,'e ajutător'],['marchează',9,7,'h și e nu sunt sunete'],['veghea',6,4,'h și e nu sunt sunete']];
+ const B_ACC = [['ca-rac-ter',2],['bu-te-li-e',2],['u-nic',0],['re-gi-zor',2],['a-va-ri-e',2],['du-mi-ni-că',1],['cra-ter',0],['doc-to-ri-ță',2],['e-chi-pă',1],['pe-nu-ri-e',2],['tra-fic',0],['lo-zin-că',1],['ve-ri-gă',1],['sim-bol',1],['re-gim',1]];
+ const accW = (sy,k) => sy.map((s,j)=>j===k?s.toUpperCase():s).join('-');
+ const OMO_OPTS = ['omofone','omografe','omonime','paronime','cuvânt polisemantic'];
+ const B_OMO = [
+  ['„sau” – „s-au”','omofone'],['„la” – „l-a”','omofone'],['„ia” – „i-a”','omofone'],['„mai” – „m-ai”','omofone'],['„nea” – „ne-a”','omofone'],['„sar” – „s-ar”','omofone'],['„neam” – „ne-am”','omofone'],['„cei” – „ce-i”','omofone'],['„sa” – „s-a”','omofone'],['„va” – „v-a”','omofone'],
+  ['„CO-pii” (după acte) – „co-PII” (băieți și fete)','omografe'],['„MO-bi-lă” (mobilier) – „mo-BI-lă” (care se mișcă)','omografe'],['„VE-se-lă” (bucuroasă) – „ve-SE-lă” (vase)','omografe'],['„A-ce-le” (acele cărți) – „a-CE-le” (de cusut)','omografe'],['„UM-bre-le” (umbrele copacilor) – „um-BRE-le” (de ploaie)','omografe'],
+  ['„lac” (apă) – „lac” (vopsea)','omonime'],['„roman” (carte) – „roman” (locuitor al Romei)','omonime'],['„somn” (pește) – „somn” (odihnă)','omonime'],['„broască” (animal) – „broască” (încuietoare)','omonime'],['„liliac” (floare) – „liliac” (animal)','omonime'],['„mare” (întindere de apă) – „mare” (adjectiv)','omonime'],
+  ['„eminent” – „iminent”','paronime'],['„original” – „originar”','paronime'],['„familial” – „familiar”','paronime'],['„literal” – „literar”','paronime'],['„emigrant” – „imigrant”','paronime'],
+  ['„gura omului” – „gura râului”','cuvânt polisemantic'],['„piciorul omului” – „piciorul mesei”','cuvânt polisemantic'],['„ochiul omului” – „ochiul acului”','cuvânt polisemantic'],['„inima omului” – „inima orașului”','cuvânt polisemantic'],['„dintele omului” – „dintele fierăstrăului”','cuvânt polisemantic']];
+ const OMO_E = {omofone:'Se pronunță la fel, dar se scriu diferit.',omografe:'Se scriu la fel, dar accentul diferă.',omonime:'Aceeași formă, sensuri fără legătură între ele.',paronime:'Formă asemănătoare, sens diferit – se confundă.','cuvânt polisemantic':'Același cuvânt, sensuri înrudite.'};
+ // acordul încrucișat: posesor × obiect posedat
+ const AC_P = [['băiatul','cărui','m. sg.'],['fata','cărei','f. sg.'],['copiii','căror','pl.'],['profesoara','cărei','f. sg.'],['vecinul','cărui','m. sg.'],['elevele','căror','pl.']];
+ const AC_N = [['frate','locuiește la Cluj','al','m. sg.'],['soră','a câștigat concursul','a','f. sg.'],['caiet','s-a pierdut','al','n. sg.'],['prieteni','au venit la serbare','ai','m. pl.'],['cărți','sunt pe masă','ale','f. pl.'],['desene','au fost premiate','ale','n. pl.']];
+ const ARTS=['al','a','ai','ale'], PRONS=['cărui','cărei','căror'];
+ Object.assign(GENS,{
+  vsc:{n:()=>B_VSC.length, make(i,r){ const [w,a,e]=B_VSC[i]; const shown=w.replace(/\((.)\)/,'<u class=s>$1</u>'); const opts=VSC_OPTS.slice(); return {t:'mc',q:'În cuvântul „'+shown+'”, litera subliniată este:',o:opts,a:opts.indexOf(a),e}; }},
+  litsun:{n:()=>B_LS.length, make(i,r){ const [w,l,s,why]=B_LS[i]; const f=(a,b)=>a+' litere și '+b+' sunete'; const c=f(l,s); const d=[f(l,l),f(s,l),f(l,s+1),f(l,s-1),f(l+1,s)].filter(x=>x!==c); return mcFrom(c,d,r,'Cuvântul „'+w+'” are:','Răspuns: '+c+' ('+why+').'); }},
+  acc:{n:()=>B_ACC.length, make(i,r){ const [w,k]=B_ACC[i]; const c=accW(w.split('-'),k); const others=rShuffle(B_ACC.filter((_,j)=>j!==i),r).slice(0,3).map(([w2,k2])=>{ const sy=w2.split('-'); return accW(sy,(k2+1)%sy.length); }); return mcFrom(c,others,r,'Cuvântul accentuat CORECT este (silaba accentuată e scrisă cu MAJUSCULE):','Corect: '+c+' (DOOM). Celelalte au accentul pe altă silabă.'); }},
+  omo:{n:()=>B_OMO.length, make(i,r){ const [p,a]=B_OMO[i]; return mcFrom(a,OMO_OPTS,r,'Perechea '+p+' ilustrează:','Răspuns: '+a+'. '+OMO_E[a]); }},
+  acord:{n:()=>AC_P.length*AC_N.length, make(i,r){ const [P,pr,pg]=AC_P[Math.floor(i/AC_N.length)], [N,pred,ar,ng]=AC_N[i%AC_N.length];
+    const c=ar+' '+pr; const d=[]; ARTS.forEach(x=>PRONS.forEach(y=>{ const s=x+' '+y; if(s!==c) d.push(s); }));
+    const pri=d.filter(s=>s.split(' ')[0]===ar||s.split(' ')[1]===pr); const opts=rShuffle([c].concat(rShuffle(pri,r).slice(0,2)).concat(rShuffle(d.filter(s=>!pri.includes(s)),r).slice(0,1)),r);
+    const Pc=P.charAt(0).toUpperCase()+P.slice(1);
+    return {t:'mc',q:'Completează corect: „Am vorbit cu '+P+' ___ '+N+' '+pred+'.”',o:opts,a:opts.indexOf(c),e:'„'+ar+'” se acordă cu „'+N+'” ('+ng+'), obiectul posedat; „'+pr+'” se acordă cu „'+P+'” ('+pg+'), posesorul.'}; }}
+ });
+ GEN_GRAM.push('vsc','litsun','acc','omo','acord');
+ Object.assign(GEN_FOR,{g1:(GEN_FOR.g1||[]).concat(['vsc','litsun','acc']), g2:(GEN_FOR.g2||[]).concat(['omo']), g6:(GEN_FOR.g6||[]).concat(['acord'])});
+})();
+
+// ===================== ÎNTREBĂRI SUPLIMENTARE (ca testele de verificare să nu repete exercițiile) =====================
+(function(){
+ const G = id => GRAM.find(m=>m.id===id), L = id => LIT.find(m=>m.id===id);
+ const TIP=['narativ','descriptiv','dialogat','argumentativ','explicativ'];
+ const tip=(s,a,e)=>({t:'mc',q:'Secvența „'+s+'” aparține tiparului textual:',o:[a].concat(TIP.filter(x=>x!==a).slice(0,3)),a:0,e});
+ L('l7').q.push(
+ {t:'mc',q:'În textul dramatic, indicațiile scenice sunt scrise de obicei:',o:['între paranteze, cu alt tip de literă','între ghilimele','la finalul piesei','ca replici ale personajelor'],a:0,e:'Indicațiile scenice (didascaliile) apar între paranteze, de obicei cu litere cursive.'},
+ {t:'mc',q:'Rolul indicațiilor scenice este:',o:['să ofere informații despre decor, gesturi, mimică și ton','să rezume acțiunea','să prezinte morala','să înlocuiască replicile'],a:0,e:'Ele îi ajută pe actori și pe regizor să pună piesa în scenă.'},
+ {t:'mc',q:'Textul dramatic este scris, în primul rând, pentru a fi:',o:['jucat pe scenă','cântat','recitat în cor','citit doar în gând'],a:0,e:'Textul dramatic devine complet prin spectacol.'},
+ {t:'mc',q:'În textul dramatic, comunicarea se realizează mai ales prin:',o:['replicile personajelor (dialog și monolog)','vocea naratorului','descrieri ample','strofe și rime'],a:0,e:'Personajele se prezintă singure, prin ce spun și ce fac.'},
+ {t:'mc',q:'În textul dramatic, naratorul:',o:['lipsește','este obligatoriu','vorbește la persoana I','apare în fiecare scenă'],a:0,e:'Nu există narator; acțiunea se desfășoară „sub ochii” spectatorului.'},
+ {t:'mc',q:'Monologul este:',o:['replica lungă a unui personaj care vorbește cu sine','dialogul dintre două personaje','o indicație scenică','lista personajelor'],a:0,e:'Monologul dezvăluie gândurile personajului.'},
+ {t:'mc',q:'Specia dramatică în care personajele sunt ridicole și finalul este, de obicei, fericit:',o:['comedia','tragedia','drama','fabula'],a:0,e:'Comedia stârnește râsul prin comic de situație, de limbaj, de caracter.'},
+ {t:'mc',q:'Actul unei piese de teatru este împărțit în:',o:['scene','strofe','capitole','paragrafe'],a:0,e:'Act → scene.'},
+ {t:'tf',q:'Indicațiile scenice nu sunt rostite de actori pe scenă.',a:true,e:'Adevărat: ele arată cum se joacă, nu se spun.'},
+ {t:'mc',q:'Conflictul dramatic înseamnă:',o:['confruntarea dintre personaje cu interese sau idei opuse','împărțirea piesei în acte','decorul piesei','sfârșitul fericit'],a:0,e:'Conflictul pune în mișcare acțiunea.'},
+ {t:'mc',q:'Cine transformă textul dramatic în spectacol, împreună cu actorii?',o:['regizorul','editorul','naratorul','criticul literar'],a:0,e:'Regizorul coordonează actorii, scenograful, luminile.'}
+ );
+ L('l4').q.push(
+ {t:'mc',q:'Caracterizarea directă se realizează prin:',o:['ce spun naratorul, alte personaje sau personajul despre sine','faptele personajului','limbajul personajului','gesturile personajului'],a:0,e:'Trăsătura este numită direct („era harnic”).'},
+ {t:'mc',q:'Caracterizarea indirectă reiese din:',o:['faptele, limbajul, gesturile și comportamentul personajului','afirmațiile naratorului','părerea altor personaje','titlul textului'],a:0,e:'Cititorul deduce trăsăturile din ce face și cum vorbește personajul.'},
+ {t:'mc',q:'Autocaracterizarea înseamnă că:',o:['personajul vorbește despre sine','naratorul descrie personajul','alt personaj îl laudă','autorul își scrie biografia'],a:0,e:'Ex.: „Eu sunt cam leneș, recunosc.”'},
+ {t:'mc',q:'În secvența „Era un copil harnic și cuminte”, caracterizarea este:',o:['directă, făcută de narator','indirectă, prin fapte','autocaracterizare','indirectă, prin limbaj'],a:0,e:'Naratorul numește direct trăsăturile.'},
+ {t:'mc',q:'Numele unui personaj (de exemplu, „Păcală”) poate fi un mijloc de caracterizare:',o:['indirectă','directă, prin narator','autocaracterizare','nu poate caracteriza'],a:0,e:'Numele sugerează o trăsătură (Păcală îi păcălește pe alții).'},
+ {t:'mc',q:'Portretul fizic este important în caracterizare mai ales când:',o:['sugerează trăsături morale','e foarte lung','nu are legătură cu acțiunea','e scris la persoana I'],a:0,e:'Ex.: ochii vii pot sugera istețimea.'},
+ {t:'mc',q:'Într-o compunere de caracterizare, o trăsătură morală trebuie:',o:['ilustrată printr-o secvență din text și comentată','doar numită','descrisă fizic','repetată de mai multe ori'],a:0,e:'Barem: trăsătură + secvență + comentariu.'},
+ {t:'mc',q:'Trăsătura MORALĂ din seria de mai jos este:',o:['curajos','înalt','brunet','slab'],a:0,e:'Celelalte sunt trăsături fizice.'},
+ {t:'mc',q:'Personajul principal:',o:['participă la majoritatea întâmplărilor, iar acțiunea se construiește în jurul lui','apare o singură dată','nu vorbește niciodată','este întotdeauna naratorul'],a:0,e:'Personajul principal e în centrul acțiunii.'},
+ {t:'mc',q:'Personajul episodic:',o:['apare într-o singură întâmplare și are un rol mic','este personajul principal','povestește întâmplările','apare în toate scenele'],a:0,e:'Ex.: un trecător care dă o informație.'},
+ {t:'tf',q:'Într-o compunere de caracterizare se pot folosi citate scurte din text.',a:true,e:'Adevărat: citatele dovedesc trăsăturile.'},
+ {t:'mc',q:'Formularea potrivită pentru a introduce a doua trăsătură într-o caracterizare:',o:['O altă trăsătură a personajului este…','A fost odată ca niciodată…','În concluzie, textul s-a terminat…','Eu nu sunt sigur, dar…'],a:0,e:'Conectori clari, de structurare a ideilor.'}
+ );
+ L('l3').q.push(
+ {t:'mc',q:'Momentul subiectului în care sunt prezentate locul, timpul și personajele este:',o:['expozițiunea','intriga','punctul culminant','deznodământul'],a:0,e:'Expozițiunea „pune scena”.'},
+ {t:'mc',q:'Intriga este momentul subiectului care:',o:['declanșează acțiunea','încheie acțiunea','prezintă locul','are tensiunea maximă'],a:0,e:'Intriga = întâmplarea care pornește conflictul.'},
+ {t:'mc',q:'Punctul culminant este momentul subiectului cu:',o:['tensiunea cea mai mare','prezentarea personajelor','rezolvarea conflictului','prima întâmplare'],a:0,e:'„Vârful” acțiunii.'},
+ {t:'mc',q:'Deznodământul este momentul subiectului în care:',o:['se rezolvă conflictul, iar acțiunea se încheie','se prezintă personajele','începe conflictul','apare primul dialog'],a:0,e:'Finalul acțiunii.'},
+ {t:'mc',q:'Ordinea corectă a momentelor subiectului:',o:['expozițiune – intrigă – desfășurarea acțiunii – punct culminant – deznodământ','intrigă – expozițiune – deznodământ – punct culminant','punct culminant – intrigă – expozițiune – deznodământ','expozițiune – punct culminant – intrigă – deznodământ'],a:0,e:'Aceasta este ordinea clasică.'},
+ {t:'mc',q:'Naratorul-personaj relatează întâmplările la persoana:',o:['I','a II-a','a III-a','a II-a plural'],a:0,e:'Participă la acțiune și spune „eu”.'},
+ {t:'mc',q:'Naratorul omniscient:',o:['știe tot despre personaje, chiar și gândurile lor, și relatează la persoana a III-a','participă la acțiune','vorbește la persoana I','nu știe nimic despre personaje'],a:0,e:'Omniscient = atotștiutor.'},
+ {t:'tf',q:'Într-o compunere narativă trebuie să existe o întâmplare cu început, desfășurare și final.',a:true,e:'Adevărat: momentele subiectului dau structura narațiunii.'},
+ {t:'mc',q:'Într-o compunere narativă, dialogul are rolul de a:',o:['da viață personajelor și a dinamiza acțiunea','înlocui finalul','prezenta morala','descrie peisajul'],a:0,e:'Replicile fac întâmplarea mai vie.'},
+ {t:'mc',q:'Fabula, specie a genului epic, se încheie de obicei cu:',o:['o morală','un dialog','o descriere','o întrebare'],a:0,e:'Morala = învățătura fabulei.'},
+ {t:'mc',q:'Schița, specie a genului epic, are:',o:['acțiune simplă, puține personaje, întindere redusă','acțiune amplă, multe planuri','versuri și rimă','personaje fantastice obligatorii'],a:0,e:'Ex.: „D-l Goe...”, „Vizită...”.'},
+ {t:'mc',q:'Basmul, specie a genului epic, conține:',o:['elemente fantastice și lupta dintre bine și rău','doar întâmplări reale','replici și indicații scenice','strofe și rimă'],a:0,e:'Ex.: „Prâslea cel voinic și merele de aur”.'},
+ {t:'mc',q:'Legenda, specie a genului epic, explică:',o:['originea unor ființe, lucruri sau locuri','regulile gramaticii','un fenomen științific','întâmplări din viitor'],a:0,e:'Ex.: legenda rândunicii.'},
+ {t:'mc',q:'Romanul, specie a genului epic, are:',o:['acțiune amplă, multe personaje, mai multe planuri','o singură întâmplare','doar două personaje','întotdeauna versuri'],a:0,e:'Ex.: „Fahrenheit 451”.'}
+ );
+ L('l14').q.push(
+ {t:'mc',q:'Formula de încheiere potrivită într-o scrisoare către un prieten:',o:['Te îmbrățișez cu drag,','Stimate domnule director,','Subsemnatul,','București, 26 noiembrie 2026'],a:0,e:'Ton apropiat, familiar.'},
+ {t:'mc',q:'Într-o scrisoare, localitatea și data se scriu:',o:['în colțul din dreapta sus','la final, după semnătură','în mijlocul textului','nu se scriu'],a:0,e:'Convenția scrisorii: sus, în dreapta.'},
+ {t:'mc',q:'Destinatarul scrisorii este:',o:['persoana căreia îi este adresată scrisoarea','persoana care scrie scrisoarea','poștașul','autorul unei cărți'],a:0,e:'Expeditor = cel care scrie; destinatar = cel care primește.'},
+ {t:'mc',q:'Expeditorul scrisorii este:',o:['persoana care scrie și trimite scrisoarea','persoana care primește scrisoarea','prietenul destinatarului','cel care citește cu voce tare'],a:0,e:'Semnătura de la final îl arată pe expeditor.'},
+ {t:'mc',q:'Post-scriptumul (P.S.) dintr-o scrisoare se adaugă:',o:['după semnătură, pentru o idee uitată','înainte de formula de adresare','în locul datei','la începutul scrisorii'],a:0,e:'P.S. = „scris după”.'},
+ {t:'mc',q:'Într-un e-mail oficial, rubrica „Subiect” trebuie să conțină:',o:['o formulare scurtă a motivului mesajului','tot textul mesajului','doar semnătura','un emoticon'],a:0,e:'Ex.: „Cerere de informații – concursul de lectură”.'},
+ {t:'mc',q:'Registrul potrivit într-o scrisoare către directorul școlii este:',o:['formal (oficial)','familiar','popular','argotic'],a:0,e:'Cu formule de politețe.'},
+ {t:'tf',q:'Într-o scrisoare, formula de adresare este urmată de virgulă, iar textul începe pe rândul următor.',a:true,e:'Adevărat: „Dragă bunico,” ↵ textul.'},
+ {t:'mc',q:'Scrisoarea familială se caracterizează prin:',o:['ton apropiat, afectiv, registru familiar','registru oficial','lipsa formulei de adresare','termeni științifici'],a:0,e:'Se scrie rudelor și prietenilor.'},
+ {t:'mc',q:'Intrusul dintre elementele obligatorii ale unei scrisori:',o:['titlul unei opere literare','data','formula de adresare','semnătura'],a:0,e:'Scrisoarea nu are titlu de operă.'},
+ {t:'mc',q:'Pagina de jurnal face parte din scrierile de tip:',o:['memorialistic (confesiv)','dramatic','științific','publicitar'],a:0,e:'Jurnalul păstrează amintiri și trăiri personale.'},
+ {t:'mc',q:'Într-o pagină de jurnal, întâmplările zilei se relatează de obicei la timpul:',o:['trecut (perfect compus)','viitor','imperativ','conjunctiv'],a:0,e:'Ex.: „Azi am mers la munte…”.'},
+ {t:'mc',q:'Formula „Dragă jurnalule,” arată că autorul:',o:['tratează jurnalul ca pe un confident','scrie o scrisoare oficială','adresează mesajul unui profesor','face o listă de cumpărături'],a:0,e:'Jurnalul devine „prietenul” căruia îi spui totul.'},
+ {t:'mc',q:'Jurnalul de călătorie cuprinde:',o:['impresiile și întâmplările dintr-o călătorie, notate pe zile','doar hărți','reguli de circulație','prețurile biletelor'],a:0,e:'Ex.: jurnalul unei excursii la mare.'},
+ {t:'tf',q:'Într-o pagină de jurnal pot apărea și planuri pentru zilele următoare.',a:true,e:'Adevărat: jurnalul cuprinde și gânduri despre viitor.'},
+ {t:'mc',q:'O pagină de jurnal este mai reușită dacă:',o:['conține detalii concrete și trăiri exprimate sincer','e doar o listă de ore','copiază un text din manual','nu are dată'],a:0,e:'Autenticitatea e calitatea principală a jurnalului.'}
+ );
+ L('l8').q.push(
+ {t:'mc',q:'Rezumatul păstrează:',o:['ideile principale, în ordinea lor','toate dialogurile','părerile cititorului','descrierile amănunțite'],a:0,e:'Rezumatul = esența întâmplărilor.'},
+ {t:'mc',q:'În rezumat, replica „— Vin mâine! spuse Ana.” devine:',o:['Ana spuse că va veni a doua zi.','— Vin mâine! spuse Ana.','Ana: „Vin mâine!”','Eu cred că Ana vine mâine.'],a:0,e:'Vorbire directă → vorbire indirectă, la persoana a III-a.'},
+ {t:'mc',q:'Conectorii potriviți într-un rezumat:',o:['apoi, după aceea, în final','vai, of, ura','eu cred că, după părerea mea','ce frumos, ce minunat'],a:0,e:'Conectorii arată succesiunea întâmplărilor.'},
+ {t:'mc',q:'Un rezumat corect NU începe cu:',o:['„Mi-a plăcut foarte mult textul…”','„Textul prezintă întâmplările unui copil…”','„Personajul principal, Nică, …”','„Într-o zi de vară, …”'],a:0,e:'Rezumatul nu conține păreri personale.'},
+ {t:'mc',q:'Planul simplu de idei este alcătuit din:',o:['idei principale formulate pe scurt','citate lungi','întrebări','descrieri amănunțite'],a:0,e:'Planul de idei e scheletul rezumatului.'},
+ {t:'tf',q:'Rezumatul poate conține păreri personale despre personaje.',a:false,e:'Fals: rezumatul este obiectiv.'}
+ );
+ L('l2').q.push(
+ tip('Copacii se înălțau drepți, cu frunze aurii și scoarța aspră.','descriptiv','Imagini, epitete (aurii, aspră) → descriptiv.'),
+ tip('Mai întâi a deschis ușa, apoi a intrat și a strigat după ajutor.','narativ','Acțiuni succesive → narativ.'),
+ tip('— Unde mergi? — La bibliotecă, să-mi iau o carte.','dialogat','Replici cu linie de dialog → dialogat.'),
+ tip('Cred că lectura este utilă, deoarece ne îmbogățește vocabularul.','argumentativ','Opinie + argument + conector (deoarece) → argumentativ.'),
+ tip('Fotosinteza este procesul prin care plantele își produc hrana folosind lumina.','explicativ','Definiție, termen științific → explicativ.'),
+ {t:'mc',q:'Conectorii „în primul rând”, „deoarece”, „așadar” sunt specifici tiparului textual:',o:['argumentativ','narativ','descriptiv','dialogat'],a:0,e:'Ei leagă opinia de argumente și de concluzie.'}
+ );
+ G('g8').q.push(
+ {t:'mc',q:'În „Am plecat <u class=s>la</u> mare.”, cuvântul subliniat este:',o:['prepoziție','conjuncție','interjecție','adverb'],a:0,e:'„la” introduce un substantiv → prepoziție.'},
+ {t:'mc',q:'În „Ana <u class=s>și</u> Ion citesc.”, cuvântul subliniat este:',o:['conjuncție coordonatoare','conjuncție subordonatoare','prepoziție','interjecție'],a:0,e:'Leagă două cuvinte egale (subiect multiplu).'},
+ {t:'mc',q:'În „Știu <u class=s>că</u> vii.”, cuvântul subliniat este:',o:['conjuncție subordonatoare','conjuncție coordonatoare','prepoziție','pronume relativ'],a:0,e:'Introduce o subordonată completivă directă.'},
+ {t:'mc',q:'Cuvântul „Poc!” imită un sunet; el este:',o:['interjecție (onomatopee)','prepoziție','conjuncție','adverb'],a:0,e:'Interjecțiile onomatopeice imită sunete.'},
+ {t:'mc',q:'Enunțul în care interjecția are funcție de predicat:',o:['Hai la joacă!','Vai, ce frumos!','Of, m-am lovit!','Bravo, ai reușit!'],a:0,e:'„Hai” = „vino” – are valoare de verb → predicat.'},
+ {t:'mc',q:'Prepoziția care cere cazul genitiv:',o:['deasupra','cu','la','lângă'],a:0,e:'deasupra casei (G). Celelalte cer acuzativul.'},
+ {t:'mc',q:'Prepoziția care cere cazul dativ:',o:['datorită','despre','contra','pe'],a:0,e:'datorită, mulțumită, grație + dativ.'},
+ {t:'mc',q:'Conjuncția adversativă este:',o:['dar','și','sau','deci'],a:0,e:'dar, iar, însă, ci = adversative.'}
+ );
+ G('g7').q.push(
+ {t:'mc',q:'În „Al doilea a câștigat.”, numeralul are funcția de:',o:['subiect','atribut','complement direct','nume predicativ'],a:0,e:'Ține locul unui substantiv (Cine a câștigat?).'},
+ {t:'mc',q:'Numeralul colectiv este:',o:['tustrei','trei','al treilea','câte trei'],a:0,e:'tustrei, amândoi, câteșitrei = numerale colective.'},
+ {t:'mc',q:'„Am citit <u class=s>amândouă</u> cărțile.” – numeralul subliniat este:',o:['colectiv','cardinal','ordinal','distributiv'],a:0,e:'Arată un grup luat împreună.'},
+ {t:'mc',q:'Scrierea corectă a numeralului 60:',o:['șaizeci','șasezeci','șaisezeci','saizeci'],a:0,e:'șaizeci (ca șaisprezece).'},
+ {t:'mc',q:'În „clasa a VIII-a”, numeralul este:',o:['ordinal','cardinal','colectiv','distributiv'],a:0,e:'Arată ordinea (a opta).'}
+ );
+ G('g10').q.push(
+ {t:'mc',q:'Fraza „Am învățat, deci am luat notă mare.” conține un raport de coordonare:',o:['conclusivă','adversativă','disjunctivă','copulativă'],a:0,e:'„deci” = conjuncție conclusivă.'},
+ {t:'mc',q:'Fraza „Vrei ceai sau preferi suc?” conține un raport de coordonare:',o:['disjunctivă','copulativă','conclusivă','adversativă'],a:0,e:'„sau” = alegere → disjunctivă.'},
+ {t:'mc',q:'Fraza „Ploua, dar noi am ieșit.” conține un raport de coordonare:',o:['adversativă','copulativă','disjunctivă','conclusivă'],a:0,e:'„dar” = opoziție → adversativă.'},
+ {t:'mc',q:'Fraza „Nici nu a sunat, nici nu a scris.” conține un raport de coordonare:',o:['copulativă','adversativă','disjunctivă','conclusivă'],a:0,e:'„nici… nici” = copulativă (negativă).'},
+ {t:'mc',q:'Fraza „Am venit, am văzut, am învins.” conține coordonare:',o:['prin juxtapunere','copulativă','adversativă','conclusivă'],a:0,e:'Propoziții legate doar prin virgulă → juxtapunere.'},
+ {t:'mc',q:'Înaintea conjuncției adversative „dar” se pune:',o:['virgulă','punct','două puncte','nimic'],a:0,e:'Regulă: virgulă înainte de dar, iar, însă, ci (coordonare adversativă).'},
+ {t:'mc',q:'Câte propoziții are fraza „Mama gătește, iar tata citește ziarul.”?',o:['2','1','3','4'],a:0,e:'Două predicate (gătește, citește), în raport de coordonare adversativă.'},
+ {t:'tf',q:'Conjuncția „și” poate lega două propoziții coordonate copulative.',a:true,e:'Adevărat: „Afară ninge și copiii se joacă.” – coordonare copulativă.'}
+ );
+ G('g2').q.push(
+ {t:'mc',q:'Paronimul potrivit: „Bunicul este ___ din Bucovina.”',o:['originar','original','originală','origine'],a:0,e:'originar = care provine dintr-un loc (paronim al lui „original”).'},
+ {t:'mc',q:'Paronimul potrivit: „Am avut o idee ___ pentru proiect.”',o:['originală','originară','originar','originea'],a:0,e:'original = nou, neobișnuit (paronim al lui „originar”).'},
+ {t:'mc',q:'Paronimul potrivit: „Ana are o atitudine ___ cu toți colegii.” (apropiată, prietenoasă)',o:['familiară','familială','familiar','familiei'],a:0,e:'familiar = apropiat; familial = al familiei (paronime).'},
+ {t:'mc',q:'Paronimul potrivit: „Pericolul era ___, așa că am fugit.”',o:['iminent','eminent','eminentă','imigrant'],a:0,e:'iminent = gata să se întâmple (paronim al lui „eminent”).'},
+ {t:'mc',q:'Enunțul în care paronimul este folosit GREȘIT:',o:['Excursia familiară a fost reușită.','Profesorul a evocat o întâmplare din copilărie.','Traducerea literală nu sună bine.','Revista literară apare lunar.'],a:0,e:'Corect: excursia familială (a familiei). Confuzie paronimică.'},
+ {t:'mc',q:'Verbul „a evoca” înseamnă:',o:['a-și aminti, a readuce în minte','a chema în ajutor','a se îmbolnăvi','a pleca din țară'],a:0,e:'a invoca = a chema în ajutor (paronim).'},
+ {t:'mc',q:'„Emigrant” este persoana care:',o:['pleacă din țara sa ca să trăiască în altă țară','vine să trăiască în țara noastră','nu a călătorit niciodată','se întoarce acasă'],a:0,e:'imigrant = cel care vine (paronime: emigrant / imigrant).'}
+ );
+})();
 // ===================== APP =====================
 const EXAM_DATE = new Date(2027, 5, 22, 9, 0, 0);
 const ORDER = ['l11','g1','l1','g2','l2','g3','g4','l8','g5','g6','l3','g7','g8','l4','g9','l6','g10','l5','g11','l7','g12','l12','l13','l10','l9','l14','g13'];
@@ -2428,7 +3020,7 @@ function confetti(){
 
 // ---------- routing ----------
 const NAV = [
- {id:'acasa',ic:'🏠',n:'Acasă'},{id:'gramatica',ic:'🧠',n:'Gramatică'},{id:'literatura',ic:'📚',n:'Literatură'},{id:'teste',ic:'🎮',n:'Teste'},{id:'progres',ic:'📊',n:'Progres'}];
+ {id:'acasa',ic:'🏠',n:'Acasă'},{id:'plan',ic:'📅',n:'Plan'},{id:'gramatica',ic:'🧠',n:'Gramatică'},{id:'literatura',ic:'📚',n:'Literatură'},{id:'teste',ic:'🎮',n:'Teste'},{id:'progres',ic:'📊',n:'Progres'}];
 let ROUTE = 'acasa', SUB = null;
 function go(r){ SUB = null; stopTimer(); if(location.hash !== '#'+r) location.hash = r; else render(); window.scrollTo(0,0); }
 window.addEventListener('hashchange', () => { const h = location.hash.slice(1); ROUTE = NAV.some(n=>n.id===h) ? h : 'acasa'; SUB = null; stopTimer(); render(); window.scrollTo(0,0); });
@@ -2451,10 +3043,10 @@ function render(){
   const v = $('#view');
   if(SUB){
     if(SUB.type==='module') v.innerHTML = vModule(); else if(SUB.type==='player') v.innerHTML = vPlayer(); else if(SUB.type==='results') v.innerHTML = vResults();
-    else if(SUB.type==='sim') v.innerHTML = vSim(); else if(SUB.type==='write') v.innerHTML = vWrite(); else if(SUB.type==='templates') v.innerHTML = vTemplates(); else if(SUB.type==='search') v.innerHTML = vSearch();
+    else if(SUB.type==='sim') v.innerHTML = vSim(); else if(SUB.type==='write') v.innerHTML = vWrite(); else if(SUB.type==='templates') v.innerHTML = vTemplates(); else if(SUB.type==='search') v.innerHTML = vSearch(); else if(SUB.type==='ptheory') v.innerHTML = vPTheory(); else if(SUB.type==='ptm') v.innerHTML = vPTm();
     renderTop(); afterRender(); return;
   }
-  v.innerHTML = ({acasa:vHome, gramatica:()=>vPath('gram'), literatura:()=>vPath('lit'), teste:vTests, progres:vProgress})[ROUTE]();
+  v.innerHTML = ({acasa:vHome, plan:vPlan, gramatica:()=>vPath('gram'), literatura:()=>vPath('lit'), teste:vTests, progres:vProgress})[ROUTE]();
   renderTop(); afterRender();
 }
 function afterRender(){ if(SUB && SUB.type==='player') setTimeout(qTimerStart,0); else stopQT(); const inp = document.querySelector('[data-autofocus]'); if(inp && (window.innerWidth>820 || (SUB&&SUB.type==='search'))) { try{ inp.focus(); }catch(e){} }
@@ -2483,6 +3075,7 @@ function vHome(){
     <div class="row"><div class="sp"><div class="dim small" style="font-weight:800">EVALUAREA NAȚIONALĂ · 22 IUNIE 2027</div><h1>${ST.name?'Salut, '+esc(ST.name)+'!':'Salut!'} 🎮</h1><div class="mut small">Mai sunt <b class="gold-t">${days}</b> zile până la proba de română. Fiecare zi contează.</div></div><div style="text-align:center"><div class="big">${days}</div><div class="tiny dim" style="font-weight:800">ZILE</div></div></div>
     <div style="margin-top:12px"><div class="row small" style="font-weight:800"><span>🎯 Obiectivul zilei</span><span class="sp"></span><span>${today}/${ST.goal} XP</span></div><div class="bar gold" style="margin-top:5px"><i style="width:${gp}%"></i></div></div>
   </div>
+  ${planHomeCard()}
   <div class="card" style="border-color:${(GRAM.includes(m)?'#a560f8':'#ff6bcb')}">
     <div class="tiny dim" style="font-weight:900">▶ CONTINUĂ AVENTURA</div>
     <div class="row" style="margin-top:6px"><span style="font-size:2.2rem">${m.icon}</span><div class="sp"><div style="font-weight:900;font-size:1.05rem">${esc(m.title)}</div><div class="small mut">${m.cat==='gram'?'Gramatică':'Literatură'} · ${starsOf(nm)}</div></div></div>
@@ -2543,7 +3136,7 @@ let PL = null;
 function startPlayer(mode, qs, meta){
   stopQT();
   PL = Object.assign({mode, qs:qs.map(q=>Object.assign({},q,{order: q.t==='mc' && !q.o.some(o=>/toate|niciun/i.test(o)) ? shuffle(q.o.map((_,i)=>i)) : (q.o||[]).map((_,i)=>i)})), i:0, ans:[], res:[], combo:0, maxCombo:0, xp:0, checked:false, sel:null, input:'', retried:false, retryMsg:false, dead:false}, meta||{});
-  PL.cfg = PL.diff ? DIFF[PL.diff] : null; PL.lives = PL.cfg ? PL.cfg.lives : 0;
+  PL.cfg = PL.cfgO || (PL.diff ? DIFF[PL.diff] : null); PL.lives = PL.cfg ? PL.cfg.lives : 0;
   SUB = {type:'player', title: PL.title}; render(); window.scrollTo(0,0);
 }
 const MODE_NAME = {lesson:'Lecție',test:'Test',review:'Repară greșelile',daily:'Provocarea zilei'};
@@ -2558,10 +3151,10 @@ function vPlayer(){
   const typeLbl = {mc:'Alege răspunsul corect',ms:'Alege TOATE răspunsurile corecte',tf:'Adevărat sau fals?',in:'Scrie răspunsul',wr:'Scrie răspunsul',drop:'Alege pentru fiecare rând'}[q.t];
   let opts = '';
   if(q.t==='mc') opts = `<div class="opts">${q.order.map((oi,k)=>{ let cls=''; if(PL.checked&&fbMode){ if(oi===q.a) cls='ok'; else if(oi===PL.sel) cls='bad'; } else if(PL.sel===oi) cls='sel';
-     return `<button class="opt ${cls}" ${PL.checked?'disabled':''} onclick="A.sel(${oi})"><span class="k">${'ABCDEF'[k]||k+1}</span><span>${q.o[oi]}</span></button>`; }).join('')}</div>`;
+     const el=!PL.checked&&PL.elim&&(PL.elim[PL.i]||[]).includes(oi); return `<button class="opt ${cls}" ${PL.checked||el?'disabled':''} ${el?'style="opacity:.25;text-decoration:line-through"':''} onclick="A.sel(${oi})"><span class="k">${'ABCDEF'[k]||k+1}</span><span>${q.o[oi]}</span></button>`; }).join('')}</div>`;
   if(q.t==='ms'){ const sel=Array.isArray(PL.sel)?PL.sel:[]; opts = `<div class="opts">${q.o.map((o,oi)=>{ let cls=''; const on=sel.includes(oi), good=q.a.includes(oi);
      if(PL.checked&&fbMode){ if(good&&on) cls='ok'; else if(on&&!good) cls='bad'; else if(good) cls='ok'; } else if(on) cls='sel';
-     return `<button class="opt ${cls}" ${PL.checked?'disabled':''} onclick="A.sel(${oi})" style="${PL.checked&&fbMode&&good&&!on?'opacity:.75;border-style:dashed':''}"><span class="k">${on?'☑':'☐'}</span><span>${o}</span></button>`; }).join('')}</div>`; }
+     const el=!PL.checked&&PL.elim&&(PL.elim[PL.i]||[]).includes(oi); return `<button class="opt ${cls}" ${PL.checked||el?'disabled':''} onclick="A.sel(${oi})" style="${PL.checked&&fbMode&&good&&!on?'opacity:.75;border-style:dashed':''}${el?'opacity:.25;text-decoration:line-through':''}"><span class="k">${on?'☑':'☐'}</span><span>${o}</span></button>`; }).join('')}</div>`; }
   if(q.t==='tf') opts = `<div class="tfrow">${[true,false].map(v=>{ let cls=''; if(PL.checked&&fbMode){ if(v===q.a) cls='ok'; else if(v===PL.sel) cls='bad'; } else if(PL.sel===v) cls='sel';
      return `<button class="opt ${cls}" style="justify-content:center" ${PL.checked?'disabled':''} onclick="A.sel(${v})">${v?'✅ Adevărat':'❌ Fals'}</button>`; }).join('')}</div>`;
   if(q.t==='in') opts = `<input class="inp" id="pin" data-autofocus autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Scrie aici…" value="${esc(PL.input)}" ${PL.checked?'disabled':''} oninput="PL.input=this.value" onkeydown="if(event.key==='Enter')A.check()"><div class="tiny dim" style="margin-top:6px">Poți scrie și fără diacritice (a, i, s, t în loc de ă, î, ș, ț).</div>`;
@@ -2576,7 +3169,7 @@ function vPlayer(){
   const hearts = PL.cfg&&PL.cfg.lives ? `<div style="font-size:.95rem;white-space:nowrap">${'❤️'.repeat(Math.max(0,PL.lives))}${'🖤'.repeat(Math.max(0,PL.cfg.lives-PL.lives))}</div>` : '';
   const timer = PL.cfg&&PL.cfg.timer&&fbMode ? `<span class="timer" id="qtimer" style="margin-left:auto">⏱️ ${PL.cfg.timer}s</span>` : '';
   return `<div class="player"><div class="phead"><button class="x" onclick="A.quit()" aria-label="Ieșire">✕</button><div class="bar"><i style="width:${Math.round((PL.i+(PL.checked?1:0))/n*100)}%"></i></div>${hearts}<div class="combo">${fbMode&&PL.combo>=2?'🔥 x'+PL.combo:(PL.i+1)+'/'+n}</div></div>
-  <div class="row" style="margin-bottom:2px"><div class="qtype">${MODE_NAME[PL.mode]}${PL.cfg?' · '+PL.cfg.e+' '+PL.cfg.n:''} · ${typeLbl}</div>${timer}</div><div class="qtext">${q.q}</div>${opts}${fb}<div class="pfoot">${btn}</div></div>`;
+  <div class="row" style="margin-bottom:2px"><div class="qtype">${MODE_NAME[PL.mode]}${PL.cfg?' · '+PL.cfg.e+' '+PL.cfg.n:''} · ${typeLbl}</div>${timer}${PL.mode!=='test'&&!PL.checked&&!(PL.hintOpen||{})[PL.i]?`<button class="btn ghost sm" style="padding:4px 10px;${timer?'':'margin-left:auto'}" onclick="A.hint()" title="Primești o regulă și se elimină variante greșite (XP pe jumătate)">💡 Indiciu</button>`:''}</div><div class="qtext">${q.q}</div>${(PL.hintOpen||{})[PL.i]&&PL.mode!=='test'?`<div class="tip small" style="margin:-4px 0 10px">💡 ${hintFor(q)}</div>`:''}${opts}${fb}<div class="pfoot">${btn}</div></div>`;
 }
 function ansText(q,a){ if(a==null||a==='') return '<i>(fără răspuns)</i>'; if(a==='__timeout__') return '⏱️ timpul a expirat';
   if(q.t==='ms') return (Array.isArray(a)?a:[]).map(i=>q.o[i]).join(' · ')||'<i>(nimic)</i>';
@@ -2611,7 +3204,7 @@ function pCheck(){
   else ST.wrong[q.qid] = Math.min(3,(ST.wrong[q.qid]||0)+1);
   if(PL.mode==='test'){ PL.checked=false; PL.sel=null; PL.input=''; if(PL.i<PL.qs.length-1){ PL.i++; render(); window.scrollTo(0,0); } else finishPlayer(); return; }
   const mul = PL.cfg ? PL.cfg.xp : 1;
-  if(ok){ PL.combo++; PL.maxCombo=Math.max(PL.maxCombo,PL.combo); PL.xp += Math.round(((PL.mode==='review'?12:10) + Math.min(10,2*(PL.combo-1))) * mul * (PL.secondTry?0.5:1)); }
+  if(ok){ PL.combo++; PL.maxCombo=Math.max(PL.maxCombo,PL.combo); PL.xp += Math.round(((PL.mode==='review'?12:10) + Math.min(10,2*(PL.combo-1))) * mul * (PL.secondTry?0.5:1) * ((PL.hinted||{})[PL.i]?0.5:1)); }
   else { PL.combo=0; if(PL.cfg && PL.cfg.lives){ PL.lives--; if(PL.lives<=0) PL.dead=true; } }
   beep(ok); PL.checked=true; PL.input = typeof a==='string' && a!=='__timeout__' ? a : PL.input; render();
   setTimeout(()=>{ const f=document.querySelector('.fb'); if(f && f.getBoundingClientRect().bottom>innerHeight) f.scrollIntoView({behavior:'smooth',block:'end'}); },50);
@@ -2622,6 +3215,7 @@ function finishPlayer(){
   const answered = PL.res.length, n=PL.qs.length, c=PL.res.filter(Boolean).length, pct=Math.round(c/n*100);
   if(PL.mode==='test') PL.xp = c*8;
   if(PL.mode==='daily' && ST.daily!==dayKey() && !PL.dead){ PL.xp+=30; ST.daily=dayKey(); award('daily'); }
+  PL.done={n,c,pct,answered}; if(PL.plan && !PL.dead) planRecord(pct);
   if(PL.mod && !PL.dead){ const s = ST.mods[PL.mod] = ST.mods[PL.mod]||{};
     s.plays=(s.plays||0)+1;
     if(PL.mode==='lesson'||PL.mode==='test'){ s.best=Math.max(s.best||0,pct); s.stars=Math.max(s.stars||0, pct>=90?3:pct>=75?2:pct>=50?1:0); }
@@ -2641,7 +3235,7 @@ function vResults(){
   <div class="mut">${c} din ${n} corecte (${pct}%)${PL.dead?' – ai ajuns la întrebarea '+answered:''} · <b class="gold-t">+${PL.xp} XP</b>${PL.maxCombo>=3?' · 🔥 combo maxim x'+PL.maxCombo:''}</div>
   ${PL.mode==='test'?`<div class="small mut" style="margin-top:6px">${lv.d}</div>`:`<div style="margin-top:6px;font-size:${PL.dead?'.95rem':'1.3rem'}">${rating[2]}</div>`}
   ${PL.cfg?`<div class="small" style="margin-top:6px">Nivel: ${PL.cfg.e} ${PL.cfg.n}${PL.diff==='greu'&&pct>=80&&!PL.dead?' · 👑 Coroana capitolului câștigată!':''}</div>`:''}
-  <div class="row" style="justify-content:center;margin-top:14px">${PL.mod?`<button class="btn ghost sm" onclick="A.openMod('${PL.mod}')">📘 Teoria</button>`:''}<button class="btn sm" onclick="A.again()">🔁 Din nou</button>${next}<button class="btn blue sm" onclick="A.back()">Gata</button></div></div>
+  ${PL.plan?planResBox():''}<div class="row" style="justify-content:center;margin-top:14px;${PL.plan?'display:none':''}">${PL.mod?`<button class="btn ghost sm" onclick="A.openMod('${PL.mod}')">📘 Teoria</button>`:''}<button class="btn sm" onclick="A.again()">🔁 Din nou</button>${next}<button class="btn blue sm" onclick="A.back()">Gata</button></div></div>
   <div class="subtitle">${PL.mode==='test'?'Corectarea testului':'Recapitulare'}</div>
   ${PL.qs.slice(0,answered).map((q,i)=>`<div class="rev ${PL.res[i]?'ok':'bad'}"><div class="q">${PL.res[i]?'✅':'❌'} ${i+1}. ${q.q}</div><div class="a">Răspunsul tău: <b>${ansText(q,PL.ans[i])}</b>${!PL.res[i]?`<br>Corect: <b class="ok-t">${q.t==='wr'?esc(q.a[0]):ansText(q,q.a)}</b>`:''}</div>${q.e?`<div class="small mut" style="margin-top:4px">💡 ${q.e}</div>`:''}</div>`).join('')}</div>`;
 }
@@ -2928,7 +3522,7 @@ function closeOv(){ $('#ovl').innerHTML=''; }
 
 // ---------- actions ----------
 window.A = {
-  back(){ stopTimer(); stopQT(); if(SUB && (SUB.type==='results'||SUB.type==='player') && PL && PL.mod && PL.mode!=='daily'){ sub({type:'module', id:PL.mod, tab:'teorie'}); return; } SUB=null; render(); window.scrollTo(0,0); },
+  back(){ stopTimer(); stopQT(); if(SUB && (SUB.type==='results'||SUB.type==='player') && PL && PL.plan){ SUB=null; go('plan'); return; } if(SUB && (SUB.type==='results'||SUB.type==='player') && PL && PL.mod && PL.mode!=='daily'){ sub({type:'module', id:PL.mod, tab:'teorie'}); return; } SUB=null; render(); window.scrollTo(0,0); },
   openMod(id){ stopTimer(); sub({type:'module', id, tab:'teorie'}); },
   tab(t){ SUB.tab=t; render(); },
   setName(){ const v=($('#nameIn')||{}).value; if(v!=null){ ST.name=v.trim().slice(0,24); save(); render(); toast('👋 Salut, '+esc(ST.name||'campionule')+'!'); } },
@@ -3073,6 +3667,461 @@ document.addEventListener('visibilitychange', ()=>{ if(!SY.token||!SY.gist||inCl
 window.addEventListener('pagehide', ()=>{ if(SY.token&&SY.gist&&!inClaude()) ghPush(true); });
 
 // ---------- boot ----------
+// boot: vezi 05b_plan.js
+
+// ===================== PROGRAMUL ZILNIC (după lista profesoarei) =====================
+// 30 de teme · 3 ture (Învăț → Consolidez → Stăpânesc) + faza finală · ~1 oră/zi
+// Fiecare zi: încălzire (repetiție) → teorie → exerciții cu indicii → (compunere) → test de verificare (80%).
+// Dacă testul nu e trecut, lecția se reia a doua zi; după 2 zile nereușite se merge mai departe, iar tema devine „de întărit”.
+
+const TOPICS = [
+ {id:'t1',n:'Părți de vorbire și părți de propoziție',ic:'🧩',cat:'gram',parts:[
+  {p:'Părțile de vorbire',th:[['g9','Harta'],['g8','Tabelul']],m:[['g9',/flexibil|parte de vorbire|funcție sintactică|substantiv –|adverb –|adjectiv –/i],['g8',null]],g:[['morph',null]],
+   h:'Întreabă-te întâi CE este cuvântul: își schimbă forma? stă lângă un substantiv? arată o acțiune? leagă alte cuvinte?',
+   tm:['Flexibile: substantiv, articol, adjectiv, pronume, numeral, verb.','Neflexibile: adverb, prepoziție, conjuncție, interjecție.','Prepoziția, conjuncția și articolul nu au funcție sintactică.','Același cuvânt poate fi altă parte de vorbire în alt context (frumos – adjectiv/adverb).']},
+  {p:'Părțile de propoziție',th:[['g9','Părțile principale'],['g9','Părțile secundare']],m:[['g9',null]],g:[['func',null]],
+   h:'Pune întrebarea de la cuvântul de care depinde: cine? (subiect) · ce face? (predicat) · pe cine?/ce? (c. direct) · cui? (c. indirect) · care?/ce fel de? (atribut) · unde?/când?/cum?/de ce?/cu ce scop? (circumstanțiale).',
+   tm:['Subiectul răspunde la cine?/ce? pus verbului.','Predicat verbal = verb predicativ; predicat nominal = verb copulativ + nume predicativ.','Atributul determină un substantiv; complementul și circumstanțialul determină un verb.','Complementul de agent apare doar la pasiv: „de (către) cine?”.']}]},
+ {id:'t2',n:'Cazurile substantivului',ic:'📦',cat:'gram',parts:[
+  {p:'Cazurile substantivului',th:[['g5','Cazurile']],m:[['g5',/caz|nominativ|acuzativ|genitiv|dativ|vocativ/i]],g:[['caz',null],['func',/^(subiect|complement direct|complement indirect|atribut)$/]],
+   h:'N: cine?/ce? · Ac: pe cine?/ce? sau după prepoziție (cu, la, în, pe) · G: al cui?/a cui? · D: cui? · V: strigare, între virgule.',
+   tm:['Nominativ: subiect sau nume predicativ.','Acuzativ: complement direct, după prepoziții (cu, la, în, pe, despre).','Genitiv: al/a/ai/ale cui? – de obicei atribut.','Dativ: cui? – complement indirect.','Vocativ: strigare, se izolează prin virgule (Ioane, vino!).']}]},
+ {id:'t3',n:'Substantivul și articolul',ic:'📘',cat:'gram',parts:[
+  {p:'Substantivul și articolul',th:[['g5','Genul'],['g5','Articolul']],m:[['g5',null]],g:[['morph',/articol|substantiv/],['caz',null]],
+   h:'Articolul hotărât e lipit la final (-ul, -a, -le, -i); nehotărâtul stă înainte (un, o, niște); posesivul e al/a/ai/ale; demonstrativul e cel/cea/cei/cele.',
+   tm:['Genuri: masculin, feminin, neutru (un caiet – două caiete).','Articol hotărât: pomul, casa; nehotărât: un pom, o casă.','Articol posesiv (genitival): al, a, ai, ale.','Copiii, membrii, fiii – articulat la plural = un „i” în plus.']}]},
+ {id:'t4',n:'Adjectivul vs. adverbul',ic:'⚖️',cat:'gram',parts:[
+  {p:'Adjectivul vs. adverbul',th:[['g7','Adjectiv sau adverb'],['g7','Gradele']],m:[['g7',/adjectiv|adverb|grad|superlativ|comparativ/i]],g:[['morph',/^(adjectiv|adverb)$/],['func',/^(atribut|circumstanțial de mod|nume predicativ)$/]],
+   h:'Se acordă cu un substantiv (fată frumoasă / fete frumoase)? → adjectiv. Determină un verb și rămâne la fel (cântă frumos)? → adverb.',
+   tm:['Adjectivul determină un substantiv și se acordă cu el.','Adverbul determină un verb și nu își schimbă forma.','Adjectiv → atribut sau nume predicativ; adverb → circumstanțial.','Grade: pozitiv, comparativ (mai/la fel de/mai puțin), superlativ (cel mai / foarte).']}]},
+ {id:'t5',n:'Verbul',ic:'⚡',cat:'gram',parts:[
+  {p:'Modurile și timpurile verbului',th:[['g3','Moduri și timpuri'],['g3','nepersonale'],['g13','Modurile verbale']],m:[['g3',/mod|timp|indicativ|conjunctiv|condițional|imperativ|infinitiv|gerunziu|participiu|supin/i],['g13',/trecând|modul/i]],g:[['tense',null],['verb',null]],
+   h:'Semne: „să” + verb → conjunctiv · aș/ai/ar/am/ați/ar + verb → condițional-optativ · poruncă → imperativ · „a” + verb → infinitiv · -ând/-ind → gerunziu · de/pentru + participiu → supin.',
+   tm:['Moduri personale: indicativ, conjunctiv, condițional-optativ, imperativ (pot fi predicat).','Moduri nepersonale: infinitiv, gerunziu, participiu, supin.','Indicativ: prezent, imperfect, perfect compus, perfect simplu, mai-mult-ca-perfect, viitor.','Mai-mult-ca-perfect: -sem, -seși (citisem, plecasem).']},
+  {p:'Verb predicativ, copulativ sau auxiliar',th:[['g3','predicativ'],['g4','Capcana']],m:[['g3',/predicativ|copulativ|auxiliar/i],['g4',/a fi|copulativ|auxiliar/i]],g:[['morph',/^verb/]],
+   h:'Auxiliar = ajută la formarea unui timp/mod (am citit, voi pleca, aș merge). Copulativ = leagă subiectul de o însușire (e harnic). Predicativ = are sens deplin singur (El este acasă = se află).',
+   tm:['„a fi” copulativ: Ana este elevă (urmează un nume predicativ).','„a fi” predicativ: Ana este acasă (= se află).','„a fi”/„a avea”/„a vrea” auxiliare: a fost văzut, am plecat, vor veni.','Copulative și: a deveni, a ajunge, a părea, a ieși, a se face, a rămâne (cu sens de „a deveni”).']},
+  {p:'Construcții active și pasive',th:[['g4','activă vs'],['g4','Trecerea'],['g4','Complementul de agent'],['g13','Activ → pasiv']],m:[['g4',null],['g13',/activă|pasivă/i]],g:[['func',/agent/]],
+   h:'Activ → pasiv: complementul direct devine subiect · verbul devine „a fi” (la același timp) + participiu acordat · subiectul devine „de (către) …”.',
+   tm:['Activ: Elevii plantează copaci.','Pasiv: Copacii sunt plantați de elevi.','„a fi” păstrează modul și timpul verbului activ (au plantat → au fost plantați).','Participiul se acordă cu noul subiect (ușa a fost închisă).']}]},
+ {id:'t6',n:'Pronumele',ic:'👤',cat:'gram',parts:[
+  {p:'Pronumele: felurile lui',th:[['g6','Regula de aur'],['g6','Felurile']],m:[['g6',/pronume|adjectiv pronominal/i]],g:[['morph',/pronume|pronominal/]],
+   h:'Ține locul unui substantiv și are funcție proprie → pronume. Stă lângă un substantiv și se acordă cu el → adjectiv pronominal.',
+   tm:['Personal, de politețe, reflexiv, posesiv, demonstrativ, interogativ, relativ, nehotărât, negativ, de întărire.','Cartea ta (adjectiv pronominal) vs. a ta (pronume).','Relativul leagă propoziții: Băiatul care citește…','Interogativul apare în întrebări: Cine a venit?']},
+  {p:'Pronumele: scriere și capcane',th:[['g6','Scriere']],m:[['g6',null],['g11',/aceeași|aceiași|nicio|niciun|însuși|ce-i|cei/i]],g:[['morph',/pronume|pronominal/],['spell',null]],
+   h:'aceeași (fem. sg.), aceiași (masc. pl.), aceleași (fem. pl.) · nicio/niciun (legat) · ce-i (ce îi/ce este) vs. cei (aceia).',
+   tm:['aceeași – fem. sg.; aceiași – masc. pl.; aceleași – fem. pl.','însuși (el), însăși (ea), înșiși (ei), înseși (ele).','nicio, niciun, niciunul – legat.','i-a (pronume + verb) vs. ia (verb „a lua”).']}]},
+ {id:'t7',n:'Numeralul',ic:'🔢',cat:'gram',parts:[
+  {p:'Numeralul',th:[['g7','3. Numeralul'],['g7','6. Numeralul']],m:[['g7',/numeral|paisprezece|șaisprezece|douăsprezece|treilea|ora/i]],g:[['morph',/numeral/]],
+   h:'Câți? → cardinal · Al câtelea? → ordinal · amândoi/tustrei → colectiv · câte doi → distributiv. Lângă substantiv = atribut; singur = subiect/complement.',
+   tm:['Cardinal: doi, trei; ordinal: al doilea, a treia.','Scriere: paisprezece, șaisprezece, douăsprezece (fete).','„ora două”, nu „ora doi”.','Funcție: atribut (trei frați) sau subiect/complement (Doi au plecat).']}]},
+ {id:'t8',n:'Interjecția, conjuncția și prepoziția',ic:'🔗',cat:'gram',parts:[
+  {p:'Interjecția, conjuncția și prepoziția',th:[['g8','Prepoziția'],['g8','Tabelul']],m:[['g8',/interjec|conjunc|prepozi/i]],g:[['morph',/interjecție|conjuncție|prepoziție/]],
+   h:'Prepoziția stă înaintea unui substantiv/pronume (la, cu, în, pe). Conjuncția leagă cuvinte sau propoziții (și, dar, că, să, dacă). Interjecția exprimă o emoție sau imită un sunet (vai!, hai!, poc!).',
+   tm:['Prepoziții: la, cu, în, pe, de, din, pentru, despre, lângă.','Conjuncții coordonatoare: și, dar, iar, însă, sau, deci; subordonatoare: că, să, dacă, deși, încât.','Interjecția se desparte de obicei prin virgulă sau semnul exclamării.','Interjecția poate fi predicat: Hai la joacă!']}]},
+ {id:'t9',n:'Coordonare și subordonare (propoziție și frază)',ic:'🪢',cat:'gram',parts:[
+  {p:'Raporturi în propoziție',th:[['g10','în PROPOZIȚIE']],m:[['g10',/coordonare|subordonare|regent/i],['g9',/multiplu/i]],g:[['func',null]],
+   h:'Răspund la aceeași întrebare (cine cântă? – Ana și Maria) → coordonare. Unul depinde de celălalt (cartea cui? – colegului) → subordonare.',
+   tm:['Coordonare = termeni egali, cu aceeași funcție (subiect multiplu).','Subordonare = regent → subordonat (cartea colegului).','Conjuncțiile coordonatoare pot lega și cuvinte: încet, dar sigur.']},
+  {p:'Coordonarea în frază',th:[['g10','Câte propoziții'],['g10','2. Coordonarea'],['g13','Coordonarea']],m:[['g10',/coordon|juxtapun|copulativ|adversativ|disjunctiv|conclusiv/i],['g13',/coordonare/i]],g:[],
+   h:'Copulativă: și, nici · adversativă: dar, iar, însă, ci · disjunctivă: sau, ori, fie · conclusivă: deci, așadar, prin urmare · juxtapunere: virgulă.',
+   tm:['Câte verbe la moduri personale, atâtea propoziții.','Copulativă (și), adversativă (dar), disjunctivă (sau), conclusivă (deci).','Juxtapunere = propoziții legate doar prin virgulă.','Virgulă înainte de dar, iar, însă, ci.']},
+  {p:'Subordonatele',th:[['g10','3. Subordonarea'],['g10','Algoritmul']],m:[['g10',/subordonat|completiv|atributiv|circumstanțial|cauzal|final/i]],g:[['sub',null]],
+   h:'Pune întrebarea de la regentă: care? → atributivă · ce?/pe cine? → completivă directă · cui? → completivă indirectă · despre ce?/la ce? → completivă prepozițională · unde/când/cum/de ce/cu ce scop → circumstanțiale.',
+   tm:['Subordonata are un element de legătură: că, să, dacă, care, unde, când, pentru că, ca să.','Atributivă – determină un substantiv (care?).','Completive: directă (ce?), indirectă (cui?), prepozițională (despre ce?).','Circumstanțiale: de loc, de timp, de mod, cauzală, finală.']}]},
+ {id:'t10',n:'Derivarea, compunerea, conversiunea',ic:'🧱',cat:'gram',parts:[
+  {p:'Mijloace interne de îmbogățire a vocabularului',th:[['g2','Formarea']],m:[['g2',/deriv|compun|conversiun|prefix|sufix/i]],g:[['form',null]],
+   h:'Prefix în față (ne-, re-, des-) sau sufix la final (-ar, -esc, -ime) → derivare. Două cuvinte unite (untdelemn, floarea-soarelui) → compunere. Altă parte de vorbire fără schimbarea formei (cântă frumos) → conversiune.',
+   tm:['Derivare: cuvânt de bază + prefix/sufix (necunoscut, pădurar).','Compunere: sudare (untdelemn), cratimă (floarea-soarelui), abreviere (ONU).','Conversiune: schimbarea părții de vorbire (frumos → adverb; mersul → substantiv).']}]},
+ {id:'t11',n:'Familie lexicală și câmp lexical',ic:'🌳',cat:'gram',parts:[
+  {p:'Familie lexicală și câmp lexical',th:[['g2','Familia lexicală vs'],['g2','Familia lexicală –']],m:[['g2',/familie|familia|câmp|intrus|cuvântul de bază/i]],g:[['fam',null]],
+   h:'Aceeași rădăcină (pădure – pădurar – împăduri) → familie lexicală. Aceeași temă, rădăcini diferite (pădure – copac – frunză) → câmp lexical.',
+   tm:['Familia lexicală: cuvântul de bază + derivatele + compusele.','Câmpul lexical: cuvinte din aceeași temă.','Intrusul din familie e cuvântul cu altă rădăcină.']}]},
+ {id:'t12',n:'Despărțirea în silabe și accentul',ic:'🗣️',cat:'gram',parts:[
+  {p:'Despărțirea în silabe și accentul',th:[['g1','Despărțirea'],['g1','Accentul –']],m:[['g1',/silab|despărțirea|accent/i]],g:[['acc',null]],
+   h:'O consoană între vocale trece mai departe (ca-să); două consoane se despart (ar-tă), dar b/c/d/f/g/h/p/t/v + l/r trec împreună (co-dru); vocalele în hiat se despart (po-e-zi-e).',
+   tm:['O consoană → trece la silaba următoare.','Două consoane → se despart (excepție: consoană + l/r).','Trei consoane → prima rămâne (excepții: lpt, mpt, nct… → sculp-tor).','Accent: ca-rac-TER, U-nic, re-gi-ZOR, du-MI-ni-că.']}]},
+ {id:'t13',n:'Vocală, semivocală, consoană',ic:'🔤',cat:'gram',parts:[
+  {p:'Vocală, semivocală, consoană',th:[['g1','Sunetele limbii'],['g1','Vocală, semivocală']],m:[['g1',/semivocal|vocală|consoan/i]],g:[['vsc',null]],
+   h:'Desparte în silabe: fiecare silabă are o singură vocală. Un e/i/o/u lipit de vocală în aceeași silabă e semivocală. După c/g + e/i + vocală, e/i nu sunt sunete.',
+   tm:['a, ă, â/î – mereu vocale.','e, i, o, u – vocale sau semivocale.','Semivocala nu poate forma singură silabă.','ce/ci/ge/gi/che/chi/ghe/ghi + vocală → e/i sunt litere ajutătoare.']}]},
+ {id:'t14',n:'Diftong, triftong, hiat',ic:'🔊',cat:'gram',parts:[
+  {p:'Diftong, triftong, hiat',th:[['g1','Diftongul'],['g1','Litere ajutătoare']],m:[['g1',/diftong|triftong|hiat/i]],g:[['dift',null],['trift',null]],
+   h:'Desparte în silabe! Două vocale în aceeași silabă → diftong; trei sunete (2 semivocale + vocală) → triftong; vocale în silabe diferite → hiat. Atenție la ce/ci/ge/gi + vocală.',
+   tm:['Diftong = vocală + semivocală în aceeași silabă (soa-re).','Triftong = 2 semivocale + vocală (beau, iau).','Hiat = vocale alăturate în silabe diferite (a-er, po-e-zi-e).','ceas, geam, ciorbă – NU au diftong (litere ajutătoare).']}]},
+ {id:'t15',n:'Numărarea sunetelor și a literelor',ic:'🔡',cat:'gram',parts:[
+  {p:'Sunete și litere (ce, ci, che, chi, ghe, ghi, ge, gi)',th:[['g1','Litere ajutătoare'],['g1','Litere vs'],['g1','Cum numeri']],m:[['g1',/sunete|litere|literă|sunet/i]],g:[['litsun',null]],
+   h:'Numeri literele; scazi h din ch/gh și e/i ajutători (când după ei urmează vocală); aduni 1 pentru fiecare x.',
+   tm:['ceas: 4 litere, 3 sunete.','chibrit: 7 litere, 6 sunete (h nu e sunet).','ghiozdan: 8 litere, 6 sunete.','taxi: 4 litere, 5 sunete (x = cs).']}]},
+ {id:'t16',n:'Sinonime și antonime',ic:'🟰',cat:'gram',parts:[
+  {p:'Sinonime și antonime',th:[['g2','Categorii semantice'],['g2','4. Sensuri']],m:[['g2',/sinonim|antonim/i]],g:[['syn',null],['ant',null],['expr',null]],
+   h:'Sinonime = același sens, altă formă (a zice – a spune). Antonime = sens opus (harnic – leneș). Verifică sensul din context!',
+   tm:['Sinonimul se alege după sensul din context.','Antonime prin cuvinte diferite (cald – rece) sau prin prefix (cunoscut – necunoscut).','Sinonimul trebuie să fie aceeași parte de vorbire.']}]},
+ {id:'t17',n:'Omonime și cuvinte polisemantice',ic:'🎭',cat:'gram',parts:[
+  {p:'Omonime și cuvinte polisemantice',th:[['g2','Categorii semantice'],['g2','4. Sensuri'],['g2','Omonime, omografe']],m:[['g2',/omonim|polisem|figurat|rădăcin/i]],g:[['omo',/omonime|polisemantic/]],
+   h:'Sensurile au legătură între ele (gura omului – gura râului)? → același cuvânt, polisemantic. Nu au nicio legătură (lac de apă – lac de unghii)? → omonime.',
+   tm:['Omonime: aceeași formă, sensuri fără legătură (lac, somn, roman).','Polisemantic: un cuvânt, mai multe sensuri înrudite (ochi, gură, picior).','Sens propriu / secundar / figurat.']}]},
+ {id:'t18',n:'Omografe și omofone',ic:'🎧',cat:'gram',parts:[
+  {p:'Omografe și omofone',th:[['g2','Omonime, omografe'],['g11','Scrierea cu cratimă']],m:[['g2',/omograf|omofon/i],['g13',/sau întâlnit|ia dat/i]],g:[['omo',/omofone|omografe/],['spell',null]],
+   h:'Omografe: se SCRIU la fel, se citesc diferit (CO-pii / co-PII). Omofone: se AUD la fel, se scriu diferit (sau / s-au). La omofone, verifică cratima!',
+   tm:['Omografe: aceeași scriere, alt accent (veselă, mobilă, acele, copii).','Omofone: același sunet, altă scriere (sau – s-au, la – l-a, ia – i-a).','Truc: s-au dus → s-a dus (are sens) → cratimă.']}]},
+ {id:'t19',n:'Paronime și confuzia paronimică',ic:'🔀',cat:'gram',parts:[
+  {p:'Paronime și confuzia paronimică',th:[['g2','Categorii semantice']],m:[['g2',/paronim|eminent|iminent|servi/i]],g:[['paro',null],['omo',/paronime/]],
+   h:'Paronimele seamănă ca formă, dar au sensuri diferite. Gândește-te la sens: eminent = remarcabil; iminent = gata să se întâmple.',
+   tm:['eminent (remarcabil) / iminent (care urmează imediat).','original (nou, autentic) / originar (care provine din).','familial (al familiei) / familiar (cunoscut).','literal (cuvânt cu cuvânt) / literar (al literaturii).']}]},
+ {id:'t20',n:'Acordul încrucișat',ic:'✖️',cat:'gram',parts:[
+  {p:'Acordul încrucișat (al cărui / a cărei / ai căror)',th:[['g6','Acordul încrucișat']],m:[['g6',/cărui|cărei|căror|căreia|cărora/i],['g13',/cărui|cărei|căror|cărora/i]],g:[['acord',null]],
+   h:'al/a/ai/ale → se uită DUPĂ (la obiectul posedat). cărui/cărei/căror → se uită ÎNAINTE (la posesor).',
+   tm:['Fata al cărei frate… (al ← frate; cărei ← fata).','Băiatul a cărui soră… (a ← soră; cărui ← băiatul).','Copiii ale căror cărți… (ale ← cărți; căror ← copiii).','Dativ: căruia/căreia/cărora (fără al/a/ai/ale).']}]},
+ {id:'t21',n:'Secvențe textuale (tipare)',ic:'🧭',cat:'lit',w2:'w5',parts:[
+  {p:'Secvența narativă, descriptivă, dialogată',th:[['l2','Exemple'],['l3','Moduri de expunere']],m:[['l2',null],['l3',/narați|descrier|dialog/i]],g:[['tipar',/narativ|descriptiv|dialogat/]],
+   h:'Acțiuni care se succed → narativ. Imagini, detalii, epitete → descriptiv. Replici cu linie de dialog → dialogat.',
+   tm:['Narativ: verbe de acțiune, succesiune de întâmplări.','Descriptiv: substantive, adjective, epitete, imagini.','Dialogat: replici, linie de dialog, verbe „a zice”.']},
+  {p:'Secvența argumentativă, explicativă + itemul 6',th:[['l2','Răspunsul-model'],['l10','Item 6'],['l14','argumentativ']],m:[['l2',/argument|explic/i],['l10',/tipar|argument/i],['l14',/argument|opinie/i]],g:[['tipar',null]],
+   h:'Opinie + argumente + conectori (deoarece, în primul rând) → argumentativ. Explică un fenomen, definiții, termeni științifici → explicativ.',
+   tm:['Argumentativ: opinie, argumente, exemple, concluzie, conectori.','Explicativ: explică „cum?” și „de ce?”, termeni de specialitate.','Item 6: numești tiparul + 2 trăsături ilustrate cu secvențe.']}]},
+ {id:'t22',n:'Pagina de jurnal',ic:'📔',cat:'lit',w3:'w9',parts:[
+  {p:'Pagina de jurnal',th:[['l14','Jurnalul']],m:[['l14',/jurnal/i],['l1',/jurnal/i],['g12',/jurnal/i]],g:[['tipar',null]],w:'w9',
+   h:'Data → relatarea la persoana I → trăirile tale → o reflecție (ce ai învățat).',
+   tm:['Data (și locul) la început.','Persoana I, ton confesiv.','Întâmplări + sentimente + reflecții.','Fără destinatar (spre deosebire de scrisoare).']}]},
+ {id:'t23',n:'Rezumatul',ic:'📝',cat:'lit',w3:'w2',parts:[
+  {p:'Rezumatul',th:[['l8','Rezumatul'],['l8','Instrumentele']],m:[['l8',null]],g:[['tipar',/narativ/]],w:'w2',
+   h:'Persoana a III-a, ideile principale în ordine, fără dialog, citate sau păreri; 100–150 de cuvinte.',
+   tm:['Persoana a III-a, timp verbal unitar.','Doar întâmplările importante, în ordine.','Fără dialog, citate, păreri.','Vorbirea directă → indirectă.']}]},
+ {id:'t24',n:'Scrisoarea',ic:'✉️',cat:'lit',w3:'w8',parts:[
+  {p:'Scrisoarea (și e-mailul)',th:[['l14','Scrisoarea'],['l14','E-mailul']],m:[['l14',/scrisoare|e-mail|adresare|destinatar|semnătur/i],['l13',/scrisoare/i]],g:[],w:'w8',
+   h:'Localitatea și data → formula de adresare (cu virgulă) → conținutul pe paragrafe → formula de încheiere → semnătura.',
+   tm:['Localitatea și data (sus, în dreapta).','Formula de adresare potrivită destinatarului.','Formula de încheiere + semnătura.','Registrul: familial sau oficial.']}]},
+ {id:'t25',n:'Compuneri: descriere, narațiune, caracterizare',ic:'🖋️',cat:'lit',w2:'w4',w3:'w1',parts:[
+  {p:'Compunerea descriptivă',th:[['l14','Descrierea']],m:[['l14',/descri/i],['l6',null]],g:[['fig',null]],w:'w7',
+   h:'De la general la particular: privire de ansamblu → detalii (vizuale, auditive) → figuri de stil → impresia ta.',
+   tm:['Tablou (peisaj) sau portret.','Imagini vizuale, auditive, olfactive.','Epitete, comparații, personificări.','Încheiere: sentimentul tău.']},
+  {p:'Compunerea narativă',th:[['l14','Narațiunea'],['l3','Momentele']],m:[['l3',/moment|intrig|deznod|expozi|narat|acțiun/i],['l14',/narați/i]],g:[['specie',null]],w:'w10',
+   h:'Titlu → expozițiune (cine, unde, când) → intriga → desfășurarea → punctul culminant → deznodământul. Adaugă dialog și descriere.',
+   tm:['Momentele subiectului: expozițiune, intrigă, desfășurare, punct culminant, deznodământ.','Narator la persoana I sau a III-a.','Integrează un dialog și o descriere.']},
+  {p:'Caracterizarea personajului',th:[['l4','Tipuri'],['l4','Mijloace'],['l4','Planul']],m:[['l4',null],['l9',/caracteriz/i]],g:[],w:'w1',
+   h:'Date de identificare → 2 trăsături morale, fiecare cu o secvență comentată → 2 mijloace de caracterizare diferite (direct/indirect) → valoare personală.',
+   tm:['Caracterizare directă: de narator, de alte personaje, autocaracterizare.','Caracterizare indirectă: fapte, limbaj, gesturi, nume, relații.','Fiecare trăsătură + o secvență din text + comentariu.']}]},
+ {id:'t26',n:'Genul liric',ic:'🎵',cat:'lit',w3:'w7',parts:[
+  {p:'Textul liric și versificația',th:[['l5','Ce este'],['l5','Versificația'],['l5','Specii']],m:[['l5',null]],g:[['fig',null]],
+   h:'Liric = eul liric își exprimă direct sentimentele. Versificația: strofa (catren = 4 versuri), rima (împerecheată aabb, încrucișată abab, îmbrățișată abba), măsura (numărul de silabe).',
+   tm:['Eul liric, sentimente exprimate direct.','Rimă împerecheată (aabb), încrucișată (abab), îmbrățișată (abba), monorimă.','Măsura = numărul de silabe al versului.','Specii: pastel, doină, imn, elegie.']},
+  {p:'Figurile de stil',th:[['l6','*']],m:[['l6',null]],g:[['fig',null]],
+   h:'Epitet (însușire), comparație (ca, precum), personificare (însușiri omenești), metaforă (comparație fără „ca”), enumerație, repetiție, hiperbolă (exagerare), antiteză (opoziție), aliterație (sunete repetate).',
+   tm:['Numești figura + explici rolul ei (expresivitate, sugestie).','Comparația are „ca/precum/asemenea”.','Personificarea dă trăsături omenești.','Antiteza opune două idei/imagini.']}]},
+ {id:'t27',n:'Genul epic',ic:'📖',cat:'lit',w2:'w3',parts:[
+  {p:'Genul epic',th:[['l3','Instanțele'],['l3','Timpul'],['l3','Specii']],m:[['l3',null],['l12',/epic|Sadoveanu|Iapa/i]],g:[['specie',/schiță|fabulă|basm|legendă|roman|nuvelă/]],
+   h:'Epic = o întâmplare povestită de un narator, cu personaje și acțiune. Specii: basm, fabulă, legendă, schiță, nuvelă, roman.',
+   tm:['Narator (persoana I sau a III-a), personaje, acțiune.','Timp și spațiu.','Moduri de expunere: narațiune, descriere, dialog.','Specii: schiță (scurtă), nuvelă, roman, basm, fabulă, legendă.']}]},
+ {id:'t28',n:'Genul dramatic',ic:'🎬',cat:'lit',w2:'w6',parts:[
+  {p:'Genul dramatic',th:[['l7','*']],m:[['l7',null],['l12',/dramatic|Ianke|Popa/i]],g:[['specie',/comedie/]],
+   h:'Dramatic = textul scris pentru a fi jucat pe scenă: replici + indicații scenice (în paranteze), acte și scene, personaje, conflict.',
+   tm:['Replici (dialog) + indicații scenice.','Acte, scene, lista personajelor.','Conflict, personaje în acțiune.','Specii: comedie, dramă, tragedie.']}]},
+ {id:'t29',n:'Exercițiile 6, 7, 8 și 9',ic:'🎯',cat:'lit',parts:[
+  {p:'Itemii 6 și 7',th:[['l10','Item 6'],['l10','Item 7'],['l8','Compararea']],m:[['l10',/tipar|item 6|item 7|comun/i],['l2',null]],g:[['tipar',null]],
+   h:'Item 6: numești tiparul + 2 trăsături cu exemple. Item 7: un element comun + câte o secvență din FIECARE text + explicație (minimum 30 de cuvinte).',
+   tm:['Item 6 (6 p): tipar + 2 trăsături + secvențe.','Item 7 (6 p): element comun + secvență din fiecare text.','Respectă numărul minim de cuvinte.']},
+  {p:'Itemii 8 și 9',th:[['l10','Item 8'],['l10','Item 9'],['l10','Banca']],m:[['l10',null],['l12',null]],g:[['fig',null],['specie',null]],
+   h:'Item 8: opinia ta + 2 argumente + conectori (50–100 de cuvinte). Item 9: alt text literar (titlu, autor) + o asemănare explicată.',
+   tm:['Item 8: opinie + argumente + concluzie, 50–100 de cuvinte.','Item 9: titlul și autorul altui text + asociere argumentată.','Folosește șabloanele din aplicație ca model.']}]},
+ {id:'t30',n:'Rescrierea corectă a unui text',ic:'🧽',cat:'gram',parts:[
+  {p:'Ortografia: cratimă, i-uri, legat/separat',th:[['g11','Scrierea cu cratimă'],['g11','Legat sau separat'],['g11','Câți de']],m:[['g11',/cratim|legat|separat| i |copiii|fii|nicio|odată|deodată|decât/i]],g:[['spell',null]],
+   h:'Cratima: s-a/s-au/i-a/l-a/n-am/într-un. Câți de „i”: copii (nearticulat) – copiii (articulat); să fii (verb) – fi (după „a”, „vei”).',
+   tm:['s-a, s-au, i-a, l-a, ne-a, n-ai, într-un.','copii / copiii, membri / membrii, fii / fi.','nicio, niciun, deodată – legat; o dată (o singură dată) – separat.']},
+  {p:'Punctuația și rescrierea unui text',th:[['g11','Virgula'],['g11','Alte semne'],['g11','Rescrierea corectă']],m:[['g11',/virgul|punct/i],['g13',/corectând/i]],g:[['spell',null]],
+   h:'4 treceri: cratima → câți de „i” → acordul → punctuația. Vocativul se pune între virgule; NU pui virgulă între subiect și predicat.',
+   tm:['Vocativ între virgule: Vino, Maria!','Fără virgulă între subiect și predicat.','Virgulă înainte de dar, iar, însă, ci.','Rescrii textul ÎNTREG, nu doar cuvântul corectat.']}]}
+];
+const TOPIC = {}; TOPICS.forEach(t=>TOPIC[t.id]=t);
+
+// generator: familie lexicală (adăugat pentru tema 11)
+(function(){
+ const FAM=[['pădure',['pădurar','pădurice','împădurire'],'copac'],['floare',['floricică','a înflori','florar'],'trandafir'],['școală',['școlar','școlăriță','școlărește'],'catalog'],
+  ['munte',['muntean','muntos','munteancă'],'vârf'],['mare',['marinar','marin','maritim'],'val'],['a scrie',['scriitor','scrisoare','nescris'],'creion'],['lemn',['lemnar','lemnos','lemnărie'],'scândură'],
+  ['joc',['jucărie','jucător','a juca'],'minge'],['iarnă',['iernatic','a ierna','iernat'],'zăpadă'],['frunză',['frunzuliță','frunziș','a înfrunzi'],'ramură'],['prieten',['prietenie','prietenos','neprietenos'],'coleg'],
+  ['cântec',['cântăreț','a cânta','cântăreață'],'melodie'],['grădină',['grădinar','grădiniță','grădinărit'],'lopată'],['pește',['pescar','pescuit','peștișor'],'undiță'],['copil',['copilărie','copilăresc','copilaș'],'elev']];
+ GENS.fam={n:()=>FAM.length*2, make(i,r){ const [b,mem,intr]=FAM[i%FAM.length];
+   if(i<FAM.length){ const opts=rShuffle(mem.concat([intr]),r); return {t:'mc',q:'Intrusul din <b>familia lexicală</b> a cuvântului „'+b+'” este:',o:opts.map(x=>'„'+x+'”'),a:opts.indexOf(intr),e:'„'+intr+'” ține de aceeași temă (câmp lexical), dar nu are rădăcina lui „'+b+'”.'}; }
+   const opts=rShuffle(['câmpul lexical','familia lexicală','seria sinonimică','perechea de antonime'],r); return {t:'mc',q:'Față de „'+b+'”, cuvântul „'+intr+'” face parte din:',o:opts,a:opts.indexOf('câmpul lexical'),e:'Aceeași temă, altă rădăcină → câmp lexical. Din familia lui „'+b+'” fac parte: '+mem.join(', ')+'.'}; }};
+ GEN_GRAM.push('fam'); GEN_FOR.g2=(GEN_FOR.g2||[]).concat(['fam']);
+})();
+
+const GEN_HINTS = {spell:'Verifică cratima (s-a, i-a, n-ai), numărul de „i” (copiii) și acordul (aceeași). Înlocuiește cu altă persoană: „s-au dus” → „s-a dus”.',
+ paro:'Gândește-te la sensul exact al fiecărui cuvânt; paronimele seamănă doar ca formă.',
+ dift:'Desparte cuvântul în silabe. Două vocale în aceeași silabă = diftong; în silabe diferite = hiat. Atenție la ce/ci/ge/gi + vocală!',
+ trift:'Caută trei sunete vocalice în aceeași silabă (2 semivocale + 1 vocală): beau, iau.',
+ morph:'Uită-te la vecinul cuvântului: stă lângă un substantiv (adjectiv/articol)? ține locul unui substantiv (pronume)? leagă ceva (prepoziție/conjuncție)?',
+ func:'Pune întrebarea de la cuvântul de care depinde: cine? ce face? pe cine? cui? care? unde? când? cum? de ce?',
+ sub:'Pune întrebarea de la propoziția regentă și uită-te la elementul de legătură (că, să, care, unde, când, pentru că, ca să).',
+ fig:'Caută semnalul: „ca/precum” = comparație; însușire omenească dată unui lucru = personificare; opoziție = antiteză; exagerare = hiperbolă.',
+ verb:'Gândește-te la terminații: imperfect -am/-eam; perfect simplu -ai/-ui/-ii; mai-mult-ca-perfect -sem.',
+ tense:'Semne: „să” = conjunctiv; „aș/ar” = condițional; „am + participiu” = perfect compus; „-sem” = mai-mult-ca-perfect; „voi/o să” = viitor.',
+ form:'Prefix în față sau sufix la final → derivare; două cuvinte unite → compunere; altă parte de vorbire, aceeași formă → conversiune.',
+ syn:'Sinonime = același sens. Antonime = sens opus. Citește fiecare pereche cu voce tare.',
+ ant:'Antonime = sens opus (zi – noapte). Sinonimele au sens asemănător.',
+ expr:'Gândește-te când ai folosi expresia în viața de zi cu zi și ce vrea să spună de fapt.',
+ caz:'Întrebări: cine?/ce? (N) · pe cine?/ce? sau după prepoziție (Ac) · al cui? (G) · cui? (D) · strigare (V).',
+ tipar:'Acțiuni → narativ; imagini și detalii → descriptiv; replici → dialogat; opinie și argumente → argumentativ; explicații → explicativ.',
+ specie:'Basm (fantastic), fabulă (animale + morală), legendă (explică originea), schiță (scurtă, puține personaje), nuvelă, roman (amplu), pastel (descrie natura), comedie (râs).',
+ vsc:'Desparte în silabe: fiecare silabă are o singură vocală. e/i/o/u lipite de vocală sunt semivocale; după c/g + vocală, e/i sunt litere ajutătoare.',
+ litsun:'Numeri literele, scazi h din ch/gh și e/i ajutători, aduni 1 pentru fiecare x.',
+ acc:'Pronunță cuvântul rar, de mai multe ori. Gândește-te la regulile DOOM: ca-rac-TER, U-nic, re-gi-ZOR.',
+ omo:'Se scriu la fel, se citesc diferit → omografe. Se aud la fel, se scriu diferit → omofone. Aceeași formă, sens fără legătură → omonime. Sensuri înrudite → polisemantic.',
+ acord:'al/a/ai/ale → după obiectul posedat (cuvântul de după). cărui/cărei/căror → după posesor (cuvântul de dinainte).',
+ fam:'Familia lexicală = aceeași rădăcină. Câmpul lexical = aceeași temă, rădăcini diferite.'};
+function modHint(mid){ const m=MODS[mid]; if(!m||!m.tricks) return ''; const t=(m.tricks.match(/<div class="tip">([\s\S]*?)<\/div>/)||[])[1]; return t? strip(t).slice(0,280) : ''; }
+function hintFor(q){ return q.h || (q.gen && GEN_HINTS[q.gen]) || (PL && PL.hint) || modHint(q.mod) || 'Citește din nou cerința și elimină variantele sigur greșite.'; }
+
+// ---------- secvența lecțiilor ----------
+const T1_G=[['t5',0],['t3',0],['t2',0],['t5',1],['t5',2],['t4',0],['t6',0],['t20',0],['t6',1],['t7',0],['t8',0],['t1',0],['t1',1],['t9',0],['t9',1],['t9',2],['t13',0],['t15',0],['t14',0],['t12',0],['t10',0],['t11',0],['t16',0],['t17',0],['t18',0],['t19',0],['t30',0],['t30',1]];
+const T1_L=[['t21',0],['t21',1],['t27',0],['t25',2],['t28',0],['t26',0],['t26',1],['t23',0],['t24',0],['t22',0],['t25',0],['t25',1],['t29',0],['t29',1]];
+const T23_G=['t5','t3','t2','t4','t6','t20','t7','t8','t1','t9','t13','t15','t14','t12','t10','t11','t16','t17','t18','t19','t30'];
+const T23_L=['t21','t27','t25','t28','t26','t23','t24','t22','t29'];
+const TURE = {1:{n:'Tura 1 · Învăț',e:'🌱',d:'O temă pe zi: teorie pe îndelete, exerciții cu indicii, test.'},2:{n:'Tura 2 · Consolidez',e:'🌿',d:'Fiecare temă încă o dată, mai greu; simulări EN în weekend.'},3:{n:'Tura 3 · Stăpânesc',e:'🌳',d:'Nivel de examen: cronometru, întrebări grele, simulări.'},4:{n:'Faza finală · Antrenament de examen',e:'🏆',d:'Teme slabe, teste mix și simulări până la examen.'}};
+function interleave(G,Lt){ const out=[]; let gi=0, li=0; while(gi<G.length||li<Lt.length){ for(let k=0;k<2&&gi<G.length;k++) out.push(G[gi++]); if(li<Lt.length) out.push(Lt[li++]); } return out; }
+const SEQ = (function(){
+ const S=[]; const add=o=>S.push(o);
+ // Tura 1
+ let k=0, block=[];
+ interleave(T1_G,T1_L).forEach(([tid,pi])=>{ const t=TOPIC[tid], p=t.parts[pi]; add({key:'1:'+tid+':'+pi, kind:'lesson', tura:1, tid, pi, title:p.p, w:p.w||null}); block.push(tid); if(++k%6===0){ add({key:'1:R'+(k/6), kind:'recap', tura:1, tids:block.slice(), title:'Recapitulare: ultimele 6 lecții'}); block=[]; } });
+ if(block.length) add({key:'1:R'+Math.ceil(k/6), kind:'recap', tura:1, tids:block.slice(), title:'Recapitulare: ultimele lecții'});
+ // Tura 2 și 3
+ const sims={2:['s1','s2','s3','s6'],3:['s4','s5','s7','s8']};
+ [2,3].forEach(tu=>{ let n=0, bl=[], si=0;
+  interleave(T23_G,T23_L).forEach(tid=>{ const t=TOPIC[tid]; add({key:tu+':'+tid, kind:'lesson', tura:tu, tid, pi:-1, title:t.n, w:t['w'+tu]||null}); bl.push(tid); n++;
+   if(n%6===0){ add({key:tu+':R'+(n/6), kind:'recap', tura:tu, tids:bl.slice(), title:'Recapitulare: ultimele 6 teme'}); bl=[]; }
+   if(n%7===0 && si<sims[tu].length){ const s=sims[tu][si++]; add({key:tu+':S'+s, kind:'sim', tura:tu, sim:s, title:'Simulare EN: '+SIMMAP[s].title}); } });
+  if(bl.length) add({key:tu+':R'+Math.ceil(n/6), kind:'recap', tura:tu, tids:bl.slice(), title:'Recapitulare: ultimele teme'});
+  while(si<sims[tu].length){ const s=sims[tu][si++]; add({key:tu+':S'+s, kind:'sim', tura:tu, sim:s, title:'Simulare EN: '+SIMMAP[s].title}); } });
+ return S; })();
+
+// ---------- stare ----------
+function PS(){ if(!ST.plan || typeof ST.plan!=='object') ST.plan={v:1,start:dayKey(),pos:0,rest:[0],res:{},top:{},log:{},cur:null,later:[]};
+ const P=ST.plan; ['res','top','log'].forEach(k=>{ if(!P[k]) P[k]={}; }); if(!P.later) P.later=[]; if(!P.rest) P.rest=[0]; return P; }
+const WD = ['D','L','Ma','Mi','J','V','S'], WDN=['duminică','luni','marți','miercuri','joi','vineri','sâmbătă'];
+const POOLC = {};
+function partsOf(L){ const t=TOPIC[L.tid]; return L.pi>=0 ? [t.parts[L.pi]] : t.parts; }
+function poolFor(specs, ck){ if(POOLC[ck]) return POOLC[ck];
+ const stat=new Map(), gen=[];
+ specs.forEach(sp=>{ (sp.m||[]).forEach(([mid,re])=>{ if(!MODS[mid]) return; MODS[mid].q.forEach(q=>{ const s=strip(q.q)+' '+(q.o||[]).join(' ')+' '+(q.e||''); if(!re||re.test(s)) stat.set(q.qid,q); }); });
+  (sp.g||[]).forEach(([g,re])=>{ if(!GENS[g]) return; const n=GENS[g].n(); const idx=[]; for(let i=0;i<n;i++){ if(!re){ idx.push(i); continue; } const q=genQ(g,i,0); if(q.t==='mc' && re.test(q.o[q.a])) idx.push(i); } if(idx.length){ const ex=gen.find(x=>x[0]===g); if(ex) ex[1]=[...new Set(ex[1].concat(idx))]; else gen.push([g,idx]); } }); });
+ return POOLC[ck]={stat:[...stat.values()], gen}; }
+function topicPool(tid){ return poolFor(TOPIC[tid].parts, 'T:'+tid); }
+function lessonPool(L){ return poolFor(partsOf(L), 'L:'+L.tid+':'+L.pi); }
+function pickFrom(pool, n, d, avoid, genRatio){
+ avoid = avoid || new Set(); const st = pool.stat.filter(q=>!avoid.has(q.qid));
+ const gTot = pool.gen.reduce((s,x)=>s+x[1].length,0);
+ let nSt = Math.min(st.length, gTot ? Math.max(n-Math.round(n*(genRatio==null?0.5:genRatio)), 0) : n);
+ const out = pickStatic(st, nSt); const used = new Set(avoid); let guard=0;
+ while(out.length<n && gTot && guard++<n*40){ const [g,idx]=pool.gen[Math.floor(Math.random()*pool.gen.length)]; let best=null;
+  for(let t=0;t<6;t++){ const i=idx[Math.floor(Math.random()*idx.length)]; const k='gen:'+g+':'+i; if(used.has(k)) continue; const sc=seenN(k)+Math.random()*0.5; if(!best||sc<best[0]) best=[sc,i,k]; }
+  if(best){ used.add(best[2]); out.push(genQ(best[1]!=null?g:g, best[1], d)); } }
+ if(out.length<n){ const more = pool.stat.filter(q=>!out.includes(q) && !avoid.has(q.qid)); out.push(...pickStatic(more, n-out.length)); }
+ if(out.length<n){ const more = pool.stat.filter(q=>!out.includes(q)); out.push(...pickStatic(more, n-out.length)); }
+ return shuffle(out); }
+function lessonAt(pos){ if(pos<SEQ.length) return SEQ[pos]; const n=pos-SEQ.length;
+ if(n%4===3){ const s=SIMS[Math.floor(n/4)%SIMS.length].id; return {key:'F:S'+n, kind:'sim', tura:4, sim:s, title:'Simulare EN: '+SIMMAP[s].title}; }
+ if(n%4===1) return {key:'F:M'+n, kind:'mix', tura:4, title:'Test mix EN (ca la examen)'};
+ const tid = weakest(); return {key:'F:'+tid+':'+n, kind:'lesson', tura:4, tid, pi:-1, title:'Întărire: '+TOPIC[tid].n}; }
+function weakest(){ const P=PS(); const sc=t=>{ const o=P.top[t.id]||{}; return (o.weak?-100:0)+(o.best==null?0:o.best)+(o.rev?(Date.parse(o.rev)/8.64e7)%1000/100:0); }; return TOPICS.slice().sort((a,b)=>sc(a)-sc(b))[0].id; }
+function cfgFor(L, sa){ const tu=L.tura; if(tu===1) return {n:'Plan',e:'📅',d:sa==='low'?0:1,q:12,lives:0,retry:true,timer:0,xp:1.3};
+ if(tu===2) return {n:'Plan',e:'📅',d:sa==='low'?1:1,q:12,lives:0,retry:true,timer:0,xp:1.5}; return {n:'Plan',e:'📅',d:2,q:14,lives:0,retry:true,timer:sa==='low'?0:45,xp:1.7}; }
+function stepsOf(L, P){ if(L.kind==='recap') return ['tm','test','fix']; if(L.kind==='sim') return ['sim']; if(L.kind==='mix') return ['warm','mix','fix'];
+ const s=[]; if(studiedTids().length) s.push('warm'); s.push('th','ex'); if(L.w) s.push('write'); s.push('test'); return s; }
+const STEP = {warm:{e:'🔥',n:'Încălzire',m:5,d:'Repetiție: întrebări din lecțiile trecute'},th:{e:'📘',n:'Teorie',m:15,d:'Citești, apoi spui cât de bine ai înțeles'},ex:{e:'🎮',n:'Exerciții cu indicii',m:15,d:'Feedback imediat · 💡 indiciu la nevoie'},
+ write:{e:'✍️',n:'Scrie compunerea',m:30,d:'În atelier, apoi autoevaluare după barem'},test:{e:'📝',n:'Test de verificare',m:10,d:'Fără indicii · trebuie minimum 80%'},tm:{e:'📋',n:'Fișele „Ține minte”',m:10,d:'Recitești regulile celor 6 teme'},
+ fix:{e:'🔧',n:'Repară greșelile',m:5,d:'Opțional'},sim:{e:'🏁',n:'Simulare EN completă',m:120,d:'2 ore, cu barem · răspunsurile se salvează'},mix:{e:'🌀',n:'Test mix EN',m:25,d:'20 de întrebări din toată materia'}};
+function stepMin(st, L){ if(st==='th' && L.tura>=2) return 8; if(st==='test' && L.kind==='recap') return 20; return STEP[st].m; }
+function studiedTids(){ const P=PS(); return Object.keys(P.top).filter(t=>TOPIC[t] && (P.top[t].tries||0)>0); }
+function passMark(L){ return L.kind==='recap'||L.kind==='mix' ? 70 : 80; }
+
+// ---------- ziua curentă ----------
+function todayLog(){ const P=PS(), d=dayKey(); if(!P.log[d]) P.log[d]={min:0,n:0,allow:1,items:[]}; return P.log[d]; }
+function isWeekendish(){ const w=new Date().getDay(); return w===0||w===5||w===6; }
+function ensureCur(){ const P=PS(); const d=dayKey();
+ if(P.cur && P.cur.failed && P.cur.failDate!==d){ Object.assign(P.cur,{steps:{},failed:false,date:d,att:(P.cur.att||1)+1,reluare:true,used:[],retried:false}); save(); }
+ if(!P.cur){ let L, later=false;
+  if(P.later.length && (isWeekendish() || P.pos-P.later[0].at>=4)){ L=P.later.shift().L; later=true; } else L=lessonAt(P.pos);
+  P.cur={L, date:d, steps:{}, att:1, used:[], later}; save(); }
+ return P.cur; }
+function checkExternal(){ const P=PS(), c=P.cur; if(!c) return;
+ const L=c.L;
+ if(L.w && c.steps.th && !c.steps.write && ST.writes.some(w=>w.id===L.w && w.date>=c.date && (!c.wt0 || w.att>=c.wt0))){ stepDone('write',{}); }
+ if(L.kind==='sim' && !c.steps.sim && ST.sims.some(s=>s.id===L.sim && s.date>=c.date && (!c.st0 || (s.att||0)>=c.st0-1))){ stepDone('sim',{}); finishLesson(100, true); } }
+function addMin(cap){ const P=PS(), c=P.cur; if(!c||!c.t0) return 0; const m=Math.min(cap||45, Math.max(1, Math.round((Date.now()-c.t0)/60000))); c.t0=null; todayLog().min+=m; return m; }
+function stepDone(st, data){ const c=PS().cur; if(!c) return; const caps={th:40,ex:45,test:40,warm:20,write:70,tm:25,mix:45,sim:130,fix:20}; const m=addMin(caps[st]); c.steps[st]=Object.assign({m},data||{}); save(); }
+
+// ---------- pornirea pașilor ----------
+function startStep(st){ const P=PS(), c=ensureCur(), L=c.L; c.t0=Date.now();
+ const parts = L.kind==='lesson' ? partsOf(L) : [];
+ const hint = parts.length ? parts.map(p=>p.h).join(' · ') : null;
+ if(st==='th'){ SUB={type:'ptheory', title:'Teorie'}; save(); render(); window.scrollTo(0,0); return; }
+ if(st==='tm'){ SUB={type:'ptm', title:'Fișele „Ține minte”'}; save(); render(); window.scrollTo(0,0); return; }
+ if(st==='warm'){ const qs=warmQs(); if(!qs.length){ stepDone('warm',{skip:true}); render(); return; } startPlayer('warm', qs, {title:'Încălzire', plan:{step:'warm'}, cfgO:{n:'Repetiție',e:'🔥',d:1,q:qs.length,lives:0,retry:false,timer:0,xp:1}}); return; }
+ if(st==='ex'){ const cfg=cfgFor(L, c.sa); const pool=lessonPool(L); const n = L.w ? 9 : cfg.q; const qs=pickFrom(pool, n, cfg.d, null, 0.55); c.used=qs.map(q=>q.qid); save();
+  startPlayer('lesson', qs, {title:'Exerciții: '+L.title, plan:{step:'ex'}, cfgO:cfg, hint}); return; }
+ if(st==='test'){ let qs; if(L.kind==='recap'){ const pools=L.tids.map(t=>topicPool(t)); qs=[]; const per=Math.max(2,Math.ceil(15/pools.length)); pools.forEach(p=>qs.push(...pickFrom(p, per, L.tura>=2?2:1, new Set(qs.map(q=>q.qid)), 0.5))); qs=shuffle(qs).slice(0,15); }
+  else { const cfg=cfgFor(L,c.sa); qs=pickFrom(lessonPool(L), L.w?8:10, Math.max(1,cfg.d), new Set(c.used||[]), 0.6); }
+  startPlayer('test', qs, {title:(L.kind==='recap'?'Recapitulare: ':'Test: ')+L.title, plan:{step:'test'}}); return; }
+ if(st==='mix'){ const all=GEN_GRAM.concat(GEN_LIT).filter(g=>GENS[g]); const stat=shuffle(Object.values(QBANK).filter(q=>q.t!=='wr'||Math.random()<0.3)).slice(0,6); const qs=shuffle(genMany(all,14,2).concat(stat)).slice(0,20);
+  startPlayer('test', qs, {title:'Test mix EN', plan:{step:'mix'}}); return; }
+ if(st==='fix'){ c.t0=null; A.review(); return; }
+ if(st==='write'){ c.wt0=Date.now(); save(); A.write(L.w); return; }
+ if(st==='sim'){ c.st0=Date.now(); save(); A.sim(L.sim); return; } }
+function warmQs(){ const P=PS(); const tids=studiedTids().filter(t=>!(P.cur&&P.cur.L.tid===t));
+ if(!tids.length) return [];
+ const sc=t=>{ const o=P.top[t]; return (o.weak?-1e12:0) + (o.rev?Date.parse(o.rev):0) + Math.random()*8.64e7; };
+ const pick=tids.sort((a,b)=>sc(a)-sc(b)).slice(0,3); const qs=[]; const used=new Set();
+ // întâi greșelile din coadă care țin de temele studiate
+ const wrongIds=Object.keys(ST.wrong).filter(id=>getQ(id)); const inPools=wrongIds.filter(id=>pick.some(t=>topicPool(t).stat.some(q=>q.qid===id)||String(id).startsWith('gen:'))).slice(0,2);
+ inPools.forEach(id=>{ const q=getQ(id); if(q){ qs.push(q); used.add(id); } });
+ pick.forEach(t=>{ qs.push(...pickFrom(topicPool(t), Math.max(1,Math.ceil((6-qs.length)/1)/pick.length|0||2), 1, used, 0.5)); qs.forEach(q=>used.add(q.qid)); P.top[t].rev=dayKey(); });
+ return shuffle(qs).slice(0,6); }
+
+// ---------- înregistrarea rezultatelor (chemată din finishPlayer) ----------
+function planRecord(pct){ const P=PS(), c=P.cur; if(!c||!PL||!PL.plan) return; const st=PL.plan.step;
+ if(st==='warm'){ stepDone('warm',{pct}); return; }
+ if(st==='ex'){ stepDone('ex',{pct}); return; }
+ if(st==='mix'){ stepDone('mix',{pct}); finishLesson(pct, pct>=70); return; }
+ if(st==='test'){ const L=c.L; const pass=pct>=passMark(L); stepDone('test',{pct,pass});
+  c.lastWrong = PL.qs.map((q,i)=>PL.res[i]?null:q.qid).filter(Boolean).slice(0,8);
+  const tl=todayLog();
+  if(L.kind==='lesson'){ const o=P.top[L.tid]=P.top[L.tid]||{}; o.tries=(o.tries||0)+1; o.last=dayKey(); o.rev=dayKey(); o.best=Math.max(o.best||0,pct); o.lastPct=pct;
+   if(pass){ o.lv=Math.max(o.lv||0, L.tura>=4?3:L.tura); if(L.pi<0||L.tura===1) o.weak=false; } }
+  if(L.kind==='recap'){ // temele cu greșeli în recapitulare devin „de întărit”
+   PL.qs.forEach((q,i)=>{ if(PL.res[i]) return; const t=L.tids.find(t=>topicPool(t).stat.includes(q)||(q.gen&&topicPool(t).gen.some(x=>x[0]===q.gen))); if(t){ const o=P.top[t]=P.top[t]||{}; o.miss=(o.miss||0)+1; } });
+   L.tids.forEach(t=>{ const o=P.top[t]; if(o&&o.miss>=2){ o.weak=true; } if(o) o.miss=0; }); }
+  if(pass || L.kind==='recap'){ PL.xp += pass?40:15; finishLesson(pct, pass); }
+  else { const fails=(P.res[L.key]&&P.res[L.key].failDays||0) + (c.failedToday?0:1);
+   P.res[L.key]=Object.assign(P.res[L.key]||{}, {failDays:fails, tries:((P.res[L.key]||{}).tries||[]).concat([{d:dayKey(),pct}])});
+   tl.items.push({key:L.key,title:L.title,pct,pass:false}); c.failedToday=true;
+   if(fails>=2){ const o=P.top[L.tid]; if(o) o.weak=true; c.movedOn=true; finishLesson(pct,false,true); }
+   else { c.failed=true; c.failDate=dayKey(); if(!c.counted){ tl.n++; c.counted=true; } } }
+  save(); } }
+function finishLesson(pct, pass, movedOn){ const P=PS(), c=P.cur; if(!c) return; const L=c.L; const tl=todayLog();
+ P.res[L.key]=Object.assign(P.res[L.key]||{}, {pass:!!pass, pct, d:dayKey()});
+ if(!tl.items.some(x=>x.key===L.key&&x.pass===pass&&x.pct===pct)) tl.items.push({key:L.key,title:L.title,pct,pass:!!pass,moved:!!movedOn});
+ if(!c.counted) tl.n++;
+ if(!c.later) P.pos++;
+ P.last={key:L.key,title:L.title,pct,pass:!!pass,movedOn:!!movedOn,kind:L.kind,d:dayKey()};
+ P.cur=null; save(); }
+
+// ---------- ecranul Plan ----------
+function minFmt(m){ return m>=60 ? Math.floor(m/60)+' h '+(m%60?m%60+' min':'') : m+' min'; }
+function estMin(L){ return stepsOf(L).filter(s=>s!=='fix').reduce((s,x)=>s+stepMin(x,L),0); }
+function etaDates(){ const P=PS(); const rest=new Set(P.rest); const d=new Date(); d.setHours(12,0,0,0); const tl=todayLog(); if(tl.n>=tl.allow) d.setDate(d.getDate()+1);
+ const ends={}; const tEnd={}; SEQ.forEach((L,i)=>tEnd[L.tura]=i); let pos=P.pos; const out={};
+ for(const tu of [1,2,3]){ const remain=Math.max(0, tEnd[tu]-pos+1); let k=remain; const x=new Date(d); while(k>0){ if(!rest.has(x.getDay())) k--; if(k>0) x.setDate(x.getDate()+1); } out[tu]=remain?new Date(x):null; }
+ return out; }
+const dShort = x => x ? x.toLocaleDateString('ro-RO',{day:'numeric',month:'short'}) : '✓';
+function turaOf(pos){ return pos<SEQ.length ? SEQ[pos].tura : 4; }
+function vPlan(){ const P=PS(); checkExternal(); const tl=todayLog(); const d=dayKey(); const wd=new Date().getDay();
+ const daysLeft = Math.max(0, Math.ceil((EXAM_DATE-new Date())/86400000));
+ const studyDays = Object.values(P.log).filter(x=>x.n>0||x.min>0).length;
+ const tu = turaOf(P.pos); const tEnd={}, tStart={}; SEQ.forEach((L,i)=>{ tEnd[L.tura]=i; if(tStart[L.tura]==null) tStart[L.tura]=i; });
+ const tuDone = tu<=3 ? P.pos - tStart[tu] : 0, tuTot = tu<=3 ? tEnd[tu]-tStart[tu]+1 : 0;
+ let main='';
+ const isRest = P.rest.includes(wd) && !tl.work && tl.n===0 && !(P.cur && Object.keys(P.cur.steps).length && P.cur.date===d);
+ if(isRest){ main = `<div class="card hl" style="text-align:center"><div style="font-size:2.6rem">😎</div><h2 style="margin:6px 0">Azi e zi de pauză</h2><p class="mut small">Creierul fixează ce ai învățat și în zilele de odihnă. Mâine continuăm.</p><div class="row" style="justify-content:center"><button class="btn ghost sm" onclick="A.daily()">🌟 Doar provocarea zilei (5 min)</button><button class="btn sm" onclick="A.pWork()">Vreau totuși să lucrez</button></div></div>`; }
+ else if(tl.n>=tl.allow){ main = doneCard(P, tl); }
+ else { main = todayCard(P, ensureCur(), tl); }
+ const eta = etaDates();
+ return `<div class="hero"><div class="row"><div class="sp"><div class="dim small" style="font-weight:800">PROGRAMUL ZILNIC · ${WDN[wd].toUpperCase()}</div><h1 style="margin:4px 0">📅 ${tu<=3?TURE[tu].e+' '+TURE[tu].n:TURE[4].e+' '+TURE[4].n}</h1><div class="small mut">${tu<=3?`Lecția ${tuDone+1} din ${tuTot} în această tură`:'Recapitulare continuă până la examen'} · zile lucrate: <b>${studyDays}</b> · până la EN: <b class="gold-t">${daysLeft}</b> zile</div></div></div>
+  ${tu<=3?`<div class="bar gold" style="margin-top:10px"><i style="width:${Math.round(tuDone/tuTot*100)}%"></i></div>`:''}</div>
+ ${main}
+ ${topicsMap(P)}
+ <div class="card"><h3>🗓️ Cum trece prin materie</h3><div class="small mut" style="margin-bottom:8px">Fiecare temă din lista profesoarei e parcursă de <b>3 ori</b>, din ce în ce mai greu. Datele sunt estimate pentru ritmul de o lecție pe zi${P.rest.length?`, cu pauză ${P.rest.map(x=>WDN[x]).join(', ')}`:''}.</div>
+  ${[1,2,3].map(t=>{ const st=P.pos>tEnd[t]?'✅':(t===tu?'▶️':'⏳'); return `<div class="row small" style="margin:5px 0"><span style="width:22px">${st}</span><span class="sp"><b>${TURE[t].e} ${TURE[t].n}</b><br><span class="dim">${TURE[t].d}</span></span><span class="tag ${P.pos>tEnd[t]?'g':'b'}">${P.pos>tEnd[t]?'gata':'≈ '+dShort(eta[t])}</span></div>`; }).join('')}
+  <div class="row small" style="margin:5px 0"><span style="width:22px">${tu===4?'▶️':'⏳'}</span><span class="sp"><b>${TURE[4].e} ${TURE[4].n}</b><br><span class="dim">${TURE[4].d}</span></span><span class="tag y">până la 22 iun.</span></div></div>
+ ${parentCard(P)}`; }
+function todayCard(P, c, tl){ const L=c.L; const steps=stepsOf(L); const t=L.tid?TOPIC[L.tid]:null;
+ const kindTag = L.kind==='recap'?'<span class="tag p">Recapitulare · test complex</span>':L.kind==='sim'?'<span class="tag y">Simulare EN</span>':L.kind==='mix'?'<span class="tag p">Test mix EN</span>':c.reluare?'<span class="tag r">Reluare – încercarea '+c.att+'</span>':(L.tura>=2?'<span class="tag b">Tura '+Math.min(L.tura,3)+' · nivel mai greu</span>':'<span class="tag g">Lecție nouă</span>');
+ const firstOpen = steps.findIndex(s=>!c.steps[s] && s!=='fix');
+ const left = steps.filter(s=>!c.steps[s]&&s!=='fix').reduce((a,s)=>a+stepMin(s,L),0);
+ const stepRows = steps.map((s,i)=>{ const done=c.steps[s]; const open=i===firstOpen || (s==='fix' && firstOpen<0); const locked=!done && !open && s!=='fix';
+   const info = done ? (done.pct!=null?`<span class="tag ${done.pass===false?'r':'g'}">${done.pct}%</span>`:'<span class="tag g">✓</span>') : `<span class="tag">~${stepMin(s,L)} min</span>`;
+   return `<button class="list-btn" ${locked?'disabled style="opacity:.45"':''} onclick="A.pStep('${s}')"><span class="em">${done?'✅':STEP[s].e}</span><span class="sp"><div class="tt">${i+1}. ${STEP[s].n}${s==='write'&&L.w?': '+esc(WRITE_TASKS.find(w=>w.id===L.w).title):''}</div><div class="ds">${s==='test'&&L.kind==='recap'?'15 întrebări din toate temele, corectare la final · minimum 70%':s==='test'?STEP[s].d:STEP[s].d}</div></span>${info}</button>`; }).join('');
+ const simBtn = L.kind==='sim' && !isWeekendish() && !c.steps.sim ? `<button class="btn ghost sm" onclick="A.pLater()">📆 Amân simularea pentru weekend</button>` : '';
+ const retry = c.failed && !c.retried ? `<div class="card" style="border-color:var(--orange)"><h3>🔁 Încă nu – ${c.steps.test?c.steps.test.pct:0}% (trebuie ${passMark(L)}%)</h3><p class="small mut">Mâine reiei lecția cu teorie, exerciții și test noi. Dacă mai ai chef și timp acum, poți recitit teoria și încerca testul încă o dată (cu alte întrebări).</p><div class="row"><button class="btn ghost sm" onclick="A.pStep('th')">📘 Recitește teoria</button><button class="btn sm" onclick="A.pRetry()">📝 Mai încerc testul acum</button></div></div>` : '';
+ return `<div class="card hl"><div class="row"><span style="font-size:2.3rem">${t?t.ic:L.kind==='sim'?'🏁':'🌀'}</span><div class="sp"><div class="tiny dim" style="font-weight:900">AZI ÎNVEȚI</div><div style="font-weight:900;font-size:1.12rem">${esc(L.title)}</div>${t&&L.pi>=0&&t.parts.length>1?`<div class="small mut">din tema „${esc(t.n)}”</div>`:''}<div style="margin-top:5px">${kindTag} <span class="tag">⏱️ ${left?'mai ai ~'+minFmt(left):'gata'}</span> ${tl.min?`<span class="tag b">azi: ${minFmt(tl.min)}</span>`:''}</div></div></div>
+  ${L.kind==='sim'?`<p class="small mut" style="margin-top:10px">O simulare durează 2 ore. E bine s-o faci într-o zi liberă. Poți opri cronometrul și termina a doua zi – răspunsurile se salvează.</p>`:''}
+  ${c.reluare && c.lastWrong && c.lastWrong.length ? `<details class="acc" style="margin-top:10px"><summary>🔎 Ce ai greșit data trecută (${c.lastWrong.length})</summary><div class="in">${c.lastWrong.map(id=>{ const q=getQ(id); return q?`<div class="small" style="margin-bottom:8px">• ${q.q}<br><span class="ok-t">✔ ${q.t==='wr'?esc(q.a[0]):ansText(q,q.a)}</span></div>`:''; }).join('')}</div></details>`:''}
+  <div style="margin-top:12px">${stepRows}</div>${simBtn}</div>${retry}`; }
+function doneCard(P, tl){ const last=P.last; const nx=P.cur?P.cur.L:lessonAt(P.pos); const canMore = tl.min<100;
+ const failedToday = P.cur && P.cur.failed && P.cur.failDate===dayKey();
+ const head = failedToday ? `<div style="font-size:2.6rem">💪</div><h2 style="margin:6px 0">Pentru azi e destul!</h2><p class="mut small">Testul a ieșit ${P.cur.steps.test?P.cur.steps.test.pct:0}%. Mâine reiei lecția „${esc(P.cur.L.title)}” cu exerciții noi – așa se învață temeinic, nu pe de rost.</p>`
+  : `<div style="font-size:2.6rem">🎉</div><h2 style="margin:6px 0">Gata pe azi!</h2><p class="mut small">${last&&last.d===dayKey()?(last.movedOn?`„${esc(last.title)}” rămâne pe lista de întărit – o vei relua la încălziri și în tura următoare.`:`Ai terminat „${esc(last.title)}”${last.kind!=='sim'?' cu '+last.pct+'%':''}. `):''}Ai lucrat <b>${minFmt(tl.min)}</b> azi.</p>`;
+ return `<div class="card hl" style="text-align:center">${head}
+  <div class="small" style="margin-top:8px">⏭️ Mâine: <b>${esc(nx.title)}</b></div>
+  <div class="row" style="justify-content:center;margin-top:12px">${failedToday&&!P.cur.retried?`<button class="btn sm" onclick="A.pRetry()">📝 Mai încerc testul acum</button>`:''}${canMore&&!failedToday?`<button class="btn ghost sm" onclick="A.pMore()">➕ Mai fac o lecție (opțional)</button>`:''}<button class="btn ghost sm" onclick="A.review()">🔧 Repară greșelile</button></div>
+  ${!canMore?'<p class="tiny dim" style="margin-top:8px">Ai trecut de 1 h 40 min azi – pauza e parte din învățare.</p>':''}</div>`; }
+function topicsMap(P){ const lv=t=>{ const o=P.top[t.id]||{}; if(o.weak) return ['🔴','de întărit']; if((o.lv||0)>=3) return ['👑','stăpânită']; if(o.lv===2) return ['🟢','consolidată']; if(o.lv===1) return ['🟡','învățată']; if(o.tries) return ['🟠','în lucru']; return ['⚪','nouă']; };
+ return `<details class="acc"><summary>🗺️ Cele 30 de teme ale profesoarei · ${TOPICS.filter(t=>(P.top[t.id]||{}).lv).length}/30 învățate</summary><div class="in">
+  <div class="tiny dim" style="margin-bottom:8px">⚪ nouă · 🟠 în lucru · 🟡 învățată (tura 1) · 🟢 consolidată (tura 2) · 👑 stăpânită (tura 3) · 🔴 de întărit</div>
+  ${TOPICS.map((t,i)=>{ const [e,n]=lv(t); const o=P.top[t.id]||{}; return `<div class="row small" style="padding:5px 0;border-bottom:1px solid var(--line)"><span style="width:26px;text-align:right;color:var(--dim)">${i+1}.</span><span>${e}</span><span class="sp">${t.ic} ${esc(t.n)}</span><span class="tiny dim">${o.best!=null?o.best+'% · ':''}${n}</span></div>`; }).join('')}</div></details>`; }
+function parentCard(P){ const days=Object.keys(P.log).sort().reverse().slice(0,14); const weak=TOPICS.filter(t=>(P.top[t.id]||{}).weak);
+ return `<details class="acc"><summary>👨‍👩‍👦 Pentru părinte: jurnal și setări</summary><div class="in">
+  <b class="small">Ultimele zile</b>
+  ${days.length?`<table class="t small" style="margin-top:6px"><tr><th>Data</th><th>Ce a lucrat</th><th>Timp</th></tr>${days.map(d=>{ const x=P.log[d]; return `<tr><td>${d.slice(8)}.${d.slice(5,7)}</td><td>${x.items.length?x.items.map(i=>esc(i.title)+(i.pct!=null?` <b style="color:${i.pass?'var(--green)':'var(--red)'}">${i.pct}%</b>`:'')).join('<br>'):'<span class="dim">început, neterminat</span>'}</td><td>${x.min?minFmt(x.min):'–'}</td></tr>`; }).join('')}</table>`:'<p class="small mut">Încă nicio zi lucrată.</p>'}
+  ${weak.length?`<p class="small" style="margin-top:8px"><b>🔴 De întărit:</b> ${weak.map(t=>esc(t.n)).join(', ')}</p>`:''}
+  <div class="small" style="margin-top:12px"><b>Zile de pauză</b> (apasă ca să schimbi)</div>
+  <div class="seg" style="margin-top:6px">${[1,2,3,4,5,6,0].map(x=>`<button class="${P.rest.includes(x)?'on':''}" onclick="A.pRest(${x})">${WD[x]}</button>`).join('')}</div>
+  <div class="small" style="margin-top:12px"><b>Sari la o lecție</b> (de ex. dacă la școală ați ajuns în altă parte)</div>
+  <select class="inp" style="margin-top:6px" onchange="A.pJump(this.value)"><option value="">— alege —</option>${SEQ.map((L,i)=>`<option value="${i}" ${i===P.pos?'selected':''}>${i+1}. ${L.tura<=3?'T'+L.tura:'F'} · ${esc(L.title)}</option>`).join('')}</select>
+  <p class="tiny dim" style="margin-top:10px">Regula: testul de la finalul fiecărei lecții trebuie trecut cu minimum 80%. Dacă nu, lecția se reia a doua zi cu întrebări noi. După 2 zile nereușite se merge mai departe, iar tema intră la „de întărit”: apare mai des la încălziri și în faza finală.</p>
+  <button class="btn ghost sm" style="margin-top:6px" onclick="A.pResetAsk()">↺ Ia programul de la capăt</button></div></details>`; }
+function vPTheory(){ const P=PS(), c=P.cur; if(!c){ SUB=null; return vPlan(); } const L=c.L; const parts=partsOf(L);
+ const secs=[]; parts.forEach(p=>p.th.forEach(([mid,key])=>{ const m=MODS[mid]; if(!m) return; if(key==='*'){ secs.push({mid,h:m.title,html:m.theory}); return; }
+   const arr=m.theory.split(/(?=<h3>)/); arr.forEach(s=>{ const h=(s.match(/<h3>([\s\S]*?)<\/h3>/)||[])[1]; if(h && strip(h).includes(key) && !secs.some(x=>x.html===s)) secs.push({mid,h:strip(h),html:s}); }); }));
+ const short = L.tura>=2;
+ return `<button class="btn ghost sm" onclick="A.back()">← Înapoi la programul de azi</button>
+ <h1 style="margin:12px 0 4px">📘 ${esc(L.title)}</h1><div class="small mut">${short?'Recitire rapidă: fișa „Ține minte” + teoria (deschide doar ce nu-ți mai amintești).':'Citește cu atenție. La final spui sincer cât de bine ai înțeles – exercițiile se potrivesc după răspunsul tău.'}</div>
+ ${parts.map(p=>`<div class="card" style="border-color:var(--gold);margin-top:12px"><h3>📌 Ține minte${parts.length>1?': '+esc(p.p):''}</h3><ul class="small">${p.tm.map(x=>`<li>${x}</li>`).join('')}</ul><div class="tip small" style="margin-top:8px">💡 <b>Indiciul lecției:</b> ${p.h}</div></div>`).join('')}
+ ${secs.map((s,i)=>short?`<details class="acc"><summary>📖 ${esc(s.h)} <span class="tiny dim">(${esc(MODS[s.mid].title)})</span></summary><div class="in theory">${s.html}</div></details>`:`<div class="card theory">${s.html}<div class="tiny dim" style="margin-top:6px">Din capitolul: ${esc(MODS[s.mid].title)}</div></div>`).join('')}
+ ${!short&&parts.some(p=>p.th.some(x=>MODS[x[0]]&&MODS[x[0]].tricks))?`<details class="acc"><summary>💡 Trucuri și capcane (din capitol)</summary><div class="in theory">${[...new Set(parts.flatMap(p=>p.th.map(x=>x[0])))].map(mid=>MODS[mid].tricks).join('<hr style="border-color:var(--line)">')}</div></details>`:''}
+ <div class="card" style="margin-top:14px;text-align:center"><h3>Cât de bine ai înțeles?</h3><p class="small mut">Fii sincer – nu se dă notă. Dacă alegi 😕, exercițiile pornesc mai ușor.</p>
+ <div class="row" style="justify-content:center"><button class="btn ghost" onclick="A.pTh('low')">😕 Încă nu prea</button><button class="btn ghost" onclick="A.pTh('mid')">🙂 Destul de bine</button><button class="btn" onclick="A.pTh('high')">😎 Am înțeles</button></div></div>`; }
+function vPTm(){ const P=PS(), c=P.cur; if(!c){ SUB=null; return vPlan(); } const L=c.L;
+ return `<button class="btn ghost sm" onclick="A.back()">← Înapoi</button><h1 style="margin:12px 0 4px">📋 Fișele „Ține minte”</h1><div class="small mut">Recitește regulile temelor din ultimele zile. Apoi urmează testul complex.</div>
+ ${L.tids.map(tid=>{ const t=TOPIC[tid]; return `<div class="card" style="margin-top:10px"><h3>${t.ic} ${esc(t.n)}</h3>${t.parts.map(p=>`<ul class="small">${p.tm.map(x=>`<li>${x}</li>`).join('')}</ul>`).join('')}</div>`; }).join('')}
+ <button class="btn full" style="margin-top:10px" onclick="A.pTmDone()">✅ Am recitit – trec la test</button>`; }
+function planHomeCard(){ const P=PS(); const tl=todayLog(); const wd=new Date().getDay();
+ if(P.rest.includes(wd) && tl.n===0 && !tl.work) return `<button class="list-btn" style="border-color:var(--gold)" onclick="go('plan')"><span class="em">😎</span><span class="sp"><div class="tt">Azi e zi de pauză</div><div class="ds">Programul continuă mâine</div></span></button>`;
+ if(tl.n>=tl.allow) return `<button class="list-btn" style="border-color:var(--green)" onclick="go('plan')"><span class="em">✅</span><span class="sp"><div class="tt">Programul de azi e gata!</div><div class="ds">Ai lucrat ${minFmt(tl.min)}. Vezi ce urmează mâine.</div></span></button>`;
+ const c=ensureCur(); const L=c.L; const steps=stepsOf(L).filter(s=>s!=='fix'); const done=steps.filter(s=>c.steps[s]).length;
+ return `<div class="card hl"><div class="tiny dim" style="font-weight:900">📅 PROGRAMUL DE AZI · ~${minFmt(estMin(L))}</div><div class="row" style="margin-top:6px"><span style="font-size:2.2rem">${L.tid?TOPIC[L.tid].ic:'🏁'}</span><div class="sp"><div style="font-weight:900;font-size:1.05rem">${esc(L.title)}</div><div class="small mut">Pasul ${Math.min(done+1,steps.length)} din ${steps.length}${c.reluare?' · reluare':''}</div></div></div><div class="bar" style="margin-top:8px"><i style="width:${Math.round(done/steps.length*100)}%"></i></div><button class="btn full" style="margin-top:10px" onclick="go('plan')">${done?'▶ Continuă':'▶ Începe'}</button></div>`; }
+function planResBox(){ const P=PS(); const st=PL.plan.step; const {pct}=PL.done;
+ if(st!=='test') return `<div class="row" style="justify-content:center;margin-top:14px"><button class="btn sm" onclick="go('plan')">➡️ Pasul următor</button></div>`;
+ const L = (P.last && P.last.d===dayKey() && !P.cur) ? null : (P.cur&&P.cur.L);
+ const pass = PL.done.pct >= (L?passMark(L):80) || (P.last&&P.last.d===dayKey()&&!P.cur);
+ const msg = (P.cur && P.cur.failed) ? `<div class="fb bad" style="margin-top:12px"><div class="h">Încă nu – ai nevoie de ${passMark(P.cur.L)}%</div><div class="small">Uită-te mai jos la explicații. Mâine reiei lecția cu întrebări noi.</div></div>`
+  : (P.last && P.last.movedOn && P.last.d===dayKey()) ? `<div class="fb bad" style="margin-top:12px"><div class="h">Mergem mai departe</div><div class="small">Tema intră pe lista „de întărit” și revine la încălziri.</div></div>`
+  : `<div class="fb ok" style="margin-top:12px"><div class="h">✅ Lecție trecută!</div><div class="small">Tema e bifată. Revine la încălziri peste câteva zile, ca să nu o uiți.</div></div>`;
+ return msg + `<div class="row" style="justify-content:center;margin-top:12px"><button class="btn sm" onclick="go('plan')">📅 Înapoi la program</button></div>`; }
+
+Object.assign(MODE_NAME,{warm:'Încălzire'});
+Object.assign(GEN_NAMES,{vsc:'🔤 Vocală/semivocală',litsun:'🔡 Litere și sunete',acc:'🗣️ Accentul',omo:'🎭 Omonime/omografe/omofone',acord:'✖️ Acordul încrucișat',fam:'🌳 Familia lexicală'});
+Object.assign(A,{
+ pStep(s){ const c=ensureCur(); if(s==='fix'){ startStep('fix'); return; } const steps=stepsOf(c.L); const first=steps.findIndex(x=>!c.steps[x]&&x!=='fix');
+  if(c.steps[s] && s!=='th' && s!=='tm'){ toast('✅ Pasul e făcut. Continuă cu următorul.'); return; } if(!c.steps[s] && steps.indexOf(s)>first){ toast('🔒 Termină întâi pasul '+(first+1)); return; } startStep(s); },
+ pTh(sa){ const c=PS().cur; if(c){ c.sa=sa; if(!c.steps.th) stepDone('th',{sa}); else { c.t0=null; save(); } } SUB=null; go('plan'); toast(sa==='low'?'👍 Exercițiile pornesc mai ușor, cu indicii.':'👍 Super! Urmează exercițiile.'); },
+ pTmDone(){ stepDone('tm',{}); SUB=null; go('plan'); },
+ pRetry(){ const c=PS().cur; if(!c) return; c.retried=true; c.failed=false; delete c.steps.test; const tl=todayLog(); if(c.counted){ tl.n=Math.max(0,tl.n-1); c.counted=false; } save(); startStep('test'); },
+ pMore(){ const tl=todayLog(); tl.allow=tl.n+1; save(); render(); window.scrollTo(0,0); },
+ pWork(){ todayLog().work=true; save(); render(); },
+ pLater(){ const P=PS(), c=P.cur; if(!c) return; P.later.push({L:c.L, at:P.pos}); if(!c.later) P.pos++; P.cur=null; save(); toast('📆 Simularea revine în weekend.'); render(); },
+ pRest(x){ const P=PS(); const i=P.rest.indexOf(x); if(i>=0) P.rest.splice(i,1); else { if(P.rest.length>=3){ toast('Maximum 3 zile de pauză pe săptămână.'); return; } P.rest.push(x); } save(); render(); },
+ pJump(v){ if(v==='') return; const P=PS(); const i=+v; overlay(`<h3>Sari la lecția ${i+1}?</h3><p class="small mut">${esc(SEQ[i].title)}. Lecția începută acum se oprește (rezultatele de până acum rămân).</p><div class="row"><button class="btn ghost" onclick="A.close();render()">Anulează</button><button class="btn" onclick="A.pJumpDo(${i})">Da, sari</button></div>`); },
+ pJumpDo(i){ const P=PS(); P.pos=i; P.cur=null; save(); closeOv(); render(); toast('Programul continuă de la lecția '+(i+1)); },
+ pResetAsk(){ overlay(`<h2>Iei programul de la capăt?</h2><p class="mut small">Se șterg doar datele programului zilnic (XP-ul, stelele și simulările rămân).</p><div class="row"><button class="btn ghost" onclick="A.close()">Anulează</button><button class="btn red" onclick="A.pReset()">Da</button></div>`); },
+ pReset(){ delete ST.plan; PS(); save(); closeOv(); render(); toast('Program nou! 🚀'); },
+ hint(){ if(!PL||PL.checked) return; const q=PL.qs[PL.i]; PL.hintOpen=PL.hintOpen||{}; PL.hinted=PL.hinted||{}; PL.elim=PL.elim||{}; PL.hintOpen[PL.i]=true; PL.hinted[PL.i]=true;
+  if(q.t==='mc' && q.o.length>=4){ const wrong=shuffle(q.o.map((_,i)=>i).filter(i=>i!==q.a)); PL.elim[PL.i]=wrong.slice(0,2); if(PL.sel!=null&&PL.elim[PL.i].includes(PL.sel)) PL.sel=null; }
+  if(q.t==='ms' && q.o.length>=4){ const wrong=shuffle(q.o.map((_,i)=>i).filter(i=>!q.a.includes(i))); PL.elim[PL.i]=wrong.slice(0,1); if(Array.isArray(PL.sel)) PL.sel=PL.sel.filter(x=>!PL.elim[PL.i].includes(x)); }
+  render(); }
+});
+
+// ---------- pornire ----------
 (function boot(){ const h=location.hash.slice(1); ROUTE = NAV.some(n=>n.id===h)?h:'acasa'; render(); initCaps(); if(SY.token&&SY.gist&&!inClaude()) ghPull(true); })();
 
 </script>
